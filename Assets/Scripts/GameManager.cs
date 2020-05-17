@@ -7,6 +7,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 	#region Variables
+	[SerializeField] private GameObject cam = default;                  // Reference to the main camera in the scene. (I know Camera.main exists)
+	[SerializeField] private GameObject playerPrefab = default;         // Reference to the Player Prefab.
 	[SerializeField] LevelGenerator levelGenerator = default;           // Reference to the level generator in the scene.
 	#endregion
 
@@ -18,9 +20,19 @@ public class GameManager : MonoBehaviour
 	#endregion
 
 	#region Functions
+	/// <summary>
+	/// Begins all the required code to start the game. This ensures the scene will always load in correctly.
+	/// </summary>
+	/// <returns></returns>
 	private IEnumerator BeginGame()
 	{
+		cam.SetActive(false);
 		yield return StartCoroutine(levelGenerator.Generate());
+
+		Instantiate(playerPrefab, Vector2.zero, Quaternion.identity);
+
+		cam.SetActive(true);
+		yield return new WaitForEndOfFrame();
 	}
 	#endregion
 }
