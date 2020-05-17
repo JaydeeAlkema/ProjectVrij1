@@ -366,6 +366,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefabs:
   - {fileID: 814267907204114471, guid: 2f303d37f22f3a64dbb58ae88c316373, type: 3}
+  - {fileID: 814267907204114471, guid: 9861effe1c8d11a4d826bf8d73c07263, type: 3}
+  - {fileID: 814267907204114471, guid: 0ae35f618c6804b4c9c1224dc5774cb7, type: 3}
+  - {fileID: 814267907204114471, guid: ad24ee05179d44b46990e38d67c6ccd5, type: 3}
   platformsToSpawn: 20
   platformOffset: {x: 10, y: -9}
   platformSpawnPoint: {fileID: 961402062}
