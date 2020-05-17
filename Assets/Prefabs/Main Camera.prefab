@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1300829944450869501}
   - component: {fileID: 1300829944450869500}
   - component: {fileID: 1300829944450869490}
-  - component: {fileID: 1300829944450869491}
   - component: {fileID: 1300829944450869502}
+  - component: {fileID: 2299972719924945777}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -60,7 +60,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -85,46 +85,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300829944450869489}
   m_Enabled: 1
---- !u!114 &1300829944450869491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300829944450869489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boost: 3.5
-  positionLerpTime: 0.2
-  mouseSensitivityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.5
-      inSlope: 0
-      outSlope: 5
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 2.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  rotationLerpTime: 0.01
-  invertY: 0
 --- !u!114 &1300829944450869502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,3 +116,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &2299972719924945777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300829944450869489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58952c8789e7264c9133103c3bba4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smoothing: 7.5
+  offset: {x: 6, y: 0, z: 0}
