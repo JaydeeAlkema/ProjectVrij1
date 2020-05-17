@@ -7,38 +7,57 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	[Space]
 	[SerializeField] private string horizontalMovementAxis = "Horizontal";  // The name of the Horizontal movement axis.
 	[SerializeField] private KeyCode jumpKey = KeyCode.Space;               // Which key to press to Jump.
+	[SerializeField] private LayerMask groundMask = default;                // Ground layermask.
+	[SerializeField] private Transform groundCheckPos = default;            // Ground Check Position.
+	[SerializeField] private bool grounded = false;                         // True when on the ground.
 	[Space]
 	[SerializeField] private float moveSpeed = 5f;                      // How fast the character moves at the max speed.
 	[SerializeField] private float jumpForce = 10f;                     // How much force is applied to the Rigidobdy when jumping.
-	[Space]
-	[SerializeField] private bool jumping = false;                      // Is true when jumping.
 	#endregion
 
 	#region Monobehaviour Callbacks
-	private void Update()
-	{
-		GetMovementInput();
-	}
-
 	private void FixedUpdate()
 	{
-		rb.AddForce(transform.right * moveSpeed * Time.deltaTime);
+		if(grounded)
+		{
+			if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+			{
+				rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+			}
+			else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+			{
+				rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+			}
+			else
+			{
+				rb.velocity = new Vector2(0, rb.velocity.y);
+			}
 
+			if(Input.GetKey(jumpKey))
+			{
+				rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+			}
+		}
+	}
+
+	private void Update()
+	{
+		CheckIfGrounded();
 	}
 	#endregion
 
 	#region Functions
-	private void GetMovementInput()
+	private void CheckIfGrounded()
 	{
-		// Regular movement
-		moveSpeed *= Input.GetAxis(horizontalMovementAxis);
+		grounded = Physics2D.Linecast(transform.position, groundCheckPos.position, groundMask) ? true : false;
+	}
+	#endregion
 
-		// Jumping
-		jumping = Input.GetKeyDown(jumpKey) ? true : false;
-		if(jumping)
-		{
-			rb.AddForce(transform.up * jumpForce * Time.deltaTime);
-		}
+	#region Debugging
+	private void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.green;
+		Gizmos.DrawLine(transform.position, groundCheckPos.position);
 	}
 	#endregion
 }
