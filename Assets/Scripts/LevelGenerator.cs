@@ -22,30 +22,42 @@ public class LevelGenerator : MonoBehaviour
 	#region Monobehaviour Callbacks
 	private void Update()
 	{
-		for(int i = 0; i < platformsInScene.Count; i++)
-		{
-			if(Vector3.Distance(platformsInScene[i].transform.position, Camera.main.transform.position) < distanceToDespawnPlatform)
-				Show(platformsInScene[i]);
-			else
-				Hide(platformsInScene[i]);
-		}
+		if(Camera.main != null)
+			for(int i = 0; i < platformsInScene.Count; i++)
+			{
+				if(Vector3.Distance(platformsInScene[i].transform.position, Camera.main.transform.position) < distanceToDespawnPlatform)
+					Show(platformsInScene[i]);
+				else
+					Hide(platformsInScene[i]);
+			}
 	}
 	#endregion
 
 	#region Functions
 	/// <summary>
 	/// Generates all the platforms needed. This is done via an enumerator because the Game Manager will have to sequence which tasks will be performed.
+	/// It also makes sure there can never be 2 of the same platforms in a row.
 	/// </summary>
 	/// <returns></returns>
 	public IEnumerator Generate()
 	{
+		int prevPlatformPrefabIndex = 0;
 		for(int i = 0; i < platformsToSpawn; i++)
 		{
+			int platformPrefabIndex = Random.Range(0, platformPrefabs.Length);
+			while(prevPlatformPrefabIndex == platformPrefabIndex)
+			{
+				platformPrefabIndex = Random.Range(0, platformPrefabs.Length);
+			}
+
 			Vector2 platformSpawnPos = new Vector2(platformSpawnPoint.position.x + platformOffset.x * i, platformOffset.y);
-			GameObject newPlatformGO = Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length)], platformSpawnPos, Quaternion.identity, platformParent);
+
+			GameObject newPlatformGO = Instantiate(platformPrefabs[platformPrefabIndex], platformSpawnPos, Quaternion.identity, platformParent);
+
+			prevPlatformPrefabIndex = platformPrefabIndex;
 			platformsInScene.Add(newPlatformGO);
+			yield return new WaitForEndOfFrame();
 		}
-		yield return new WaitForEndOfFrame();
 	}
 
 	/// <summary>
