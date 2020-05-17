@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject cam = default;                  // Reference to the main camera in the scene. (I know Camera.main exists)
 	[SerializeField] private GameObject playerPrefab = default;         // Reference to the Player Prefab.
 	[SerializeField] LevelGenerator levelGenerator = default;           // Reference to the level generator in the scene.
+
+	private GameObject playerInstance = null;
 	#endregion
 
 	#region Monobehaviour Callbacks
@@ -29,8 +31,10 @@ public class GameManager : MonoBehaviour
 		cam.SetActive(false);
 		yield return StartCoroutine(levelGenerator.Generate());
 
-		Instantiate(playerPrefab, Vector2.zero, Quaternion.identity);
+		playerInstance = Instantiate(playerPrefab, Vector2.zero, Quaternion.identity);
+		playerInstance.transform.position = new Vector3(0, -5f, 0);
 
+		cam.GetComponent<SmoothCam>().Target = playerInstance.transform;
 		cam.SetActive(true);
 		yield return new WaitForEndOfFrame();
 	}
