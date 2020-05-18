@@ -342,7 +342,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -888,6 +888,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 583702793826195019, guid: a1d42c289c9317645b50337181c24c7b,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 583702793826195020, guid: a1d42c289c9317645b50337181c24c7b,
         type: 3}
       propertyPath: m_Name
@@ -991,6 +996,26 @@ PrefabInstance:
         type: 3}
       propertyPath: maxClamp.x
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: offset.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: offset.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: minClamp.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: maxClamp.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f52971ce897688f4fafcacbcc38936d5, type: 3}
