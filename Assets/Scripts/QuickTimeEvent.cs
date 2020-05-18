@@ -66,7 +66,10 @@ public class QuickTimeEvent : MonoBehaviour
 	/// </summary>
 	private void CheckIfInViewOfCamera()
 	{
-
+		if(spriteRenderer.isVisible)
+		{
+			state = QuickTimeEventState.Active;
+		}
 	}
 	#endregion
 }
