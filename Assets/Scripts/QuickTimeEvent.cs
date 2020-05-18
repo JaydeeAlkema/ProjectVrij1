@@ -48,6 +48,7 @@ public class QuickTimeEvent : MonoBehaviour
 					if(keyToPressIndex == quickTimeEventKeys.Length)
 					{
 						state = QuickTimeEventState.Completed;
+						spriteRenderer.sprite = null;
 						return;
 					}
 					else
