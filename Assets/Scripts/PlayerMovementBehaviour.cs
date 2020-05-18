@@ -20,19 +20,20 @@ public class PlayerMovementBehaviour : MonoBehaviour
 	{
 		if(grounded)
 		{
-			if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-			{
-				rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-			}
-			else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-			{
-				rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-			}
-			else
-			{
-				rb.velocity = new Vector2(0, rb.velocity.y);
-			}
+			//if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+			//{
+			//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+			//}
+			//else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+			//{
+			//	rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
+			//}
+			//else
+			//{
+			//	rb.velocity = new Vector2(0, rb.velocity.y);
+			//}
 
+			rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 			if(Input.GetKey(jumpKey))
 			{
 				rb.velocity = new Vector2(rb.velocity.x, jumpForce);
