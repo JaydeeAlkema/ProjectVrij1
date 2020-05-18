@@ -6,6 +6,8 @@ public class SmoothCam : MonoBehaviour
 	[SerializeField] private Transform target = default;            // what to follow.
 	[SerializeField] private float smoothing = default;             // How "Smooooth" the camera follows the target.
 	[SerializeField] private Vector3 offset = default;              // Offset from the target transform.
+	[SerializeField] private Vector2 minClamp = default;            // Minimum clamp of the Camera (How far left it can go)
+	[SerializeField] private Vector2 maxClamp = default;            // Naximum clamp of the Camera (How far Right it can go)
 
 	private Vector3 desiredPos;
 	private Vector3 smoothedPos;
@@ -18,6 +20,9 @@ public class SmoothCam : MonoBehaviour
 	#region Monobehaviour Callbacks
 	private void Update()
 	{
+		Vector3 pos = transform.position;
+		pos.x = Mathf.Clamp(pos.x, minClamp.x, maxClamp.x);
+		transform.position = pos;
 	}
 
 	private void FixedUpdate()
