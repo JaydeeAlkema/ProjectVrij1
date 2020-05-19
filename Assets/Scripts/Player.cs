@@ -8,7 +8,6 @@ public class Player : MonoBehaviour, IDamageable
 	[Space]
 	[Header("Player Movement")]
 	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
-	[SerializeField] private string horizontalMovementAxis = "Horizontal";      // The name of the Horizontal movement axis.
 	[SerializeField] private KeyCode jumpKey = KeyCode.Space;                   // Which key to press to Jump.
 	[SerializeField] private LayerMask groundMask = default;                    // Ground layermask.
 	[SerializeField] private Transform groundCheckPos = default;                // Ground Check Position.
@@ -26,6 +25,7 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private Color lanternColorRed = new Color();               // The RED color of the lantern.
 	[SerializeField] private Color lanternColorPurple = new Color();            // The PURPLE color of the lantern.
 	[SerializeField] private Color lanternColorYellow = new Color();            // The YELLOW color of the lantern.
+	[SerializeField] private int lanternDir = 1;                                // Which direction the lantern points. (0 = left, 1 = right)
 	#endregion
 
 	#region Methods
@@ -55,6 +55,7 @@ public class Player : MonoBehaviour, IDamageable
 		CheckIfGrounded();
 		RotateLanternOnInput();
 		ChangeLanterncolorOnInput();
+		RotateLantern();
 	}
 	#endregion
 
@@ -66,14 +67,14 @@ public class Player : MonoBehaviour, IDamageable
 
 	private void RotateLanternOnInput()
 	{
-		if(Input.GetKeyDown(lanternPointLeft))
-		{
-			lanternPivot.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
-		}
-		else if(Input.GetKeyDown(lanternPointRight))
-		{
-			lanternPivot.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-		}
+		if(Input.GetKeyDown(lanternPointLeft)) lanternDir = 0;
+		else if(Input.GetKeyDown(lanternPointRight)) lanternDir = 1;
+	}
+
+	private void RotateLantern()
+	{
+		if(lanternDir == 0) lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 179)), lanternRotationSpeed * Time.deltaTime);
+		else if(lanternDir == 1) lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 1)), lanternRotationSpeed * Time.deltaTime);
 	}
 
 	private void ChangeLanterncolorOnInput()
