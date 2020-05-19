@@ -59,9 +59,9 @@ public class Enemy : MonoBehaviour
 	/// <param name="collision"></param>
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.GetComponent<IDamagable>() != null)
+		if(collision.GetComponent<IDamageable>() != null)
 		{
-			collision.GetComponent<IDamagable>().Damage(1);
+			collision.GetComponent<IDamageable>().Damage(1);
 			state = EnemyState.Dead;
 		}
 	}
