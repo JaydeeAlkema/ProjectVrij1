@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
 {
 	#region Variables
 	[SerializeField] private EnemyState state = EnemyState.Idle;            // The state of the enemy.
+	[SerializeField] private int damageOnCollision = 50;					// how much damage the enemy deals when it comes into contact with the target.
 	[Space]
 	[SerializeField] private Transform target = default;                    // Target of the enemy. (which will always be the player).
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
@@ -61,7 +62,7 @@ public class Enemy : MonoBehaviour
 	{
 		if(collision.GetComponent<IDamageable>() != null)
 		{
-			collision.GetComponent<IDamageable>().Damage(1);
+			collision.GetComponent<IDamageable>().Damage(damageOnCollision);
 			state = EnemyState.Dead;
 		}
 	}
