@@ -399,10 +399,10 @@ MonoBehaviour:
   lanternPivot: {fileID: 5119056894129970533}
   lanternPointLeft: 113
   lanternPointRight: 101
-  lanternColorBlue: {r: 0.39215684, g: 0.63657993, b: 1, a: 1}
-  lanternColorRed: {r: 1, g: 0.41526982, b: 0.39215684, a: 1}
-  lanternColorPurple: {r: 0.546863, g: 0.39215684, b: 1, a: 1}
-  lanternColorYellow: {r: 1, g: 0.9639585, b: 0.39215684, a: 1}
+  lanternColorBlue: {r: 0, g: 0.4000001, b: 1, a: 1}
+  lanternColorRed: {r: 1, g: 0.038709674, b: 0, a: 1}
+  lanternColorPurple: {r: 0.25161314, g: 0, b: 1, a: 1}
+  lanternColorYellow: {r: 1, g: 0.9419354, b: 0, a: 1}
 --- !u!1 &6160788983321068294
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0.5, z: 0}
   m_ShapePathHash: 229968350
   m_Mesh: {fileID: 0}
-  m_InstanceId: -25336
+  m_InstanceId: 17178
 --- !u!1 &7292347152234870753
 GameObject:
   m_ObjectHideFlags: 0
