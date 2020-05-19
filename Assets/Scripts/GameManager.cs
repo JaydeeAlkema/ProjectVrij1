@@ -7,6 +7,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 	#region Variables
+	private static GameManager instance = default;                      // Instance of this.
+
 	[SerializeField] private GameObject cam = default;                  // Reference to the main camera in the scene. (I know Camera.main exists)
 	[Space]
 	[SerializeField] private GameObject playerPrefab = default;         // Reference to the Player Prefab.
@@ -17,7 +19,17 @@ public class GameManager : MonoBehaviour
 	private GameObject playerInstance = null;
 	#endregion
 
+	#region Properties
+	public static GameManager Instance { get => instance; set => instance = value; }
+	public GameObject PlayerInstance { get => playerInstance; set => playerInstance = value; }
+	#endregion
+
 	#region Monobehaviour Callbacks
+	private void Awake()
+	{
+		if(!instance || instance != this) instance = this;
+	}
+
 	private void Start()
 	{
 		StartCoroutine(BeginGame());
