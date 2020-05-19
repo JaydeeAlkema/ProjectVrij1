@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
 		playerInstance = Instantiate(playerPrefab, playerPrefabSpawnPos.position, Quaternion.identity);
 
-		cam.GetComponent<SmoothCam>().Target = playerInstance.transform;
+		cam.GetComponent<SmoothFollow>().Target = playerInstance.transform;
 		cam.SetActive(true);
 		yield return new WaitForEndOfFrame();
 	}
