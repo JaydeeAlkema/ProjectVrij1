@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class SmoothCam : MonoBehaviour
+public class SmoothFollow : MonoBehaviour
 {
 	#region Variables
 	[SerializeField] private Transform target = default;            // what to follow.
