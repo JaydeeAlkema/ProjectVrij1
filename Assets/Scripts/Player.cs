@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
 	#region Variables
 	[SerializeField] private Rigidbody2D rb = default;                          // Reference to the Rigidbody2D component.
 	[Space]
 	[Header("Player Movement")]
+	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
 	[SerializeField] private string horizontalMovementAxis = "Horizontal";      // The name of the Horizontal movement axis.
 	[SerializeField] private KeyCode jumpKey = KeyCode.Space;                   // Which key to press to Jump.
 	[SerializeField] private LayerMask groundMask = default;                    // Ground layermask.
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
 	[Space]
 	[Header("Lantern")]
 	[SerializeField] private float lanternRotationSpeed = 0.25f;                // How long the rotation lerp takes.
-	[SerializeField] private Light2D[] lanternLights = default;                   // Array with all the lantern lights.
+	[SerializeField] private Light2D[] lanternLights = default;                 // Array with all the lantern lights.
 	[SerializeField] private Transform lanternPivot = default;                  // Pivot of the Lantern.
 	[SerializeField] private KeyCode lanternPointLeft = default;                // Which key to press to make lantern point to the Left.
 	[SerializeField] private KeyCode lanternPointRight = default;               // Which key to press to make lantern point to the Right.
@@ -25,6 +26,10 @@ public class Player : MonoBehaviour
 	[SerializeField] private Color lanternColorRed = new Color();               // The RED color of the lantern.
 	[SerializeField] private Color lanternColorPurple = new Color();            // The PURPLE color of the lantern.
 	[SerializeField] private Color lanternColorYellow = new Color();            // The YELLOW color of the lantern.
+	#endregion
+
+	#region Methods
+	public void Damage(int damageTaken) => health -= damageTaken;
 	#endregion
 
 	#region Monobehaviour Callbacks
@@ -37,19 +42,6 @@ public class Player : MonoBehaviour
 	{
 		if(grounded)
 		{
-			//if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-			//{
-			//rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-			//}
-			//else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-			//{
-			//	rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
-			//}
-			//else
-			//{
-			//	rb.velocity = new Vector2(0, rb.velocity.y);
-			//}
-
 			rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 			if(Input.GetKey(jumpKey))
 			{
@@ -99,6 +91,7 @@ public class Player : MonoBehaviour
 			lanternLights[i].color = color;
 		}
 	}
+
 	#endregion
 
 	#region Debugging
@@ -107,5 +100,6 @@ public class Player : MonoBehaviour
 		Gizmos.color = Color.green;
 		Gizmos.DrawLine(transform.position, groundCheckPos.position);
 	}
+
 	#endregion
 }
