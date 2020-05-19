@@ -907,6 +907,11 @@ PrefabInstance:
       propertyPath: maxClamp.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: offset.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f52971ce897688f4fafcacbcc38936d5, type: 3}
 --- !u!1001 &7770346241297589090
