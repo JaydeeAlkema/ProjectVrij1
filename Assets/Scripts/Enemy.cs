@@ -7,20 +7,32 @@ public enum EnemyState
 	Dead
 }
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
 	#region Variables
 	[SerializeField] private EnemyState state = EnemyState.Idle;            // The state of the enemy.
-	[SerializeField] private int damageOnCollision = 50;					// how much damage the enemy deals when it comes into contact with the target.
+	[SerializeField] private int damageOnCollision = 50;                    // how much damage the enemy deals when it comes into contact with the target.
+	[SerializeField] private Vector2 startingPos = default;                 // the starting position of the enemy.
 	[Space]
+	[SerializeField] private float health = 100;                            // How much health is left.
 	[SerializeField] private Transform target = default;                    // Target of the enemy. (which will always be the player).
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
-	[SerializeField] private float movementSpeed = default;                 // How fast the enemy moves towards the target.
+	[SerializeField] private float lerpTime = default;                      // how long it takes in second the reach the target destination.
+
+	private float timeStartedLerping;
 	#endregion
 
 	#region Monobehaviour Callbacks
+	private void Start()
+	{
+		startingPos = transform.position;
+		timeStartedLerping = Time.time;
+	}
+
 	private void Update()
 	{
+		if(health <= 0) state = EnemyState.Dead;
+
 		if(state == EnemyState.Idle) CheckIfInViewOfCamera();
 		else if(state == EnemyState.Active) MoveTowardsTarget();
 		else if(state == EnemyState.Dead) Destroy(gameObject);
@@ -45,13 +57,22 @@ public class Enemy : MonoBehaviour
 	/// </summary>
 	private void MoveTowardsTarget()
 	{
-		transform.position = Vector2.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+		transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, lerpTime);
 
 		Vector3 diff = target.position - transform.position;
 		diff.Normalize();
 
 		float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+	}
+
+	private Vector3 CleanLerp(Vector3 startPos, Vector3 endPos, float timeStartedLerping, float lerptime = 1)
+	{
+		float timeSinceStarted = Time.time - timeStartedLerping;
+		float percentageComplete = timeSinceStarted / lerptime;
+
+		Vector3 result = Vector3.Lerp(startPos, endPos, percentageComplete);
+		return result;
 	}
 
 	/// <summary>
@@ -66,5 +87,7 @@ public class Enemy : MonoBehaviour
 			state = EnemyState.Dead;
 		}
 	}
+
+	public void Damage(int damageTaken) => health -= damageTaken;
 	#endregion
 }
