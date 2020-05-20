@@ -66,6 +66,14 @@ public class Enemy : MonoBehaviour, IDamageable
 		transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 	}
 
+	/// <summary>
+	/// Cleanly lerps the enemy from the starting point to the end point.
+	/// </summary>
+	/// <param name="startPos"></param>
+	/// <param name="endPos"></param>
+	/// <param name="timeStartedLerping"></param>
+	/// <param name="lerptime"></param>
+	/// <returns></returns>
 	private Vector3 CleanLerp(Vector3 startPos, Vector3 endPos, float timeStartedLerping, float lerptime = 1)
 	{
 		float timeSinceStarted = Time.time - timeStartedLerping;
@@ -88,6 +96,10 @@ public class Enemy : MonoBehaviour, IDamageable
 		}
 	}
 
+	/// <summary>
+	/// Implementation of the IDamageable interface.
+	/// </summary>
+	/// <param name="damageTaken"></param>
 	public void Damage(int damageTaken) => health -= damageTaken;
 	#endregion
 }

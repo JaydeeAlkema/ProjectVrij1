@@ -117,12 +117,20 @@ public class Player : MonoBehaviour, IDamageable
 		}
 	}
 
+	/// <summary>
+	/// Gets called when the OnCollisionEnter2D function gets triggered on the PlayerLightArea
+	/// </summary>
+	/// <param name="playerLightArea"></param>
 	public void OnCollisionDetected(PlayerLightArea playerLightArea)
 	{
 		lightArea = playerLightArea;
 		StartCoroutine(DealDamageToTargetInLightArea());
 	}
 
+	/// <summary>
+	/// Deals damage to the target within the light area after a certain time.
+	/// </summary>
+	/// <returns></returns>
 	public IEnumerator DealDamageToTargetInLightArea()
 	{
 		if(lightArea.TargetInLightArea != null)
