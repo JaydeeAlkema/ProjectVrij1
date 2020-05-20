@@ -137,11 +137,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  type: 0
   damageOnCollision: 50
+  startingPos: {x: 0, y: 0}
   health: 100
   target: {fileID: 0}
   bodySpriteRenderer: {fileID: 2201212629162708450}
-  movementSpeed: 0.35
+  lerpTime: 5
+  lights:
+  - {fileID: 2201212628535590594}
+  - {fileID: 2201212629366713519}
 --- !u!1 &2201212629162708476
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +226,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!1 &2201212629366713513
 GameObject:

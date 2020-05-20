@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16125232701017663}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 17.12, y: 0, z: 0}
-  m_LocalScale: {x: 25.40456, y: 33.779842, z: 1}
+  m_LocalPosition: {x: 8.395, y: 0.152, z: 0}
+  m_LocalScale: {x: 11.178006, y: 16.552124, z: 1}
   m_Children: []
   m_Father: {fileID: 47549724332293618}
   m_RootOrder: 2
@@ -438,7 +438,7 @@ MonoBehaviour:
   moveSpeed: 2.5
   jumpForce: 5
   grounded: 0
-  lightArea: {fileID: 0}
+  lightArea: {fileID: 1233199272680153551}
   lanternDir: 1
   timeToDefeatEnemy: 2
   lanternRotationSpeed: 10
@@ -448,10 +448,12 @@ MonoBehaviour:
   lanternPivot: {fileID: 5119056894129970533}
   lanternPointLeft: 113
   lanternPointRight: 101
-  lanternColorBlue: {r: 0, g: 0.4000001, b: 1, a: 1}
-  lanternColorRed: {r: 1, g: 0.038709674, b: 0, a: 1}
-  lanternColorPurple: {r: 0.25161314, g: 0, b: 1, a: 1}
-  lanternColorYellow: {r: 1, g: 0.9419354, b: 0, a: 1}
+  lanternLightColors:
+  - {r: 0, g: 0.052369833, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.03997326, a: 1}
+  - {r: 0.4373927, g: 0, b: 1, a: 1}
+  - {r: 0.9752312, g: 1, b: 0, a: 1}
+  lanterLightColorIndex: 0
 --- !u!1 &6160788983321068294
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +561,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0.5, z: 0}
   m_ShapePathHash: 229968350
   m_Mesh: {fileID: 0}
-  m_InstanceId: 24198
+  m_InstanceId: 31362
 --- !u!1 &7292347152234870753
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +621,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 30
   m_PointLightOuterAngle: 65
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 15
+  m_PointLightOuterRadius: 10
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
