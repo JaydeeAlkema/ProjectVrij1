@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4337412843175994882}
   - component: {fileID: 6594776376798037525}
+  - component: {fileID: 8455836197200555589}
+  - component: {fileID: 1233199272680153551}
   m_Layer: 0
   m_Name: New Sprite Mask
   m_TagString: Untagged
@@ -25,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16125232701017663}
   m_LocalRotation: {x: -0, y: -0, z: 0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 17.204, y: 0, z: 0}
-  m_LocalScale: {x: 19.003, y: 30, z: 1}
+  m_LocalPosition: {x: 17.12, y: 0, z: 0}
+  m_LocalScale: {x: 25.40456, y: 33.779842, z: 1}
   m_Children: []
   m_Father: {fileID: 47549724332293618}
   m_RootOrder: 2
@@ -80,6 +82,49 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!60 &8455836197200555589
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16125232701017663}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.50000006}
+      - {x: -0.22240342, y: 0.11991614}
+      - {x: -0.4366125, y: -0.25230035}
+      - {x: 0.43661112, y: -0.25402924}
+      - {x: 0.22509655, y: 0.12164497}
+--- !u!114 &1233199272680153551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16125232701017663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf363fa69860064e84732530bd3cf7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetInLightArea: {fileID: 0}
 --- !u!1 &932817872314670992
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3913333031785102169}
-  horizontalMovementAxis: Horizontal
+  health: 100
+  damageToDeal: 100
   jumpKey: 32
   groundMask:
     serializedVersion: 2
@@ -392,6 +438,9 @@ MonoBehaviour:
   moveSpeed: 2.5
   jumpForce: 5
   grounded: 0
+  lightArea: {fileID: 0}
+  lanternDir: 1
+  timeToDefeatEnemy: 2
   lanternRotationSpeed: 10
   lanternLights:
   - {fileID: 2939292129012185369}
@@ -510,7 +559,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0.5, z: 0}
   m_ShapePathHash: 229968350
   m_Mesh: {fileID: 0}
-  m_InstanceId: 17178
+  m_InstanceId: 24198
 --- !u!1 &7292347152234870753
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,10 +616,10 @@ MonoBehaviour:
   m_AlphaBlendOnOverlap: 0
   m_ShadowIntensity: 1
   m_ShadowVolumeIntensity: 0
-  m_PointLightInnerAngle: 14.18
-  m_PointLightOuterAngle: 47.65
+  m_PointLightInnerAngle: 30
+  m_PointLightOuterAngle: 65
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 25
+  m_PointLightOuterRadius: 15
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
