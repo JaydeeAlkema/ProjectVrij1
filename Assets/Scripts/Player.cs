@@ -30,10 +30,8 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private KeyCode lanternPointLeft = default;                // Which key to press to make lantern point to the Left.
 	[SerializeField] private KeyCode lanternPointRight = default;               // Which key to press to make lantern point to the Right.
 	[Space]
-	[SerializeField] private Color lanternColorBlue = new Color();              // The BLUE color of the lantern.
-	[SerializeField] private Color lanternColorRed = new Color();               // The RED color of the lantern.
-	[SerializeField] private Color lanternColorPurple = new Color();            // The PURPLE color of the lantern.
-	[SerializeField] private Color lanternColorYellow = new Color();            // The YELLOW color of the lantern.
+	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
+	[SerializeField] private int lanterLightColorIndex = 0;
 	#endregion
 
 	#region Methods
@@ -43,7 +41,7 @@ public class Player : MonoBehaviour, IDamageable
 	#region Monobehaviour Callbacks
 	private void Start()
 	{
-		ChangeLanternLight(lanternColorYellow);
+		ChangeLanternLight(lanternLightColors[lanterLightColorIndex]);
 	}
 
 	private void FixedUpdate()
@@ -99,22 +97,27 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void ChangeLanterncolorOnInput()
 	{
-		if(Input.GetKeyDown(KeyCode.Alpha1)) ChangeLanternLight(lanternColorBlue);
-		if(Input.GetKeyDown(KeyCode.Alpha2)) ChangeLanternLight(lanternColorRed);
-		if(Input.GetKeyDown(KeyCode.Alpha3)) ChangeLanternLight(lanternColorPurple);
-		if(Input.GetKeyDown(KeyCode.Alpha4)) ChangeLanternLight(lanternColorYellow);
+		if(Input.GetKeyDown(KeyCode.Alpha1)) lanterLightColorIndex = 0;
+		if(Input.GetKeyDown(KeyCode.Alpha2)) lanterLightColorIndex = 1;
+		if(Input.GetKeyDown(KeyCode.Alpha3)) lanterLightColorIndex = 2;
+		if(Input.GetKeyDown(KeyCode.Alpha4)) lanterLightColorIndex = 3;
+
+		ChangeLanternLight(lanternLightColors[lanterLightColorIndex]);
 	}
 
 	/// <summary>
 	/// A simple function that receives a color and sets all the lights underneath the lanter transform.
+	/// It also enables and disables the light area gameobject so the OnCollisionEnter2D can be triggered again.
 	/// </summary>
 	/// <param name="color"></param>
 	private void ChangeLanternLight(Color color)
 	{
+		lightArea.gameObject.SetActive(false);
 		for(int i = 0; i < lanternLights.Length; i++)
 		{
 			lanternLights[i].color = color;
 		}
+		lightArea.gameObject.SetActive(true);
 	}
 
 	/// <summary>
@@ -133,10 +136,13 @@ public class Player : MonoBehaviour, IDamageable
 	/// <returns></returns>
 	public IEnumerator DealDamageToTargetInLightArea()
 	{
-		if(lightArea.TargetInLightArea != null)
+		if(lanterLightColorIndex == lightArea.TargetInLightArea.GetComponent<Enemy>().GetTypeIndex())
 		{
-			yield return new WaitForSeconds(timeToDefeatEnemy);
-			lightArea.TargetInLightArea.GetComponent<IDamageable>()?.Damage(damageToDeal);
+			if(lightArea.TargetInLightArea.GetComponent<IDamageable>() != null)
+			{
+				yield return new WaitForSeconds(timeToDefeatEnemy);
+				lightArea.TargetInLightArea.GetComponent<IDamageable>().Damage(damageToDeal);
+			}
 		}
 	}
 	#endregion
