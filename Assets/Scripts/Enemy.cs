@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public enum EnemyState
 {
@@ -7,10 +8,20 @@ public enum EnemyState
 	Dead
 }
 
+public enum EnemyType
+{
+	Blue,
+	Red,
+	Purple,
+	Yellow
+}
+
 public class Enemy : MonoBehaviour, IDamageable
 {
 	#region Variables
 	[SerializeField] private EnemyState state = EnemyState.Idle;            // The state of the enemy.
+	[SerializeField] private EnemyType type = EnemyType.Blue;               // The type of enemy.
+	[Space]
 	[SerializeField] private int damageOnCollision = 50;                    // how much damage the enemy deals when it comes into contact with the target.
 	[SerializeField] private Vector2 startingPos = default;                 // the starting position of the enemy.
 	[Space]
@@ -18,15 +29,22 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private Transform target = default;                    // Target of the enemy. (which will always be the player).
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
 	[SerializeField] private float lerpTime = default;                      // how long it takes in second the reach the target destination.
+	[Space]
+	[SerializeField] private Light2D[] lights = default;                        // Array with all the lights the enemy has to show where it is in the scene.
 
 	private float timeStartedLerping;
+	#endregion
+
+	#region Properties
+	public EnemyType Type { get => type; set => type = value; }
 	#endregion
 
 	#region Monobehaviour Callbacks
 	private void Start()
 	{
 		startingPos = transform.position;
-		timeStartedLerping = Time.time;
+
+		ChangeEyeColorByType();
 	}
 
 	private void Update()
@@ -45,10 +63,11 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	private void CheckIfInViewOfCamera()
 	{
-		if(bodySpriteRenderer.isVisible)
+		if(Vector3.Distance(transform.position, Camera.main.transform.position) < 15f)
 		{
-			state = EnemyState.Active;
 			target = GameManager.Instance.PlayerInstance.transform;
+			timeStartedLerping = Time.time;
+			state = EnemyState.Active;
 		}
 	}
 
@@ -101,5 +120,52 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	/// <param name="damageTaken"></param>
 	public void Damage(int damageTaken) => health -= damageTaken;
+
+	public int GetTypeIndex()
+	{
+		int index = 0;
+		switch(type)
+		{
+			case EnemyType.Blue:
+				index = 0;
+				break;
+			case EnemyType.Red:
+				index = 1;
+				break;
+			case EnemyType.Purple:
+				index = 2;
+				break;
+			case EnemyType.Yellow:
+				index = 3;
+				break;
+			default:
+				break;
+		}
+		return index;
+	}
+
+	private void ChangeEyeColorByType()
+	{
+		for(int i = 0; i < lights.Length; i++)
+		{
+			switch(type)
+			{
+				case EnemyType.Blue:
+					lights[i].color = Color.blue;
+					break;
+				case EnemyType.Red:
+					lights[i].color = Color.red;
+					break;
+				case EnemyType.Purple:
+					lights[i].color = Color.cyan;
+					break;
+				case EnemyType.Yellow:
+					lights[i].color = Color.yellow;
+					break;
+				default:
+					break;
+			}
+		}
+	}
 	#endregion
 }
