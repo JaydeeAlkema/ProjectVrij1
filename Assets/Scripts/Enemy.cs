@@ -63,12 +63,13 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	private void CheckIfInViewOfCamera()
 	{
-		if(Vector3.Distance(transform.position, Camera.main.transform.position) < 15f)
-		{
-			target = GameManager.Instance.PlayerInstance.transform;
-			timeStartedLerping = Time.time;
-			state = EnemyState.Active;
-		}
+		if(Camera.main != null)
+			if(Vector3.Distance(transform.position, Camera.main.transform.position) < 15f)
+			{
+				target = GameManager.Instance.PlayerInstance.transform;
+				timeStartedLerping = Time.time;
+				state = EnemyState.Active;
+			}
 	}
 
 	/// <summary>
