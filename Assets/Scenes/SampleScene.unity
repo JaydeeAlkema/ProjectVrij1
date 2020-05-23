@@ -579,7 +579,7 @@ MonoBehaviour:
   platformOffset: {x: 10, y: -5}
   platformSpawnPoint: {fileID: 961402062}
   platformParent: {fileID: 1127627955}
-  distanceToDespawnPlatform: 20
+  distanceToDespawnPlatform: 30
   platformsInScene:
   - {fileID: 305913103}
   - {fileID: 1015616762}
@@ -885,6 +885,11 @@ PrefabInstance:
       propertyPath: m_ClearFlags
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1300829944450869500, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: orthographic size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,7 +898,7 @@ PrefabInstance:
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
@@ -978,12 +983,12 @@ PrefabInstance:
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: minClamp.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: maxClamp.y
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
