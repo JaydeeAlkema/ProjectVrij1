@@ -64,7 +64,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	private void CheckIfInViewOfCamera()
 	{
 		if(Camera.main != null)
-			if(Vector3.Distance(transform.position, Camera.main.transform.position) < 15f)
+			if(Vector3.Distance(transform.position, Camera.main.transform.position) < 25f)
 			{
 				target = GameManager.Instance.PlayerInstance.transform;
 				timeStartedLerping = Time.time;
