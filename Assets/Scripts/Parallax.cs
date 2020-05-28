@@ -20,13 +20,7 @@ public class Parallax : MonoBehaviour
 	#region Monobehaviour Callbacks
 	private void Start()
 	{
-		camTransform = Camera.main.transform;
 		lastCameraX = camTransform.position.x;
-		layers = new Transform[transform.childCount];
-
-		for(int i = 0; i < transform.childCount; i++)
-			layers[i] = transform.GetChild(i);
-
 		leftIndex = 0;
 		rightIndex = layers.Length - 1;
 	}
