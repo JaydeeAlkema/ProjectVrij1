@@ -563,7 +563,10 @@ MonoBehaviour:
   backgroundSize: 19.2
   parallaxSpeed: 0.5
   camTransform: {fileID: 1571233440}
-  layers: []
+  layers:
+  - {fileID: 1566272198}
+  - {fileID: 1038692671}
+  - {fileID: 1401303046}
   viewZone: 0
   leftIndex: 0
   rightIndex: 0
@@ -619,7 +622,10 @@ MonoBehaviour:
   backgroundSize: 19.2
   parallaxSpeed: 0.8
   camTransform: {fileID: 1571233440}
-  layers: []
+  layers:
+  - {fileID: 1372529668}
+  - {fileID: 286565248}
+  - {fileID: 206524310}
   viewZone: 0
   leftIndex: 0
   rightIndex: 0
@@ -1760,7 +1766,10 @@ MonoBehaviour:
   backgroundSize: 19.2
   parallaxSpeed: 0
   camTransform: {fileID: 1571233440}
-  layers: []
+  layers:
+  - {fileID: 308065051}
+  - {fileID: 1457640223}
+  - {fileID: 1503628514}
   viewZone: 0
   leftIndex: 0
   rightIndex: 0
