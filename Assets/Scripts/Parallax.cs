@@ -33,6 +33,8 @@ public class Parallax : MonoBehaviour
 
 	private void Update()
 	{
+		if(!camTransform) camTransform = Camera.main.transform;
+
 		if(parallaxing)
 		{
 			float deltaX = camTransform.position.x - lastCameraX;
