@@ -34,6 +34,10 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private int lanterLightColorIndex = 0;
 	#endregion
 
+	#region Properties
+	public Rigidbody2D Rb { get => rb; set => rb = value; }
+	#endregion
+
 	#region Methods
 	public void Damage(int damageTaken) => health -= damageTaken;
 	#endregion
