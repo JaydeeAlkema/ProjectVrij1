@@ -561,8 +561,8 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 19.2
-  parallaxSpeed: 0
-  camTransform: {fileID: 0}
+  parallaxSpeed: 0.5
+  camTransform: {fileID: 1571233440}
   layers: []
   viewZone: 0
   leftIndex: 0
@@ -617,8 +617,8 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 19.2
-  parallaxSpeed: 0
-  camTransform: {fileID: 0}
+  parallaxSpeed: 0.8
+  camTransform: {fileID: 1571233440}
   layers: []
   viewZone: 0
   leftIndex: 0
@@ -1759,7 +1759,7 @@ MonoBehaviour:
   parallaxing: 1
   backgroundSize: 19.2
   parallaxSpeed: 0
-  camTransform: {fileID: 0}
+  camTransform: {fileID: 1571233440}
   layers: []
   viewZone: 0
   leftIndex: 0
@@ -1960,7 +1960,7 @@ PrefabInstance:
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
@@ -2045,7 +2045,7 @@ PrefabInstance:
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: offset.y
-      value: 0
+      value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
@@ -2065,7 +2065,7 @@ PrefabInstance:
     - target: {fileID: 2299972719924945777, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
       propertyPath: clamping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f52971ce897688f4fafcacbcc38936d5, type: 3}
