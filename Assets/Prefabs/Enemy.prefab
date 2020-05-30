@@ -143,7 +143,7 @@ MonoBehaviour:
   health: 100
   target: {fileID: 0}
   bodySpriteRenderer: {fileID: 2201212629162708450}
-  lerpTime: 5
+  lerpTime: 10
   lights:
   - {fileID: 2201212628535590594}
   - {fileID: 2201212629366713519}
