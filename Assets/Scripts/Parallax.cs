@@ -12,9 +12,9 @@ public class Parallax : MonoBehaviour
 	[SerializeField] private Transform camTransform = default;                              // Reference to the camera transform.
 	[SerializeField] private Transform[] layers = default;                                  // All background layers.
 	[SerializeField] private float viewZone = 10;                                           // view zone of the camera.
-	[SerializeField] private int leftIndex = default;                                       // Left most image index.
-	[SerializeField] private int rightIndex = default;                                      // Right most image index.
-	[SerializeField] private float lastCameraX = default;                                   // Last X pos of the camera.
+	private int leftIndex = default;														// Left most image index.
+	private int rightIndex = default;														// Right most image index.
+	private float lastCameraX = default;													// Last X pos of the camera.
 	#endregion
 
 	#region Monobehaviour Callbacks
