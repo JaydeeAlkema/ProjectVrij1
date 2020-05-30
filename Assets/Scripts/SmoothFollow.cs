@@ -19,8 +19,12 @@ public class SmoothFollow : MonoBehaviour
 	#endregion
 
 	#region Monobehaviour Callbacks
-	private void Update()
+	private void FixedUpdate()
 	{
+		desiredPos = new Vector3(offset.x + target.position.x, offset.y + target.position.y, offset.z);
+		smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothing * Time.deltaTime);
+		transform.position = smoothedPos;
+
 		if(clamping)
 		{
 			Vector3 pos = transform.position;
@@ -28,13 +32,6 @@ public class SmoothFollow : MonoBehaviour
 			pos.y = Mathf.Clamp(pos.y, minClamp.y, maxClamp.y);
 			transform.position = pos;
 		}
-	}
-
-	private void FixedUpdate()
-	{
-		desiredPos = new Vector3(offset.x + target.position.x, offset.y + target.position.y, offset.z);
-		smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothing * Time.deltaTime);
-		transform.position = smoothedPos;
 	}
 	#endregion
 }
