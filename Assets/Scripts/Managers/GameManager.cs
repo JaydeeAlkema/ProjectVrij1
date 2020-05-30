@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField] private GameObject cam = default;                  // Reference to the main camera in the scene. (I know Camera.main exists)
 	[Space]
+	[SerializeField] private SceneFader sceneFader = default;			// Reference to the scene fader.
 	[SerializeField] private GameObject playerPrefab = default;         // Reference to the Player Prefab.
 	[SerializeField] private Transform playerPrefabSpawnPos = default;  // Where the player will be spawned.
 	[Space]
@@ -50,6 +51,8 @@ public class GameManager : MonoBehaviour
 
 		cam.GetComponent<SmoothFollow>().Target = playerInstance.transform;
 		cam.SetActive(true);
+
+		sceneFader.Fade();
 		yield return new WaitForEndOfFrame();
 	}
 	#endregion
