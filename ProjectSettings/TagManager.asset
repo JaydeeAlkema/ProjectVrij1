@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 468359823
+    locked: 0
+  - name: Entity
+    uniqueID: 1624694779
+    locked: 0
+  - name: Foreground
+    uniqueID: 2911469855
+    locked: 0
