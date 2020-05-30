@@ -141,14 +141,14 @@ public class Player : MonoBehaviour, IDamageable
 	public IEnumerator DealDamageToTargetInLightArea()
 	{
 		yield return new WaitForSeconds(timeToDefeatEnemy);
-		if(lanterLightColorIndex == lightArea.TargetInLightArea.GetComponent<Enemy>().GetTypeIndex())
+		if(lightArea.TargetInLightArea != null)
 		{
-			if(lightArea.TargetInLightArea != null)
+			if(lanterLightColorIndex == lightArea.TargetInLightArea.GetComponent<Enemy>().GetTypeIndex())
 			{
 				lightArea.TargetInLightArea.GetComponent<IDamageable>()?.Damage(damageToDeal);
-				yield return null;
 			}
 		}
+		yield return null;
 	}
 	#endregion
 
