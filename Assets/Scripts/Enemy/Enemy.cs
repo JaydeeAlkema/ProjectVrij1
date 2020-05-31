@@ -31,6 +31,9 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private float lerpTime = default;                      // how long it takes in second the reach the target destination.
 	[Space]
 	[SerializeField] private Light2D[] lights = default;                        // Array with all the lights the enemy has to show where it is in the scene.
+	[Space]
+	[SerializeField] private AudioSource audioSource = default;             // Reference to the audiosource component.
+	[SerializeField] private AudioClip[] onEnemyHitAudioSource = default;   // Array with all on hit sounds.
 
 	private float timeStartedLerping;
 	#endregion
@@ -44,7 +47,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	{
 		startingPos = transform.position;
 
-		ChangeEyeColorByType();
+		ChangeEyeColorLightByType();
 	}
 
 	private void Update()
@@ -120,8 +123,18 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// Implementation of the IDamageable interface.
 	/// </summary>
 	/// <param name="damageTaken"></param>
-	public void Damage(int damageTaken) => health -= damageTaken;
+	public void Damage(int damageTaken)
+	{
+		health -= damageTaken;
 
+		int index = Random.Range(0, onEnemyHitAudioSource.Length);
+		AudioManager.Instance.PlaySoundEffect(onEnemyHitAudioSource[index], transform, 1f);
+	}
+
+	/// <summary>
+	/// Returns and index relevant to the enemy type.
+	/// </summary>
+	/// <returns></returns>
 	public int GetTypeIndex()
 	{
 		int index = 0;
@@ -145,8 +158,12 @@ public class Enemy : MonoBehaviour, IDamageable
 		return index;
 	}
 
-	private void ChangeEyeColorByType()
+	/// <summary>
+	/// </summary>
+	private void ChangeEyeColorLightByType()
 	{
+		RandomizeEnemyType();
+
 		for(int i = 0; i < lights.Length; i++)
 		{
 			switch(type)
@@ -158,7 +175,11 @@ public class Enemy : MonoBehaviour, IDamageable
 					lights[i].color = Color.red;
 					break;
 				case EnemyType.Purple:
-					lights[i].color = Color.cyan;
+					Color newCol;
+					if(ColorUtility.TryParseHtmlString("FD00FF", out newCol))
+					{
+						lights[i].color = newCol;
+					}
 					break;
 				case EnemyType.Yellow:
 					lights[i].color = Color.yellow;
@@ -166,6 +187,33 @@ public class Enemy : MonoBehaviour, IDamageable
 				default:
 					break;
 			}
+		}
+	}
+
+	/// <summary>
+	/// Sets the enemy type to a (pseudo) random type
+	/// </summary>
+	private void RandomizeEnemyType()
+	{
+		int typeIndex = Random.Range(0, 4);
+
+		switch(typeIndex)
+		{
+			case 0:
+				type = EnemyType.Blue;
+				break;
+			case 1:
+				type = EnemyType.Red;
+				break;
+			case 2:
+				type = EnemyType.Purple
+					;
+				break;
+			case 3:
+				type = EnemyType.Yellow;
+				break;
+			default:
+				break;
 		}
 	}
 	#endregion
