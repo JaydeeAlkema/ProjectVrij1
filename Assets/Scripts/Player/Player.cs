@@ -16,6 +16,7 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private float moveSpeed = 5f;                              // How fast the character moves at the max speed.
 	[SerializeField] private float jumpForce = 10f;                             // How much force is applied to the Rigidobdy when jumping.
 	[SerializeField] private bool grounded = false;                             // True when on the ground.
+	[SerializeField] private bool canJump = true;                               // If the player can jump.
 	[Space]
 	[Header("Lantern")]
 	[SerializeField] private PlayerLightArea lightArea = default;               // Reference to the Player Light Area class.
@@ -26,39 +27,38 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private Light2D[] lanternLights = default;                 // Array with all the lantern lights.
 	[SerializeField] private Transform lanternPivot = default;                  // Pivot of the Lantern.
 	[Space]
-
 	[SerializeField] private KeyCode lanternPointLeft = default;                // Which key to press to make lantern point to the Left.
 	[SerializeField] private KeyCode lanternPointRight = default;               // Which key to press to make lantern point to the Right.
 	[Space]
 	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
-	[SerializeField] private int lanterLightColorIndex = 0;
+	[SerializeField] private int lanternLightColorIndex = 0;
+	[Space]
+	[SerializeField] private AudioClip onPlayerJumpAudioClip = default;         // Audio Clip to play when player jumps.
+	[SerializeField] private AudioClip onPlayerJumpLandAudioClip = default;     // Audio Clip to play when player lands after jumping.
+	[SerializeField] private AudioClip onPlayerHitAudioClip = default;          // Audio clip to play when player gets hit.
+	[SerializeField] private AudioClip onLanternColorChange = default;          // Audio Clip to play when lantern color changes.
+	[SerializeField] private AudioClip onLanternDirChange = default;            // Audio Clip to play when lantern changes direction.
 	#endregion
 
 	#region Properties
 	public Rigidbody2D Rb { get => rb; set => rb = value; }
 	#endregion
 
-	#region Methods
-	public void Damage(int damageTaken) => health -= damageTaken;
-	#endregion
-
 	#region Monobehaviour Callbacks
 	private void Start()
 	{
-		ChangeLanternLight(lanternLightColors[lanterLightColorIndex]);
+		ChangeLanternLight(lanternLightColors[0], false);
 	}
 
 	private void FixedUpdate()
 	{
-		if(grounded)
+		rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+		if(Input.GetKey(jumpKey))
 		{
-			rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-			if(Input.GetKey(jumpKey))
-			{
-				rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-			}
+			JumpEvent();
 		}
 	}
+
 
 	private void Update()
 	{
@@ -75,7 +75,37 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void CheckIfGrounded()
 	{
-		grounded = Physics2D.Linecast(transform.position, groundCheckPos.position, groundMask) ? true : false;
+		//grounded = Physics2D.Linecast(transform.position, groundCheckPos.position, groundMask) ? true : false;
+
+		if(Physics2D.Linecast(transform.position, groundCheckPos.position, groundMask))
+		{
+			if(grounded == false)
+			{
+				AudioManager.Instance.PlaySoundEffect(onPlayerJumpLandAudioClip, transform, 1f);
+				grounded = true;
+			}
+		}
+		else
+		{
+			grounded = false;
+		}
+	}
+
+	private void JumpEvent()
+	{
+		if(grounded && canJump)
+		{
+			canJump = false;
+			AudioManager.Instance.PlaySoundEffect(onPlayerJumpAudioClip, transform, 1f);
+			rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+			StartCoroutine(JumpCooldown());
+		}
+	}
+
+	private IEnumerator JumpCooldown()
+	{
+		yield return new WaitForSeconds(0.1f);
+		canJump = true;
 	}
 
 	/// <summary>
@@ -83,8 +113,8 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void RotateLanternOnInput()
 	{
-		if(Input.GetKeyDown(lanternPointLeft)) lanternDir = 0;
-		else if(Input.GetKeyDown(lanternPointRight)) lanternDir = 1;
+		if(Input.GetKeyDown(lanternPointLeft)) { lanternDir = 0; AudioManager.Instance.PlaySoundEffect(onLanternDirChange, transform, 0.6f); }
+		else if(Input.GetKeyDown(lanternPointRight)) { lanternDir = 1; AudioManager.Instance.PlaySoundEffect(onLanternDirChange, transform, 0.6f); }
 	}
 
 	/// <summary>
@@ -101,12 +131,10 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void ChangeLanterncolorOnInput()
 	{
-		if(Input.GetKeyDown(KeyCode.Alpha1)) lanterLightColorIndex = 0;
-		if(Input.GetKeyDown(KeyCode.Alpha2)) lanterLightColorIndex = 1;
-		if(Input.GetKeyDown(KeyCode.Alpha3)) lanterLightColorIndex = 2;
-		if(Input.GetKeyDown(KeyCode.Alpha4)) lanterLightColorIndex = 3;
-
-		ChangeLanternLight(lanternLightColors[lanterLightColorIndex]);
+		if(Input.GetKeyDown(KeyCode.Alpha1)) { ChangeLanternLight(lanternLightColors[0]); lanternLightColorIndex = 0; }
+		if(Input.GetKeyDown(KeyCode.Alpha2)) { ChangeLanternLight(lanternLightColors[1]); lanternLightColorIndex = 1; }
+		if(Input.GetKeyDown(KeyCode.Alpha3)) { ChangeLanternLight(lanternLightColors[2]); lanternLightColorIndex = 2; }
+		if(Input.GetKeyDown(KeyCode.Alpha4)) { ChangeLanternLight(lanternLightColors[3]); lanternLightColorIndex = 3; }
 	}
 
 	/// <summary>
@@ -114,13 +142,16 @@ public class Player : MonoBehaviour, IDamageable
 	/// It also enables and disables the light area gameobject so the OnCollisionEnter2D can be triggered again.
 	/// </summary>
 	/// <param name="color"></param>
-	private void ChangeLanternLight(Color color)
+	private void ChangeLanternLight(Color color, bool playAudio = true)
 	{
 		lightArea.gameObject.SetActive(false);
+
 		for(int i = 0; i < lanternLights.Length; i++)
-		{
 			lanternLights[i].color = color;
-		}
+
+		if(playAudio)
+			AudioManager.Instance.PlaySoundEffect(onLanternColorChange, transform, 0.5f);
+
 		lightArea.gameObject.SetActive(true);
 	}
 
@@ -131,24 +162,37 @@ public class Player : MonoBehaviour, IDamageable
 	public void OnCollisionDetected(PlayerLightArea playerLightArea)
 	{
 		lightArea = playerLightArea;
-		StartCoroutine(DealDamageToTargetInLightArea());
+		Enemy enemyInSpotlight = lightArea.TargetInLightArea.GetComponent<Enemy>();
+		StartCoroutine(DealDamageToTargetInLightArea(enemyInSpotlight, enemyInSpotlight.GetTypeIndex()));
 	}
 
 	/// <summary>
 	/// Deals damage to the target within the light area after a certain time.
 	/// </summary>
 	/// <returns></returns>
-	public IEnumerator DealDamageToTargetInLightArea()
+	public IEnumerator DealDamageToTargetInLightArea(Enemy enemy, int enemyTypeIndex)
 	{
 		yield return new WaitForSeconds(timeToDefeatEnemy);
 		if(lightArea.TargetInLightArea != null)
 		{
-			if(lanterLightColorIndex == lightArea.TargetInLightArea.GetComponent<Enemy>().GetTypeIndex())
+			if(lanternLightColorIndex == enemyTypeIndex)
 			{
-				lightArea.TargetInLightArea.GetComponent<IDamageable>()?.Damage(damageToDeal);
+				enemy.GetComponent<IDamageable>()?.Damage(damageToDeal);
 			}
 		}
 		yield return null;
+	}
+
+	/// <summary>
+	/// Implementation of the IDamageable interface Damage Void.
+	/// </summary>
+	/// <param name="damageTaken"></param>
+	/// <param name="audioSource"></param>
+	/// <param name="audioClip"></param>
+	public void Damage(int damageTaken)
+	{
+		health -= damageTaken;
+		AudioManager.Instance.PlaySoundEffect(onPlayerHitAudioClip, transform, 0.5f);
 	}
 	#endregion
 
@@ -158,6 +202,5 @@ public class Player : MonoBehaviour, IDamageable
 		Gizmos.color = Color.green;
 		Gizmos.DrawLine(transform.position, groundCheckPos.position);
 	}
-
 	#endregion
 }
