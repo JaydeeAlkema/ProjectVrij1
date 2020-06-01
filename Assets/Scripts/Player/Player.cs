@@ -6,6 +6,7 @@ public class Player : MonoBehaviour, IDamageable
 {
 	#region Variables
 	[SerializeField] private Rigidbody2D rb = default;                          // Reference to the Rigidbody2D component.
+	[SerializeField] private Animator anim = default;                           // Reference to the Animator Component.
 	[Space]
 	[Header("Player Movement")]
 	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
@@ -66,6 +67,8 @@ public class Player : MonoBehaviour, IDamageable
 		RotateLanternOnInput();
 		ChangeLanterncolorOnInput();
 		RotateLantern();
+
+		anim.SetBool("Grounded", grounded);
 	}
 	#endregion
 
