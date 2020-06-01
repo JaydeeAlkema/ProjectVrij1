@@ -13,7 +13,7 @@ public enum EnemyType
 	Blue,
 	Red,
 	Purple,
-	Yellow
+	Green
 }
 
 public class Enemy : MonoBehaviour, IDamageable
@@ -30,7 +30,8 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
 	[SerializeField] private float lerpTime = default;                      // how long it takes in second the reach the target destination.
 	[Space]
-	[SerializeField] private Light2D[] lights = default;                        // Array with all the lights the enemy has to show where it is in the scene.
+	[SerializeField] private Light2D[] lights = default;                    // Array with all the lights the enemy has to show where it is in the scene.
+	[SerializeField] private Color[] lightColors = default;                 // Array with all the colors that the lights can be.
 	[Space]
 	[SerializeField] private AudioSource audioSource = default;             // Reference to the audiosource component.
 	[SerializeField] private AudioClip[] onEnemyHitAudioSource = default;   // Array with all on hit sounds.
@@ -149,7 +150,7 @@ public class Enemy : MonoBehaviour, IDamageable
 			case EnemyType.Purple:
 				index = 2;
 				break;
-			case EnemyType.Yellow:
+			case EnemyType.Green:
 				index = 3;
 				break;
 			default:
@@ -169,21 +170,21 @@ public class Enemy : MonoBehaviour, IDamageable
 			switch(type)
 			{
 				case EnemyType.Blue:
-					lights[i].color = Color.blue;
+					lights[i].color = lightColors[0];
 					break;
+
 				case EnemyType.Red:
-					lights[i].color = Color.red;
+					lights[i].color = lightColors[1];
 					break;
+
 				case EnemyType.Purple:
-					Color newCol;
-					if(ColorUtility.TryParseHtmlString("FD00FF", out newCol))
-					{
-						lights[i].color = newCol;
-					}
+					lights[i].color = lightColors[2];
 					break;
-				case EnemyType.Yellow:
-					lights[i].color = Color.yellow;
+
+				case EnemyType.Green:
+					lights[i].color = lightColors[3];
 					break;
+
 				default:
 					break;
 			}
@@ -210,7 +211,7 @@ public class Enemy : MonoBehaviour, IDamageable
 					;
 				break;
 			case 3:
-				type = EnemyType.Yellow;
+				type = EnemyType.Green;
 				break;
 			default:
 				break;
