@@ -727,6 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3913333031785102169}
+  anim: {fileID: 1312145896686179165}
   health: 100
   damageToDeal: 100
   jumpKey: 32
@@ -773,6 +774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6160788983321068295}
   - component: {fileID: 6160788983321067768}
+  - component: {fileID: 1312145896686179165}
   - component: {fileID: 1524908370}
   m_Layer: 0
   m_Name: Sprite
@@ -845,6 +847,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1312145896686179165
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6160788983321068294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 750cd1d2a2bb0d4488f03bab63f3f917, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1524908370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,7 +873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6160788983321068294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -911,4 +932,4 @@ MonoBehaviour:
   - {x: 0.82885635, y: -1.5358883, z: 0}
   m_ShapePathHash: -274325278
   m_Mesh: {fileID: 0}
-  m_InstanceId: 54574
+  m_InstanceId: 17866
