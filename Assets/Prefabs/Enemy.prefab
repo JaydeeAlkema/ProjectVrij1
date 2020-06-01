@@ -244,6 +244,11 @@ MonoBehaviour:
   lights:
   - {fileID: 2201212628535590594}
   - {fileID: 2201212629366713519}
+  lightColors:
+  - {r: 0.08018869, g: 0.1216158, b: 1, a: 1}
+  - {r: 1, g: 0.08018869, b: 0.119122356, a: 1}
+  - {r: 0.49140298, g: 0.0990566, b: 1, a: 1}
+  - {r: 0.19811329, g: 0.5943396, b: 0, a: 1}
   audioSource: {fileID: 2015738096933062320}
   onEnemyHitAudioSource:
   - {fileID: 8300000, guid: 1d957cc3b4631a547a969a9e2f8a20b7, type: 3}

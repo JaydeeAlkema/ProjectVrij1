@@ -488,7 +488,7 @@ MonoBehaviour:
   m_FalloffIntensity: 0.462
   m_Color: {r: 1, g: 0.764565, b: 0.514151, a: 1}
   m_Intensity: 0.75
-  m_LightVolumeOpacity: 0.33
+  m_LightVolumeOpacity: 0.25
   m_ApplyToSortingLayers: 000000008f9aea1bfbdfd660
   m_LightCookieSprite: {fileID: 21300000, guid: 156f50b9dbf270142a9e6f2bf2e3a65f,
     type: 3}
@@ -499,7 +499,7 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.17839676
   m_PointLightOuterRadius: 3
   m_PointLightDistance: 3
   m_PointLightQuality: 1
@@ -753,7 +753,7 @@ MonoBehaviour:
   - {r: 0.08018869, g: 0.1216158, b: 1, a: 1}
   - {r: 1, g: 0.08018869, b: 0.119122356, a: 1}
   - {r: 0.49140298, g: 0.0990566, b: 1, a: 1}
-  - {r: 0.9786595, g: 1, b: 0.11792451, a: 1}
+  - {r: 0.19811329, g: 0.5943396, b: 0, a: 1}
   lanternLightColorIndex: 0
   onPlayerJumpAudioClip: {fileID: 8300000, guid: e8f7526ad9a646c49a934be8abb97bfd,
     type: 3}
