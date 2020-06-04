@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932817872314670992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4524980573176458473}
@@ -306,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368571205453343191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 47549724332293618}
@@ -730,7 +730,8 @@ MonoBehaviour:
   anim: {fileID: 1312145896686179165}
   health: 100
   damageToDeal: 100
-  jumpKey: 32
+  jumpKey: 119
+  slideKey: 115
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -738,6 +739,7 @@ MonoBehaviour:
   moveSpeed: 2.5
   jumpForce: 5
   grounded: 1
+  canSlide: 1
   canJump: 1
   lightArea: {fileID: 1233199272680153551}
   lanternDir: 1
@@ -758,6 +760,8 @@ MonoBehaviour:
   onPlayerJumpAudioClip: {fileID: 8300000, guid: e8f7526ad9a646c49a934be8abb97bfd,
     type: 3}
   onPlayerJumpLandAudioClip: {fileID: 8300000, guid: 7be4e2249b58ae74e95c24a58f99c7de,
+    type: 3}
+  onPlayerSlideAudioClip: {fileID: 8300000, guid: 63d52ab2f69e0254099c41ee9bf725a4,
     type: 3}
   onPlayerHitAudioClip: {fileID: 8300000, guid: a4dbb37ee0fb3f7439f3e92a3124d6b2,
     type: 3}
@@ -836,12 +840,13 @@ SpriteRenderer:
   m_SortingLayerID: 1624694779
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0c4e7d4be48b7de43ab3867e29617ba3, type: 3}
+  m_Sprite: {fileID: -3306330532419899966, guid: 4f23fbbb99aff8f45884e1e3c6544892,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
