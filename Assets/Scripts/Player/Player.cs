@@ -11,12 +11,14 @@ public class Player : MonoBehaviour, IDamageable
 	[Header("Player Movement")]
 	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
 	[SerializeField] private int damageToDeal = 100;                            // How much damage to deal to the enemy.
-	[SerializeField] private KeyCode jumpKey = KeyCode.Space;                   // Which key to press to Jump.
+	[SerializeField] private KeyCode jumpKey = KeyCode.W;                   // Which key to press to Jump.
+	[SerializeField] private KeyCode slideKey = KeyCode.S;                   // Which key to press to Jump.
 	[SerializeField] private LayerMask groundMask = default;                    // Ground layermask.
 	[SerializeField] private Transform groundCheckPos = default;                // Ground Check Position.
 	[SerializeField] private float moveSpeed = 5f;                              // How fast the character moves at the max speed.
 	[SerializeField] private float jumpForce = 10f;                             // How much force is applied to the Rigidobdy when jumping.
 	[SerializeField] private bool grounded = false;                             // True when on the ground.
+	[SerializeField] private bool canSlide = false;                              // True when sliding on the ground.
 	[SerializeField] private bool canJump = true;                               // If the player can jump.
 	[Space]
 	[Header("Lantern")]
@@ -33,9 +35,10 @@ public class Player : MonoBehaviour, IDamageable
 	[Space]
 	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
 	[SerializeField] private int lanternLightColorIndex = 0;
-	[Space]
+	[Header("Audio Clips")]
 	[SerializeField] private AudioClip onPlayerJumpAudioClip = default;         // Audio Clip to play when player jumps.
 	[SerializeField] private AudioClip onPlayerJumpLandAudioClip = default;     // Audio Clip to play when player lands after jumping.
+	[SerializeField] private AudioClip onPlayerSlideAudioClip = default;        // Audio Clip to play when player starts sliding.
 	[SerializeField] private AudioClip onPlayerHitAudioClip = default;          // Audio clip to play when player gets hit.
 	[SerializeField] private AudioClip onLanternColorChange = default;          // Audio Clip to play when lantern color changes.
 	[SerializeField] private AudioClip onLanternDirChange = default;            // Audio Clip to play when lantern changes direction.
@@ -54,12 +57,7 @@ public class Player : MonoBehaviour, IDamageable
 	private void FixedUpdate()
 	{
 		rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-		if(Input.GetKey(jumpKey))
-		{
-			JumpEvent();
-		}
 	}
-
 
 	private void Update()
 	{
@@ -67,6 +65,12 @@ public class Player : MonoBehaviour, IDamageable
 		RotateLanternOnInput();
 		ChangeLanterncolorOnInput();
 		RotateLantern();
+
+		if(Input.GetKeyDown(jumpKey))
+			JumpEvent();
+
+		if(Input.GetKeyDown(slideKey))
+			SlideEvent();
 
 		anim.SetBool("Grounded", grounded);
 	}
@@ -94,6 +98,35 @@ public class Player : MonoBehaviour, IDamageable
 		}
 	}
 
+	/// <summary>
+	/// Starts the Slide Event.
+	/// </summary>
+	private void SlideEvent()
+	{
+		if(grounded && canSlide)
+		{
+			canSlide = false;
+			AudioManager.Instance.PlaySoundEffect(onPlayerSlideAudioClip, transform, 1f);
+			AudioManager.Instance.PlaySoundEffect(onPlayerJumpAudioClip, transform, 1f);
+			anim.SetBool("Sliding", true);
+			StartCoroutine(SlideCooldown());
+		}
+	}
+
+	/// <summary>
+	/// Starts the Slide Cooldown.
+	/// </summary>
+	/// <returns></returns>
+	private IEnumerator SlideCooldown()
+	{
+		yield return new WaitForSeconds(0.75f);
+		canSlide = true;
+		anim.SetBool("Sliding", false);
+	}
+
+	/// <summary>
+	/// Starts the Jump Event.
+	/// </summary>
 	private void JumpEvent()
 	{
 		if(grounded && canJump)
@@ -105,6 +138,10 @@ public class Player : MonoBehaviour, IDamageable
 		}
 	}
 
+	/// <summary>
+	/// Starts the Jump Cooldown.
+	/// </summary>
+	/// <returns></returns>
 	private IEnumerator JumpCooldown()
 	{
 		yield return new WaitForSeconds(0.1f);
