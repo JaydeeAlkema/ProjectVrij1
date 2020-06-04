@@ -11,8 +11,8 @@ public class Player : MonoBehaviour, IDamageable
 	[Header("Player Movement")]
 	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
 	[SerializeField] private int damageToDeal = 100;                            // How much damage to deal to the enemy.
-	[SerializeField] private KeyCode jumpKey = KeyCode.W;                   // Which key to press to Jump.
-	[SerializeField] private KeyCode slideKey = KeyCode.S;                   // Which key to press to Jump.
+	[SerializeField] private KeyCode jumpKey = KeyCode.W;                       // Which key to press to Jump.
+	[SerializeField] private KeyCode slideKey = KeyCode.S;                      // Which key to press to Jump.
 	[SerializeField] private LayerMask groundMask = default;                    // Ground layermask.
 	[SerializeField] private Transform groundCheckPos = default;                // Ground Check Position.
 	[SerializeField] private float moveSpeed = 5f;                              // How fast the character moves at the max speed.
@@ -32,6 +32,7 @@ public class Player : MonoBehaviour, IDamageable
 	[Space]
 	[SerializeField] private KeyCode lanternPointLeft = default;                // Which key to press to make lantern point to the Left.
 	[SerializeField] private KeyCode lanternPointRight = default;               // Which key to press to make lantern point to the Right.
+	[SerializeField] private KeyCode lanternToggleKey = default;                // Which key to press to toggle the lantern.
 	[Space]
 	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
 	[SerializeField] private int lanternLightColorIndex = 0;
@@ -71,6 +72,9 @@ public class Player : MonoBehaviour, IDamageable
 
 		if(Input.GetKeyDown(slideKey))
 			SlideEvent();
+
+		if(Input.GetKeyDown(lanternToggleKey))
+			lanternLights[0].gameObject.SetActive(!lanternLights[0].gameObject.activeInHierarchy);
 
 		anim.SetBool("Grounded", grounded);
 	}
@@ -120,8 +124,9 @@ public class Player : MonoBehaviour, IDamageable
 	private IEnumerator SlideCooldown()
 	{
 		yield return new WaitForSeconds(0.75f);
-		canSlide = true;
 		anim.SetBool("Sliding", false);
+		yield return new WaitForSeconds(1.25f);
+		canSlide = true;
 	}
 
 	/// <summary>
