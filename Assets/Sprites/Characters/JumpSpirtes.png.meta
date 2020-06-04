@@ -1,67 +1,40 @@
 fileFormatVersion: 2
-guid: 301ea4d73dd15a7498d3755c352b582e
+guid: 503d8360480083d43b44df8e9594bee7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3749153955474499927
-    second: TestSpriteSheetPlayer_0
+      213: -1948930513602635129
+    second: JumpSpirtes_0
   - first:
-      213: -1043591537080378069
-    second: TestSpriteSheetPlayer_1
+      213: -307344673082968631
+    second: JumpSpirtes_1
   - first:
-      213: -8752316416347733922
-    second: TestSpriteSheetPlayer_2
+      213: -6902358132937051962
+    second: JumpSpirtes_2
   - first:
-      213: 453647417041648500
-    second: TestSpriteSheetPlayer_3
+      213: -4349849804870851039
+    second: JumpSpirtes_3
   - first:
-      213: 4416030761663340540
-    second: TestSpriteSheetPlayer_4
+      213: -5527234422838796949
+    second: JumpSpirtes_4
   - first:
-      213: -3156083924777337641
-    second: TestSpriteSheetPlayer_5
+      213: 7327972695855725318
+    second: JumpSpirtes_5
   - first:
-      213: -8838655173038024092
-    second: TestSpriteSheetPlayer_6
+      213: -6148094183857794127
+    second: JumpSpirtes_6
   - first:
-      213: 7296176778170449446
-    second: TestSpriteSheetPlayer_7
+      213: 1750215799696566322
+    second: JumpSpirtes_7
   - first:
-      213: -4158109242544458308
-    second: TestSpriteSheetPlayer_8
+      213: 431783098402240424
+    second: JumpSpirtes_8
   - first:
-      213: -3894019168786574926
-    second: TestSpriteSheetPlayer_9
+      213: -171623251576154287
+    second: JumpSpirtes_9
   - first:
-      213: 1445504214906794460
-    second: TestSpriteSheetPlayer_10
-  - first:
-      213: 6506542213425630892
-    second: TestSpriteSheetPlayer_11
-  - first:
-      213: 5414917617663157637
-    second: TestSpriteSheetPlayer_12
-  - first:
-      213: 221549402091299426
-    second: TestSpriteSheetPlayer_13
-  - first:
-      213: -3100295437508260722
-    second: TestSpriteSheetPlayer_14
-  - first:
-      213: -719148047026743176
-    second: TestSpriteSheetPlayer_15
-  - first:
-      213: 2725807163337733972
-    second: TestSpriteSheetPlayer_16
-  - first:
-      213: -6760605914156941997
-    second: TestSpriteSheetPlayer_17
-  - first:
-      213: -6245987082382330348
-    second: TestSpriteSheetPlayer_18
-  - first:
-      213: 5619656720395726635
-    second: TestSpriteSheetPlayer_19
+      213: -1893222176525951192
+    second: JumpSpirtes_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -183,7 +156,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_0
+      name: JumpSpirtes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -197,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a611b3675458fbc0800000000000000
-      internalID: -3749153955474499927
+      spriteID: 78a9bc4160204f4e0800000000000000
+      internalID: -1948930513602635129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_1
+      name: JumpSpirtes_1
       rect:
         serializedVersion: 2
         x: 1024
@@ -218,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2d58b5b60b6481f0800000000000000
-      internalID: -1043591537080378069
+      spriteID: 9c5f741f5a71cbbf0800000000000000
+      internalID: -307344673082968631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_2
+      name: JumpSpirtes_2
       rect:
         serializedVersion: 2
         x: 2048
@@ -239,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5006c15796898680800000000000000
-      internalID: -8752316416347733922
+      spriteID: 6c032cd29d5e530a0800000000000000
+      internalID: -6902358132937051962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_3
+      name: JumpSpirtes_3
       rect:
         serializedVersion: 2
         x: 3072
@@ -260,14 +233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47b7a0a1cedab4600800000000000000
-      internalID: 453647417041648500
+      spriteID: 126ee5226aa32a3c0800000000000000
+      internalID: -4349849804870851039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_4
+      name: JumpSpirtes_4
       rect:
         serializedVersion: 2
         x: 0
@@ -281,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cff1422a494e84d30800000000000000
-      internalID: 4416030761663340540
+      spriteID: b6dd164b3915b43b0800000000000000
+      internalID: -5527234422838796949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_5
+      name: JumpSpirtes_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -302,14 +275,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc735e54665334d0800000000000000
-      internalID: -3156083924777337641
+      spriteID: 60bfd34775032b560800000000000000
+      internalID: 7327972695855725318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_6
+      name: JumpSpirtes_6
       rect:
         serializedVersion: 2
         x: 2048
@@ -323,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a56e603f9c65580800000000000000
-      internalID: -8838655173038024092
+      spriteID: 1b3d28de9e49daaa0800000000000000
+      internalID: -6148094183857794127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_7
+      name: JumpSpirtes_7
       rect:
         serializedVersion: 2
         x: 3072
@@ -344,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ebd497f1a314560800000000000000
-      internalID: 7296176778170449446
+      spriteID: 238a03d2ff30a4810800000000000000
+      internalID: 1750215799696566322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_8
+      name: JumpSpirtes_8
       rect:
         serializedVersion: 2
         x: 0
@@ -365,14 +338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb57edcacad6b46c0800000000000000
-      internalID: -4158109242544458308
+      spriteID: 8a77848b0700ef500800000000000000
+      internalID: 431783098402240424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestSpriteSheetPlayer_9
+      name: JumpSpirtes_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -386,8 +359,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b11ae7823aa5f9c0800000000000000
-      internalID: -3894019168786574926
+      spriteID: 1571b9edf854e9df0800000000000000
+      internalID: -171623251576154287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpSpirtes_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f574f067ce9b5e0800000000000000
+      internalID: -1893222176525951192
       vertices: []
       indices: 
       edges: []
