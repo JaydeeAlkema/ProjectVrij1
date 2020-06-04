@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8455836197200555589}
   - component: {fileID: 1233199272680153551}
   m_Layer: 0
-  m_Name: New Sprite Mask
+  m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,12 +26,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16125232701017663}
-  m_LocalRotation: {x: -0, y: -0, z: 0.70710576, w: 0.70710784}
-  m_LocalPosition: {x: 15, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 30, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999868, w: 0.0051406627}
+  m_LocalPosition: {x: 0.012256052, y: 0.89557606, z: 0}
+  m_LocalScale: {x: 1.9754343, y: 1.7806102, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 47549724332293618}
-  m_RootOrder: 2
+  m_Father: {fileID: 4524980573176458473}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
 --- !u!331 &6594776376798037525
 SpriteMask:
@@ -155,7 +155,6 @@ Transform:
   m_Children:
   - {fileID: 4524980573176458473}
   - {fileID: 5870289792403287336}
-  - {fileID: 4337412843175994882}
   m_Father: {fileID: 5119056894129970533}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -236,7 +235,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.70346344, w: 0.7107314}
   m_LocalPosition: {x: -0.09, y: 0, z: 0}
   m_LocalScale: {x: 12.655, y: 16.8486, z: 2}
-  m_Children: []
+  m_Children:
+  - {fileID: 4337412843175994882}
   m_Father: {fileID: 47549724332293618}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -499,8 +499,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.17839676
-  m_PointLightOuterRadius: 3
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 5
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -751,6 +751,7 @@ MonoBehaviour:
   lanternPivot: {fileID: 5119056894129970533}
   lanternPointLeft: 113
   lanternPointRight: 101
+  lanternToggleKey: 102
   lanternLightColors:
   - {r: 0.08018869, g: 0.1216158, b: 1, a: 1}
   - {r: 1, g: 0.08018869, b: 0.119122356, a: 1}
