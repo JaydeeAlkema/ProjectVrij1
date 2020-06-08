@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	[SerializeField] private float health = 100;                            // How much health is left.
 	[SerializeField] private Transform target = default;                    // Target of the enemy. (which will always be the player).
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
-	[SerializeField] private float lerpTime = default;                      // how long it takes in second the reach the target destination.
+	[SerializeField] private float moveTime = default;                      // how long it takes in second the reach the target destination.
 	[Space]
 	[SerializeField] private Light2D[] lights = default;                    // Array with all the lights the enemy has to show where it is in the scene.
 	[SerializeField] private Color[] lightColors = default;                 // Array with all the colors that the lights can be.
@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
 	#region Properties
 	public EnemyType Type { get => type; set => type = value; }
+	public float MoveTime { get => moveTime; set => moveTime = value; }
 	#endregion
 
 	#region Monobehaviour Callbacks
@@ -55,25 +56,37 @@ public class Enemy : MonoBehaviour, IDamageable
 	{
 		if(health <= 0) state = EnemyState.Dead;
 
-		if(state == EnemyState.Idle) CheckIfInViewOfCamera();
-		else if(state == EnemyState.Active) MoveTowardsTarget();
-		else if(state == EnemyState.Dead) Destroy(gameObject);
+		switch(state)
+		{
+			case EnemyState.Idle:
+				GetTarget();
+				break;
+
+			case EnemyState.Active:
+				MoveTowardsTarget();
+				break;
+
+			case EnemyState.Dead:
+				Destroy(gameObject);
+				break;
+
+			default:
+				break;
+		}
 	}
 	#endregion
 
 	#region Functions
 	/// <summary>
-	/// checks if the body sprite renderer is in view of the camera, if so, the enemy will be set to active.
+	/// Simply gets the target from the GameManager and sets the State to Active.
 	/// </summary>
-	private void CheckIfInViewOfCamera()
+	private void GetTarget()
 	{
-		if(Camera.main != null)
-			if(Vector3.Distance(transform.position, Camera.main.transform.position) < 25f)
-			{
-				target = GameManager.Instance.PlayerInstance.transform;
-				timeStartedLerping = Time.time;
-				state = EnemyState.Active;
-			}
+		if(!target)
+		{
+			target = GameManager.Instance.PlayerInstance.transform;
+			state = EnemyState.Active;
+		}
 	}
 
 	/// <summary>
@@ -81,7 +94,8 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	private void MoveTowardsTarget()
 	{
-		transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, lerpTime);
+		//transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, moveTime);
+		transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
 
 		Vector3 diff = target.position - transform.position;
 		diff.Normalize();
