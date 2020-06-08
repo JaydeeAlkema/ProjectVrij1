@@ -10,6 +10,7 @@ public class EnemySpawnerManager : MonoBehaviour
 	[Space]
 	[SerializeField] private float spawnInterval = 10f; // Time between enemy spawns.
 	[SerializeField] private List<GameObject> enemiesInScene = new List<GameObject>();  // List with all the enemies in the scene.
+	[SerializeField] private Transform enemySpawnTransformParent = default; // Reference to the parent of the newly spawned enemies.
 
 	private int enemyIndex = 0;
 	private Transform followTransform = default;
@@ -42,10 +43,12 @@ public class EnemySpawnerManager : MonoBehaviour
 			yield return new WaitForSeconds(spawnInterval);
 			int randInt = Random.Range(0, 2);
 
-			GameObject enemyGO = Instantiate(enemiesToSpawn[randInt], spawnPositions[randInt].position, Quaternion.identity);
-			if(randInt == 0) enemyGO.GetComponent<Enemy>().MoveTime = 3.65f;
+			GameObject enemyGO = Instantiate(enemiesToSpawn[randInt], spawnPositions[randInt].position, Quaternion.identity, enemySpawnTransformParent);
+			enemyGO.name += " [" + enemyIndex + "]";
+			if(randInt == 0) enemyGO.GetComponent<Enemy>().MoveTime = 3.35f;
 			else if(randInt == 1) enemyGO.GetComponent<Enemy>().MoveTime = -0.65f;
 
+			enemyIndex++;
 			enemiesInScene.Add(enemyGO);
 		}
 	}
