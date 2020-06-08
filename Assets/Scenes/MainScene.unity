@@ -2238,6 +2238,7 @@ MonoBehaviour:
   - {fileID: 2201212628947622420, guid: 90ccfab77cba756499041303d8dfd42e, type: 3}
   spawnInterval: 10
   enemiesInScene: []
+  enemySpawnTransformParent: {fileID: 1008887511}
 --- !u!1 &1274064900
 GameObject:
   m_ObjectHideFlags: 0
