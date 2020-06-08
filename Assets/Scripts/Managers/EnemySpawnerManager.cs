@@ -23,7 +23,13 @@ public class EnemySpawnerManager : MonoBehaviour
 
 	private void Update()
 	{
-		if(followTransform == null) followTransform = GameManager.Instance.PlayerInstance.transform;
+		if(followTransform == null)
+		{
+			if(GameManager.Instance.PlayerInstance != null)
+			{
+				followTransform = GameManager.Instance.PlayerInstance.transform;
+			}
+		}
 		else transform.position = followTransform.position;
 	}
 	#endregion
@@ -35,7 +41,11 @@ public class EnemySpawnerManager : MonoBehaviour
 		{
 			yield return new WaitForSeconds(spawnInterval);
 			int randInt = Random.Range(0, 2);
+
 			GameObject enemyGO = Instantiate(enemiesToSpawn[randInt], spawnPositions[randInt].position, Quaternion.identity);
+			if(randInt == 0) enemyGO.GetComponent<Enemy>().MoveTime = 3.65f;
+			else if(randInt == 1) enemyGO.GetComponent<Enemy>().MoveTime = -0.65f;
+
 			enemiesInScene.Add(enemyGO);
 		}
 	}
