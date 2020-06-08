@@ -18,7 +18,7 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private float moveSpeed = 5f;                              // How fast the character moves at the max speed.
 	[SerializeField] private float jumpForce = 10f;                             // How much force is applied to the Rigidobdy when jumping.
 	[SerializeField] private bool grounded = false;                             // True when on the ground.
-	[SerializeField] private bool canSlide = false;                              // True when sliding on the ground.
+	[SerializeField] private bool canSlide = true;                              // True when sliding on the ground.
 	[SerializeField] private bool canJump = true;                               // If the player can jump.
 	[Space]
 	[Header("Lantern")]
