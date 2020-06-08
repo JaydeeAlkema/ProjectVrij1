@@ -22,6 +22,7 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private bool canJump = true;                               // If the player can jump.
 	[Space]
 	[Header("Lantern")]
+	[SerializeField] private bool lanternIsOn = false;
 	[SerializeField] private PlayerLightArea lightArea = default;               // Reference to the Player Light Area class.
 	[SerializeField] private int lanternDir = 1;                                // Which direction the lantern points. (0 = left, 1 = right)
 	[SerializeField] private float timeToDefeatEnemy = 2f;                      // How long it takes before the enemy in the light area get's defeated.
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour, IDamageable
 	private void Start()
 	{
 		ChangeLanternLight(lanternLightColors[0], false);
+		ToggleLanternLights();
 	}
 
 	private void FixedUpdate()
@@ -74,13 +76,25 @@ public class Player : MonoBehaviour, IDamageable
 			SlideEvent();
 
 		if(Input.GetKeyDown(lanternToggleKey))
-			lanternLights[0].gameObject.SetActive(!lanternLights[0].gameObject.activeInHierarchy);
+		{
+			ToggleLanternLights();
+		}
 
 		anim.SetBool("Grounded", grounded);
 	}
+
 	#endregion
 
 	#region Functions
+	/// <summary>
+	/// Toggles the lantern light on/off.
+	/// </summary>
+	private void ToggleLanternLights()
+	{
+		lanternIsOn = !lanternIsOn;
+		lanternLights[0].gameObject.SetActive(lanternIsOn);
+	}
+
 	/// <summary>
 	/// Checks if there is a ground underneath the player.
 	/// </summary>
