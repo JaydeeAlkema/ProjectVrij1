@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	[Space]
 	[SerializeField] private float health = 100;                            // How much health is left.
 	[SerializeField] private Transform target = default;                    // Target of the enemy. (which will always be the player).
+	[SerializeField] private Transform spriteTransform = default;           // Reference to the Transform with the SpriteRenderer Component.
 	[SerializeField] private SpriteRenderer bodySpriteRenderer = default;   // Reference to the SpriteRenderer component of the body.
 	[SerializeField] private float moveTime = default;                      // how long it takes in second the reach the target destination.
 	[Space]
@@ -85,6 +86,7 @@ public class Enemy : MonoBehaviour, IDamageable
 		if(!target)
 		{
 			target = GameManager.Instance.PlayerInstance.transform;
+
 			state = EnemyState.Active;
 		}
 	}
@@ -94,14 +96,13 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	private void MoveTowardsTarget()
 	{
-		//transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, moveTime);
 		transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
 
 		Vector3 diff = target.position - transform.position;
 		diff.Normalize();
 
 		float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+		spriteTransform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 	}
 
 	/// <summary>
