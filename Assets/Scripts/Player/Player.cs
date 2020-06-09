@@ -37,13 +37,14 @@ public class Player : MonoBehaviour, IDamageable
 	[Space]
 	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
 	[SerializeField] private int lanternLightColorIndex = 0;
-	[Header("Audio Clips")]
+	[Header("Audio Clips & Sources")]
 	[SerializeField] private AudioClip onPlayerJumpAudioClip = default;         // Audio Clip to play when player jumps.
 	[SerializeField] private AudioClip onPlayerJumpLandAudioClip = default;     // Audio Clip to play when player lands after jumping.
 	[SerializeField] private AudioClip onPlayerSlideAudioClip = default;        // Audio Clip to play when player starts sliding.
 	[SerializeField] private AudioClip onPlayerHitAudioClip = default;          // Audio clip to play when player gets hit.
 	[SerializeField] private AudioClip onLanternColorChange = default;          // Audio Clip to play when lantern color changes.
 	[SerializeField] private AudioClip onLanternDirChange = default;            // Audio Clip to play when lantern changes direction.
+	[SerializeField] private AudioSource onLowHealthGhostlyWhispers = default;    // Audio Clip that gets louder and louder the lower the players health gets.
 	#endregion
 
 	#region Properties
@@ -83,9 +84,30 @@ public class Player : MonoBehaviour, IDamageable
 		anim.SetBool("Grounded", grounded);
 	}
 
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if(collision.CompareTag("Obstacle"))
+		{
+			Debug.Log("Hit by: " + collision.name);
+			health -= 20;
+			AudioManager.Instance.PlaySoundEffect(onPlayerHitAudioClip, transform, 0.5f);
+			GameManager.Instance.ChangeVignetteIntensity(0.20f);
+			collision.GetComponent<CapsuleCollider2D>().enabled = false;
+			ChangeGhostlyWhisperVolume();
+		}
+	}
 	#endregion
 
 	#region Functions
+	private void ChangeGhostlyWhisperVolume()
+	{
+		float newVolume = health / 100f;
+		newVolume -= 1f;
+		newVolume = newVolume / 100f;
+		newVolume = Mathf.Abs(newVolume);
+		onLowHealthGhostlyWhispers.volume = newVolume;
+	}
+
 	/// <summary>
 	/// Toggles the lantern light on/off.
 	/// </summary>
@@ -127,6 +149,7 @@ public class Player : MonoBehaviour, IDamageable
 			AudioManager.Instance.PlaySoundEffect(onPlayerSlideAudioClip, transform, 1f);
 			AudioManager.Instance.PlaySoundEffect(onPlayerJumpAudioClip, transform, 1f);
 			anim.SetBool("Sliding", true);
+			GetComponent<CapsuleCollider2D>().size.Set(GetComponent<CapsuleCollider2D>().size.x, 0.5f);
 			StartCoroutine(SlideCooldown());
 		}
 	}
@@ -139,6 +162,7 @@ public class Player : MonoBehaviour, IDamageable
 	{
 		yield return new WaitForSeconds(0.75f);
 		anim.SetBool("Sliding", false);
+		GetComponent<CapsuleCollider2D>().size.Set(GetComponent<CapsuleCollider2D>().size.x, 2.75f);
 		yield return new WaitForSeconds(1.25f);
 		canSlide = true;
 	}
@@ -251,7 +275,9 @@ public class Player : MonoBehaviour, IDamageable
 	public void Damage(int damageTaken)
 	{
 		health -= damageTaken;
+		ChangeGhostlyWhisperVolume();
 		AudioManager.Instance.PlaySoundEffect(onPlayerHitAudioClip, transform, 0.5f);
+		GameManager.Instance.ChangeVignetteIntensity(damageTaken / 100f);
 	}
 	#endregion
 
