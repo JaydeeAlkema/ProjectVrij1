@@ -182,6 +182,7 @@ Transform:
   - {fileID: 780144644}
   - {fileID: 441210484}
   - {fileID: 1159135867}
+  - {fileID: 1786870016}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -699,7 +700,7 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 38.4
-  parallaxSpeed: 0.5
+  parallaxSpeed: 0
   camTransform: {fileID: 1571233440}
   layers:
   - {fileID: 823683244}
@@ -1008,7 +1009,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419329497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1159135867}
@@ -1547,6 +1548,7 @@ MonoBehaviour:
     type: 3}
   playerPrefabSpawnPos: {fileID: 105317305}
   levelGenerator: {fileID: 1301051509}
+  postProcessVolume: {fileID: 1163837256}
 --- !u!4 &780144644
 Transform:
   m_ObjectHideFlags: 0
@@ -1779,7 +1781,7 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 38.4
-  parallaxSpeed: -0.2
+  parallaxSpeed: -0.25
   camTransform: {fileID: 1571233440}
   layers:
   - {fileID: 386324465}
@@ -1897,7 +1899,7 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 38.4
-  parallaxSpeed: 0.5
+  parallaxSpeed: 0
   camTransform: {fileID: 1571233440}
   layers:
   - {fileID: 666028168}
@@ -2239,6 +2241,18 @@ MonoBehaviour:
   spawnInterval: 10
   enemiesInScene: []
   enemySpawnTransformParent: {fileID: 1008887511}
+--- !u!114 &1163837256 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7770346241740396134, guid: c408d2fc3c215844f944740972c8c8f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 7770346241297589090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1274064900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,9 +2409,9 @@ MonoBehaviour:
   m_LightType: 2
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeOpacity: 0
+  m_Color: {r: 1, g: 0.6728762, b: 0, a: 1}
+  m_Intensity: 10
+  m_LightVolumeOpacity: 1
   m_ApplyToSortingLayers: 00000000fbdfd660
   m_LightCookieSprite: {fileID: 21300000, guid: 68eae87f23becd74f9040cdeff9d2516,
     type: 3}
@@ -2480,8 +2494,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320994239}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85, y: -2.39, z: 0}
-  m_LocalScale: {x: 0.23007, y: 0.23007, z: 0.23007}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -2733,7 +2747,7 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 38.4
-  parallaxSpeed: -0.2
+  parallaxSpeed: -0.25
   camTransform: {fileID: 1571233440}
   layers:
   - {fileID: 410922108}
@@ -2821,6 +2835,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1786870015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786870016}
+  - component: {fileID: 1786870017}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1786870016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786870015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1787259681}
+  m_Father: {fileID: 147850157}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1786870017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786870015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7614104c6eed94d8e51af0c96e44c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaclesToSpawn:
+  - name: Tak
+    parent: {fileID: 1673338727}
+    prefab: {fileID: 2178109019874046336, guid: e3529dd8d4df5ab468b2e9d2274aa12b,
+      type: 3}
+    pos: {x: 0, y: 1, z: 0}
+    rot: {x: 0, y: 0, z: 60}
+  - name: Stenen
+    parent: {fileID: 348826359}
+    prefab: {fileID: 6445614768629209973, guid: e6a80371dbd57e34b9b5702ad4f0f3a1,
+      type: 3}
+    pos: {x: 0, y: -3.5, z: 0}
+    rot: {x: 0, y: 0, z: 0}
+  - name: Boomstronk
+    parent: {fileID: 348826359}
+    prefab: {fileID: 8817562940618017523, guid: 16df43b6bd6e386428ba4548599e0d08,
+      type: 3}
+    pos: {x: 0, y: -3.5, z: 0}
+    rot: {x: 0, y: 0, z: 0}
+  - name: Bosje
+    parent: {fileID: 348826359}
+    prefab: {fileID: 8545741567041265619, guid: a87068ae45221d443b6803ff865c38fd,
+      type: 3}
+    pos: {x: 0, y: -3.5, z: 0}
+    rot: {x: 0, y: 0, z: 0}
+  spawnOffset: {fileID: 1787259681}
+  spawnInterval: 10
+  obstaclesInScene: []
+--- !u!1 &1787259680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787259681}
+  m_Layer: 0
+  m_Name: SpawnOffset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1787259681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787259680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1786870016}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1853276728
 GameObject:
   m_ObjectHideFlags: 0
