@@ -45,9 +45,16 @@ public class EnemySpawnerManager : MonoBehaviour
 
 			GameObject enemyGO = Instantiate(enemiesToSpawn[randInt], spawnPositions[randInt].position, Quaternion.identity, enemySpawnTransformParent);
 			enemyGO.name += " [" + enemyIndex + "]";
-			if(randInt == 0) enemyGO.GetComponent<Enemy>().MoveTime = 3.35f;
-			else if(randInt == 1) enemyGO.GetComponent<Enemy>().MoveTime = -0.65f;
-
+			if(randInt == 0)
+			{
+				enemyGO.GetComponent<Enemy>().MovementMethod = MovementMethod.MoveTowards;
+				enemyGO.GetComponent<Enemy>().MoveTime = 4f;
+			}
+			else if(randInt == 1)
+			{
+				enemyGO.GetComponent<Enemy>().MovementMethod = MovementMethod.CleanLerp;
+				enemyGO.GetComponent<Enemy>().MoveTime = 10f;
+			}
 			enemyIndex++;
 			enemiesInScene.Add(enemyGO);
 		}
