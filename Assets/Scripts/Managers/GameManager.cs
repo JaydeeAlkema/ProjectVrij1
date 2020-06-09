@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 /// <summary>
 /// Manages the main scene.
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Transform playerPrefabSpawnPos = default;  // Where the player will be spawned.
 	[Space]
 	[SerializeField] LevelGenerator levelGenerator = default;           // Reference to the level generator in the scene.
+	[Space]
+	[SerializeField] private Volume postProcessVolume = default;		// Reference to the post process volume.
 
 	private GameObject playerInstance = null;
 	#endregion
@@ -23,6 +27,7 @@ public class GameManager : MonoBehaviour
 	#region Properties
 	public static GameManager Instance { get => instance; set => instance = value; }
 	public GameObject PlayerInstance { get => playerInstance; set => playerInstance = value; }
+	public Volume PostProcessVolume { get => postProcessVolume; set => postProcessVolume = value; }
 	#endregion
 
 	#region Monobehaviour Callbacks
@@ -55,6 +60,12 @@ public class GameManager : MonoBehaviour
 		AudioManager.Instance.FadeInBackgroundMusic();
 		sceneFader.Fade();
 		yield return new WaitForEndOfFrame();
+	}
+
+	public void ChangeVignetteIntensity(float amount)
+	{
+		postProcessVolume.profile.TryGet(out Vignette vignette);
+		vignette.intensity.value += amount / 2;
 	}
 	#endregion
 }
