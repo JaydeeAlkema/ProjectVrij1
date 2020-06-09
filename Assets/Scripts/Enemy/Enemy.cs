@@ -16,11 +16,18 @@ public enum EnemyType
 	Green
 }
 
+public enum MovementMethod
+{
+	CleanLerp,
+	MoveTowards
+}
+
 public class Enemy : MonoBehaviour, IDamageable
 {
 	#region Variables
 	[SerializeField] private EnemyState state = EnemyState.Idle;            // The state of the enemy.
 	[SerializeField] private EnemyType type = EnemyType.Blue;               // The type of enemy.
+	[SerializeField] private MovementMethod movementMethod = MovementMethod.CleanLerp;  // Which movement method to use.
 	[Space]
 	[SerializeField] private int damageOnCollision = 50;                    // how much damage the enemy deals when it comes into contact with the target.
 	[SerializeField] private Vector2 startingPos = default;                 // the starting position of the enemy.
@@ -43,6 +50,7 @@ public class Enemy : MonoBehaviour, IDamageable
 	#region Properties
 	public EnemyType Type { get => type; set => type = value; }
 	public float MoveTime { get => moveTime; set => moveTime = value; }
+	public MovementMethod MovementMethod { get => movementMethod; set => movementMethod = value; }
 	#endregion
 
 	#region Monobehaviour Callbacks
@@ -86,7 +94,7 @@ public class Enemy : MonoBehaviour, IDamageable
 		if(!target)
 		{
 			target = GameManager.Instance.PlayerInstance.transform;
-
+			timeStartedLerping = Time.time;
 			state = EnemyState.Active;
 		}
 	}
@@ -96,7 +104,11 @@ public class Enemy : MonoBehaviour, IDamageable
 	/// </summary>
 	private void MoveTowardsTarget()
 	{
-		transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
+		if(movementMethod == MovementMethod.CleanLerp)
+			transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, moveTime);
+
+		else if(movementMethod == MovementMethod.MoveTowards)
+			transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
 
 		Vector3 diff = target.position - transform.position;
 		diff.Normalize();
