@@ -205,8 +205,16 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void RotateLantern()
 	{
-		if(lanternDir == 0) lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 179)), lanternRotationSpeed * Time.deltaTime);
-		else if(lanternDir == 1) lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 1)), lanternRotationSpeed * Time.deltaTime);
+		if(lanternDir == 0)
+		{
+			lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 179)), lanternRotationSpeed * Time.deltaTime);
+			lanternPivot.GetComponentInChildren<SpriteRenderer>().flipY = true;
+		}
+		else if(lanternDir == 1)
+		{
+			lanternPivot.rotation = Quaternion.Lerp(lanternPivot.rotation, Quaternion.Euler(new Vector3(0, 0, 1)), lanternRotationSpeed * Time.deltaTime);
+			lanternPivot.GetComponentInChildren<SpriteRenderer>().flipY = false;
+		}
 	}
 
 	/// <summary>
