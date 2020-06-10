@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 	[Space]
 	[SerializeField] LevelGenerator levelGenerator = default;           // Reference to the level generator in the scene.
 	[Space]
-	[SerializeField] private Volume postProcessVolume = default;		// Reference to the post process volume.
+	[SerializeField] private Volume postProcessVolume = default;        // Reference to the post process volume.
 
 	private GameObject playerInstance = null;
 	#endregion
@@ -65,7 +65,10 @@ public class GameManager : MonoBehaviour
 	public void ChangeVignetteIntensity(float amount)
 	{
 		postProcessVolume.profile.TryGet(out Vignette vignette);
-		vignette.intensity.value += amount / 2;
+		vignette.intensity.value += amount / 3f;
+
+		// Clamp value to a certain point.
+		if(vignette.intensity.value >= 0.3f) vignette.intensity.value = 0.3f;
 	}
 	#endregion
 }
