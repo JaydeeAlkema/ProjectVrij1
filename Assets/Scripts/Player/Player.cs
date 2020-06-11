@@ -7,6 +7,7 @@ public class Player : MonoBehaviour, IDamageable
 	#region Variables
 	[SerializeField] private Rigidbody2D rb = default;                          // Reference to the Rigidbody2D component.
 	[SerializeField] private Animator anim = default;                           // Reference to the Animator Component.
+	[SerializeField] private CapsuleCollider2D capsuleCollider = default;
 	[Space]
 	[Header("Player Movement")]
 	[SerializeField] private int health = 100;                                  // How much health the player has before game over occurs.
@@ -22,7 +23,6 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private bool canJump = true;                               // If the player can jump.
 	[Space]
 	[Header("Lantern")]
-	[SerializeField] private bool lanternIsOn = false;
 	[SerializeField] private PlayerLightArea lightArea = default;               // Reference to the Player Light Area class.
 	[SerializeField] private int lanternDir = 1;                                // Which direction the lantern points. (0 = left, 1 = right)
 	[SerializeField] private float timeToDefeatEnemy = 2f;                      // How long it takes before the enemy in the light area get's defeated.
@@ -33,7 +33,6 @@ public class Player : MonoBehaviour, IDamageable
 	[Space]
 	[SerializeField] private KeyCode lanternPointLeft = default;                // Which key to press to make lantern point to the Left.
 	[SerializeField] private KeyCode lanternPointRight = default;               // Which key to press to make lantern point to the Right.
-	[SerializeField] private KeyCode lanternToggleKey = default;                // Which key to press to toggle the lantern.
 	[Space]
 	[SerializeField] private Color[] lanternLightColors = default;              // Array with all the colors the lanter can be.
 	[SerializeField] private int lanternLightColorIndex = 0;
@@ -55,7 +54,6 @@ public class Player : MonoBehaviour, IDamageable
 	private void Start()
 	{
 		ChangeLanternLight(lanternLightColors[0], false);
-		ToggleLanternLights();
 	}
 
 	private void FixedUpdate()
@@ -75,11 +73,6 @@ public class Player : MonoBehaviour, IDamageable
 
 		if(Input.GetKeyDown(slideKey))
 			SlideEvent();
-
-		if(Input.GetKeyDown(lanternToggleKey))
-		{
-			ToggleLanternLights();
-		}
 
 		anim.SetBool("Grounded", grounded);
 	}
@@ -106,15 +99,6 @@ public class Player : MonoBehaviour, IDamageable
 		newVolume = newVolume / 100f;
 		newVolume = Mathf.Abs(newVolume);
 		onLowHealthGhostlyWhispers.volume = newVolume;
-	}
-
-	/// <summary>
-	/// Toggles the lantern light on/off.
-	/// </summary>
-	private void ToggleLanternLights()
-	{
-		lanternIsOn = !lanternIsOn;
-		lanternLights[0].gameObject.SetActive(lanternIsOn);
 	}
 
 	/// <summary>
@@ -149,7 +133,8 @@ public class Player : MonoBehaviour, IDamageable
 			AudioManager.Instance.PlaySoundEffect(onPlayerSlideAudioClip, transform, 1f);
 			AudioManager.Instance.PlaySoundEffect(onPlayerJumpAudioClip, transform, 1f);
 			anim.SetBool("Sliding", true);
-			GetComponent<CapsuleCollider2D>().size.Set(GetComponent<CapsuleCollider2D>().size.x, 0.5f);
+			capsuleCollider.size = new Vector2(capsuleCollider.size.x, 0.5f);
+			capsuleCollider.offset = new Vector2(capsuleCollider.offset.x, -1f);
 			StartCoroutine(SlideCooldown());
 		}
 	}
@@ -160,9 +145,10 @@ public class Player : MonoBehaviour, IDamageable
 	/// <returns></returns>
 	private IEnumerator SlideCooldown()
 	{
-		yield return new WaitForSeconds(0.75f);
+		yield return new WaitForSeconds(1.15f);
 		anim.SetBool("Sliding", false);
-		GetComponent<CapsuleCollider2D>().size.Set(GetComponent<CapsuleCollider2D>().size.x, 2.75f);
+		capsuleCollider.size = new Vector2(capsuleCollider.size.x, 2.75f);
+		capsuleCollider.offset = new Vector2(capsuleCollider.offset.x, 0f);
 		yield return new WaitForSeconds(1.25f);
 		canSlide = true;
 	}
