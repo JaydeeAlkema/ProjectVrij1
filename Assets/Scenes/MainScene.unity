@@ -3403,6 +3403,11 @@ PrefabInstance:
       propertyPath: m_ApplyToSortingLayers.Array.data[3]
       value: 1624694779
       objectReference: {fileID: 0}
+    - target: {fileID: 583702793826195019, guid: a1d42c289c9317645b50337181c24c7b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 583702793826195020, guid: a1d42c289c9317645b50337181c24c7b,
         type: 3}
       propertyPath: m_Name
@@ -3426,6 +3431,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300829944450869489, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300829944450869500, guid: f52971ce897688f4fafcacbcc38936d5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1300829944450869501, guid: f52971ce897688f4fafcacbcc38936d5,
         type: 3}
