@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8817562940618017532}
   - component: {fileID: 8817562940618017533}
   - component: {fileID: 8817562940618017522}
+  - component: {fileID: 490426914849674892}
   m_Layer: 10
   m_Name: boomstam
   m_TagString: Obstacle
@@ -98,3 +99,48 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.18087733}
   m_Size: {x: 1.5462406, y: 2.1982453}
   m_Direction: 0
+--- !u!114 &490426914849674892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8817562940618017523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000008f9aea1bfbdfd6601f8189ad
+  m_ShapePath:
+  - {x: -1.013498, y: -0.5104189, z: 0}
+  - {x: -1.2106999, y: -0.8948889, z: 0}
+  - {x: -1.233567, y: -1.1235609, z: 0}
+  - {x: -0.8562579, y: -1.1235609, z: 0}
+  - {x: -0.6313969, y: -1.1006937, z: 0}
+  - {x: -0.47513756, y: -1.234086, z: 0}
+  - {x: -0.12831819, y: -1.2302742, z: 0}
+  - {x: 0.06069696, y: -1.1430788, z: 0}
+  - {x: 0.58437693, y: -1.1731071, z: 0}
+  - {x: 0.90832937, y: -1.1349945, z: 0}
+  - {x: 1.1713024, y: -1.0549593, z: 0}
+  - {x: 1.0950797, y: -0.56332445, z: 0}
+  - {x: 1.05161, y: 0.14835453, z: 0}
+  - {x: 1.0531552, y: 0.36660433, z: 0}
+  - {x: 1.0645889, y: 0.83919334, z: 0}
+  - {x: 0.9769314, y: 1.090733, z: 0}
+  - {x: 0.8511617, y: 1.151712, z: 0}
+  - {x: 0.63011175, y: 1.1707683, z: 0}
+  - {x: -0.033037543, y: 1.1669569, z: 0}
+  - {x: -0.600907, y: 1.1364675, z: 0}
+  - {x: -0.844824, y: 1.079299, z: 0}
+  - {x: -0.90297294, y: 0.9144068, z: 0}
+  - {x: -0.905802, y: -0.09833431, z: 0}
+  m_ShapePathHash: 942922662
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -69338
