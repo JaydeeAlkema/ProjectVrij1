@@ -1352,7 +1352,7 @@ MonoBehaviour:
   scrolling: 1
   parallaxing: 1
   backgroundSize: 38.4
-  parallaxSpeed: 0.8
+  parallaxSpeed: 0.2
   camTransform: {fileID: 1571233440}
   layers:
   - {fileID: 1782889720}
@@ -2238,7 +2238,7 @@ MonoBehaviour:
   enemiesToSpawn:
   - {fileID: 2201212628947622420, guid: 90ccfab77cba756499041303d8dfd42e, type: 3}
   - {fileID: 2201212628947622420, guid: 90ccfab77cba756499041303d8dfd42e, type: 3}
-  spawnInterval: 10
+  spawnInterval: 20
   enemiesInScene: []
   enemySpawnTransformParent: {fileID: 1008887511}
 --- !u!114 &1163837256 stripped
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclesToSpawn:
   - name: Tak
-    parent: {fileID: 1673338727}
+    parent: {fileID: 348826359}
     prefab: {fileID: 2178109019874046336, guid: e3529dd8d4df5ab468b2e9d2274aa12b,
       type: 3}
     pos: {x: 0, y: 1, z: 0}
@@ -2905,7 +2905,7 @@ MonoBehaviour:
     pos: {x: 0, y: -3.5, z: 0}
     rot: {x: 0, y: 0, z: 0}
   spawnOffset: {fileID: 1787259681}
-  spawnInterval: 10
+  spawnInterval: 15
   obstaclesInScene: []
 --- !u!1 &1787259680
 GameObject:
