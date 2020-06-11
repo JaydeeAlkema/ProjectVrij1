@@ -30,6 +30,7 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	{
 		mainImage.color = mouseOnClickColor;
 		PlayAudio(onClickAudioClip);
+		OnButtonClick();
 	}
 
 	public void OnPointerUp(PointerEventData eventData)
@@ -46,5 +47,12 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 		audioSource.PlayOneShot(audioClip);
 	}
 
+	public delegate void OnButtonClickDelegate();
+	public OnButtonClickDelegate buttonClickDelegate;
+
+	public void OnButtonClick()
+	{
+		buttonClickDelegate();
+	}
 	#endregion
 }
