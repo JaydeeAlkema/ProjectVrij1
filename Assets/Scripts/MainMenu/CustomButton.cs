@@ -13,6 +13,9 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	[Space]
 	[SerializeField] private AudioSource audioSource = default;
 	[SerializeField] private AudioClip onClickAudioClip = default;
+
+	public delegate void OnButtonClickDelegate();
+	public OnButtonClickDelegate buttonClickDelegate;
 	#endregion
 
 	#region Functions
@@ -47,9 +50,9 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 		audioSource.PlayOneShot(audioClip);
 	}
 
-	public delegate void OnButtonClickDelegate();
-	public OnButtonClickDelegate buttonClickDelegate;
-
+	/// <summary>
+	/// Call to the OnClickDelegate
+	/// </summary>
 	public void OnButtonClick()
 	{
 		buttonClickDelegate();
