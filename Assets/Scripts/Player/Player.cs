@@ -60,23 +60,33 @@ public class Player : MonoBehaviour, IDamageable
 
 	private void FixedUpdate()
 	{
-		rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+		if(GameManager.Instance.GameState == GameState.Active)
+			rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 	}
 
 	private void Update()
 	{
-		CheckIfGrounded();
-		RotateLanternOnInput();
-		ChangeLanterncolorOnInput();
-		RotateLantern();
+		if(GameManager.Instance.GameState == GameState.Active)
+		{
+			if(health <= 0)
+			{
+				GameManager.Instance.GameOver();
+				StopAllCoroutines();
+			}
 
-		if(Input.GetKeyDown(jumpKey))
-			JumpEvent();
+			CheckIfGrounded();
+			RotateLanternOnInput();
+			ChangeLanterncolorOnInput();
+			RotateLantern();
 
-		if(Input.GetKeyDown(slideKey))
-			SlideEvent();
+			if(Input.GetKeyDown(jumpKey))
+				JumpEvent();
 
-		anim.SetBool("Grounded", grounded);
+			if(Input.GetKeyDown(slideKey))
+				SlideEvent();
+
+			anim.SetBool("Grounded", grounded);
+		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
