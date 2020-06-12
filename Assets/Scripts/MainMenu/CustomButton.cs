@@ -13,6 +13,7 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	[Space]
 	[SerializeField] private AudioSource audioSource = default;
 	[SerializeField] private AudioClip onClickAudioClip = default;
+	[SerializeField] private AudioClip onHoverAudioClip = default;
 
 	public delegate void OnButtonClickDelegate();
 	public OnButtonClickDelegate buttonClickDelegate;
@@ -22,6 +23,7 @@ public class CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		mainImage.color = mouseHoverColor;
+		PlayAudio(onHoverAudioClip);
 	}
 
 	public void OnPointerExit(PointerEventData eventData)
