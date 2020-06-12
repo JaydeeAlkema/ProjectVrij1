@@ -508,7 +508,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: db4db596f278be344b06108a22f7f141, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1573,6 +1573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b4a75752ea42f4b95178b215a84d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
   cam: {fileID: 1571233435}
   sceneFader: {fileID: 583568223}
   playerPrefab: {fileID: 6160788983263710560, guid: f7f7950863854fe4ca33576965fc60e1,
@@ -1580,6 +1581,7 @@ MonoBehaviour:
   playerPrefabSpawnPos: {fileID: 105317305}
   levelGenerator: {fileID: 1301051509}
   postProcessVolume: {fileID: 1163837256}
+  audioSourcesInScene: []
 --- !u!4 &780144644
 Transform:
   m_ObjectHideFlags: 0
