@@ -233,7 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   type: 0
-  damageOnCollision: 35
+  movementMethod: 0
+  damageOnCollision: 20
   startingPos: {x: 0, y: 0}
   health: 100
   target: {fileID: 0}
