@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public enum GameState
 {
 	Active,
-	GameOver
+	GameOver,
+	Transitioning
 }
 
 /// <summary>
@@ -52,6 +53,13 @@ public class GameManager : MonoBehaviour
 	{
 		StartCoroutine(BeginGame());
 	}
+
+	private void Update()
+	{
+		if(playerInstance != null)
+			if(playerInstance.transform.position.x >= 310 && gameState == GameState.Active)
+				StartCoroutine(GoToCutscene());
+	}
 	#endregion
 
 	#region Functions
@@ -86,6 +94,23 @@ public class GameManager : MonoBehaviour
 
 		// Clamp value to a certain point.
 		if(vignette.intensity.value >= 0.3f) vignette.intensity.value = 0.3f;
+	}
+
+	public IEnumerator GoToCutscene()
+	{
+		gameState = GameState.Transitioning;
+
+		foreach(AudioSource audioSource in audioSourcesInScene)
+		{
+			audioSource.enabled = false;
+			audioSource.volume = 0;
+		}
+
+		sceneFader.FadeType = FadeType.FadeIn;
+		sceneFader.Fade();
+		yield return new WaitForSeconds(3f);
+		SceneManager.LoadScene(2);
+
 	}
 
 	public void GameOver()
