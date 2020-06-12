@@ -239,10 +239,10 @@ public class Player : MonoBehaviour, IDamageable
 	/// </summary>
 	private void ChangeLanterncolorOnInput()
 	{
-		if(Input.GetKeyDown(KeyCode.Alpha1)) { ChangeLanternLight(lanternLightColors[0]); lanternLightColorIndex = 0; }
-		if(Input.GetKeyDown(KeyCode.Alpha2)) { ChangeLanternLight(lanternLightColors[1]); lanternLightColorIndex = 1; }
-		if(Input.GetKeyDown(KeyCode.Alpha3)) { ChangeLanternLight(lanternLightColors[2]); lanternLightColorIndex = 2; }
-		if(Input.GetKeyDown(KeyCode.Alpha4)) { ChangeLanternLight(lanternLightColors[3]); lanternLightColorIndex = 3; }
+		if(Input.GetKeyDown(KeyCode.Q)) { ChangeLanternLight(lanternLightColors[0]); lanternLightColorIndex = 0; }
+		if(Input.GetKeyDown(KeyCode.W)) { ChangeLanternLight(lanternLightColors[1]); lanternLightColorIndex = 1; }
+		if(Input.GetKeyDown(KeyCode.E)) { ChangeLanternLight(lanternLightColors[2]); lanternLightColorIndex = 2; }
+		if(Input.GetKeyDown(KeyCode.R)) { ChangeLanternLight(lanternLightColors[3]); lanternLightColorIndex = 3; }
 	}
 
 	/// <summary>
