@@ -41,9 +41,11 @@ public class Player : MonoBehaviour, IDamageable
 	[SerializeField] private AudioClip onPlayerJumpLandAudioClip = default;     // Audio Clip to play when player lands after jumping.
 	[SerializeField] private AudioClip onPlayerSlideAudioClip = default;        // Audio Clip to play when player starts sliding.
 	[SerializeField] private AudioClip onPlayerHitAudioClip = default;          // Audio clip to play when player gets hit.
+	[SerializeField] private AudioClip onPlayerCollectAudioClip = default;      // Audio clip to play when player Collects an light orb.
 	[SerializeField] private AudioClip onLanternColorChange = default;          // Audio Clip to play when lantern color changes.
 	[SerializeField] private AudioClip onLanternDirChange = default;            // Audio Clip to play when lantern changes direction.
-	[SerializeField] private AudioSource onLowHealthGhostlyWhispers = default;    // Audio Clip that gets louder and louder the lower the players health gets.
+	[SerializeField] private AudioSource onLowHealthGhostlyWhispers = default;  // Audio Clip of GhostlyWhispers that gets louder and louder the lower the players health gets.
+	[SerializeField] private AudioSource onLowHealthHearthBeat = default;       // Audio Clip of a HearthBeat that gets louder and louder the lower the players health gets.
 	#endregion
 
 	#region Properties
@@ -82,23 +84,52 @@ public class Player : MonoBehaviour, IDamageable
 		if(collision.CompareTag("Obstacle"))
 		{
 			Debug.Log("Hit by: " + collision.name);
-			health -= 20;
+			SetHealth(-20);
+
 			AudioManager.Instance.PlaySoundEffect(onPlayerHitAudioClip, transform, 0.5f);
 			GameManager.Instance.ChangeVignetteIntensity(0.20f);
+
 			collision.GetComponent<CapsuleCollider2D>().enabled = false;
-			ChangeGhostlyWhisperVolume();
+			SetVolumeOfLowHealthAudioClips();
+		}
+		else if(collision.GetComponent<ICollectable>() != null)
+		{
+			SetHealth(35);
+
+			collision.GetComponent<ICollectable>().Collect();
+			AudioManager.Instance.PlaySoundEffect(onPlayerCollectAudioClip, transform, 0.5f);
+			GameManager.Instance.ChangeVignetteIntensity(-0.35f);
+
+			SetVolumeOfLowHealthAudioClips();
+			Destroy(collision.gameObject);
 		}
 	}
 	#endregion
 
 	#region Functions
-	private void ChangeGhostlyWhisperVolume()
+	/// <summary>
+	/// A simple Health setter.
+	/// Clamps the health value to 100.
+	/// </summary>
+	/// <param name="value"></param>
+	private void SetHealth(int value)
+	{
+		health += value;
+
+		if(health >= 100) health = 100;
+	}
+
+	/// <summary>
+	/// Changes the volume of the ghostly whispers and hearthbeat when health is getting low.
+	/// </summary>
+	private void SetVolumeOfLowHealthAudioClips()
 	{
 		float newVolume = health / 100f;
 		newVolume -= 1f;
 		newVolume = newVolume / 100f;
 		newVolume = Mathf.Abs(newVolume);
 		onLowHealthGhostlyWhispers.volume = newVolume;
+		onLowHealthHearthBeat.volume = newVolume * 10f;
 	}
 
 	/// <summary>
@@ -269,7 +300,7 @@ public class Player : MonoBehaviour, IDamageable
 	public void Damage(int damageTaken)
 	{
 		health -= damageTaken;
-		ChangeGhostlyWhisperVolume();
+		SetVolumeOfLowHealthAudioClips();
 		AudioManager.Instance.PlaySoundEffect(onPlayerHitAudioClip, transform, 0.5f);
 		GameManager.Instance.ChangeVignetteIntensity(damageTaken / 100f);
 	}
