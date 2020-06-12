@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawnerManager : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
 	#region Variables
 	[SerializeField] private Transform[] spawnPositions = default;  // spawn Pos for the enemies that spawn to the right of the screen. 0 = left, 1 = right.
