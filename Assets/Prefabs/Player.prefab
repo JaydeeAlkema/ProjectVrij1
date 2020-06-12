@@ -733,8 +733,8 @@ MonoBehaviour:
   capsuleCollider: {fileID: 4715484966110495885}
   health: 100
   damageToDeal: 100
-  jumpKey: 119
-  slideKey: 115
+  jumpKey: 273
+  slideKey: 274
   groundMask:
     serializedVersion: 2
     m_Bits: 256
@@ -752,8 +752,8 @@ MonoBehaviour:
   - {fileID: 204415279692616686}
   - {fileID: 2686148519313499291}
   lanternPivot: {fileID: 5119056894129970533}
-  lanternPointLeft: 113
-  lanternPointRight: 101
+  lanternPointLeft: 276
+  lanternPointRight: 275
   lanternLightColors:
   - {r: 0.08018869, g: 0.1216158, b: 1, a: 1}
   - {r: 1, g: 0.08018869, b: 0.119122356, a: 1}
