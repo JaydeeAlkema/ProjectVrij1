@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private Volume postProcessVolume = default;        // Reference to the post process volume.
 	[Space]
 	[SerializeField] private AudioSource[] audioSourcesInScene = default; // Array with all the active audio sources in the scene.
+	[SerializeField] private GameObject treeLeavesParticleSystem = default; // Reference to the tree Leaves Particle System in the scene.
 
 	private GameObject playerInstance = null;
 	#endregion
@@ -52,13 +53,19 @@ public class GameManager : MonoBehaviour
 	private void Start()
 	{
 		StartCoroutine(BeginGame());
+		treeLeavesParticleSystem.SetActive(false);
 	}
 
 	private void Update()
 	{
 		if(playerInstance != null)
+		{
 			if(playerInstance.transform.position.x >= 310 && gameState == GameState.Active)
 				StartCoroutine(GoToCutscene());
+
+			if(playerInstance.transform.position.x > 150)
+				treeLeavesParticleSystem.SetActive(true);
+		}
 	}
 	#endregion
 
