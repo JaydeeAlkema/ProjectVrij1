@@ -110,11 +110,11 @@ public class Enemy : MonoBehaviour, IDamageable
 		else if(movementMethod == MovementMethod.MoveTowards)
 			transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
 
-		Vector3 diff = target.position - transform.position;
-		diff.Normalize();
+		//Vector3 diff = target.position - transform.position;
+		//diff.Normalize();
 
-		float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-		spriteTransform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+		//float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+		//spriteTransform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 	}
 
 	/// <summary>
