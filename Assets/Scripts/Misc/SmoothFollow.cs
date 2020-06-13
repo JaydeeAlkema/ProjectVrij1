@@ -9,6 +9,7 @@ public class SmoothFollow : MonoBehaviour
 	[SerializeField] private Vector2 minClamp = default;            // Minimum clamp of the Camera (How far left it can go)
 	[SerializeField] private Vector2 maxClamp = default;            // Naximum clamp of the Camera (How far Right it can go)
 	[SerializeField] private bool clamping = true;                  // is clamping enabled.
+	[SerializeField] private bool followPlayerInstance = false;     // If this should follow the player instance.
 
 	private Vector3 desiredPos;
 	private Vector3 smoothedPos;
@@ -21,6 +22,10 @@ public class SmoothFollow : MonoBehaviour
 	#region Monobehaviour Callbacks
 	private void FixedUpdate()
 	{
+		if(!target && followPlayerInstance)
+			if(GameManager.Instance.PlayerInstance != null)
+				target = GameManager.Instance.PlayerInstance.transform;
+
 		desiredPos = new Vector3(offset.x + target.position.x, offset.y + target.position.y, offset.z);
 		smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothing * Time.deltaTime);
 		transform.position = smoothedPos;
