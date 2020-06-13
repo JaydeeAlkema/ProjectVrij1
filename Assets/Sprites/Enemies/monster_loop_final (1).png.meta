@@ -1,0 +1,4487 @@
+fileFormatVersion: 2
+guid: 504b9c29fcb88d84c8c8b2c1ca36d36d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6366600736211047735
+    second: monster_loop_final (1)_0
+  - first:
+      213: 4793546737203129500
+    second: monster_loop_final (1)_1
+  - first:
+      213: -3661720833860933127
+    second: monster_loop_final (1)_2
+  - first:
+      213: 6884090546608796096
+    second: monster_loop_final (1)_3
+  - first:
+      213: -4724365788211595544
+    second: monster_loop_final (1)_4
+  - first:
+      213: 8524264600599364057
+    second: monster_loop_final (1)_5
+  - first:
+      213: 1772341193908713536
+    second: monster_loop_final (1)_6
+  - first:
+      213: -4104297263605862139
+    second: monster_loop_final (1)_7
+  - first:
+      213: -3820045134291120226
+    second: monster_loop_final (1)_8
+  - first:
+      213: -6294184308681264284
+    second: monster_loop_final (1)_9
+  - first:
+      213: 2487667515135506769
+    second: monster_loop_final (1)_10
+  - first:
+      213: -4511091435366921687
+    second: monster_loop_final (1)_11
+  - first:
+      213: 3582164861304000539
+    second: monster_loop_final (1)_12
+  - first:
+      213: 6486203254127692463
+    second: monster_loop_final (1)_13
+  - first:
+      213: 5375889866250031865
+    second: monster_loop_final (1)_14
+  - first:
+      213: 7590399202838574495
+    second: monster_loop_final (1)_15
+  - first:
+      213: 2545215455974238754
+    second: monster_loop_final (1)_16
+  - first:
+      213: -4242244321310147715
+    second: monster_loop_final (1)_17
+  - first:
+      213: -2874570871256969718
+    second: monster_loop_final (1)_18
+  - first:
+      213: 7018644060757711048
+    second: monster_loop_final (1)_19
+  - first:
+      213: 4678235532164044112
+    second: monster_loop_final (1)_20
+  - first:
+      213: 6291949316719432765
+    second: monster_loop_final (1)_21
+  - first:
+      213: -2128862106103003807
+    second: monster_loop_final (1)_22
+  - first:
+      213: 364446151363706824
+    second: monster_loop_final (1)_23
+  - first:
+      213: 2726105408634432136
+    second: monster_loop_final (1)_24
+  - first:
+      213: 4205029410517834957
+    second: monster_loop_final (1)_25
+  - first:
+      213: 5570136971024176955
+    second: monster_loop_final (1)_26
+  - first:
+      213: 1269338543306484160
+    second: monster_loop_final (1)_27
+  - first:
+      213: -8207484872270973222
+    second: monster_loop_final (1)_28
+  - first:
+      213: 3446702444289792898
+    second: monster_loop_final (1)_29
+  - first:
+      213: -5513388939577938621
+    second: monster_loop_final (1)_30
+  - first:
+      213: 5185151986888585727
+    second: monster_loop_final (1)_31
+  - first:
+      213: -6134432740436217143
+    second: monster_loop_final (1)_32
+  - first:
+      213: -8890796664653732326
+    second: monster_loop_final (1)_33
+  - first:
+      213: -1763900919955539790
+    second: monster_loop_final (1)_34
+  - first:
+      213: -2270008636300174774
+    second: monster_loop_final (1)_35
+  - first:
+      213: 1386020657733466514
+    second: monster_loop_final (1)_36
+  - first:
+      213: -9088366723424463027
+    second: monster_loop_final (1)_37
+  - first:
+      213: 5894235479247810646
+    second: monster_loop_final (1)_38
+  - first:
+      213: -291537449062281662
+    second: monster_loop_final (1)_39
+  - first:
+      213: 4612972308923010824
+    second: monster_loop_final (1)_40
+  - first:
+      213: -287921674383754271
+    second: monster_loop_final (1)_41
+  - first:
+      213: 2801285908950781467
+    second: monster_loop_final (1)_42
+  - first:
+      213: -3219276469763913193
+    second: monster_loop_final (1)_43
+  - first:
+      213: -5878202596566186523
+    second: monster_loop_final (1)_44
+  - first:
+      213: 3825661773497009221
+    second: monster_loop_final (1)_45
+  - first:
+      213: -5619590732927881718
+    second: monster_loop_final (1)_46
+  - first:
+      213: 6936218241992562374
+    second: monster_loop_final (1)_47
+  - first:
+      213: -4380366350836177068
+    second: monster_loop_final (1)_48
+  - first:
+      213: 2389866728871197436
+    second: monster_loop_final (1)_49
+  - first:
+      213: 7021057375468650059
+    second: monster_loop_final (1)_50
+  - first:
+      213: -1872502959231223083
+    second: monster_loop_final (1)_51
+  - first:
+      213: 3722483953166488897
+    second: monster_loop_final (1)_52
+  - first:
+      213: 1962456862702558169
+    second: monster_loop_final (1)_53
+  - first:
+      213: 3436840767608656919
+    second: monster_loop_final (1)_54
+  - first:
+      213: -2639995024215913638
+    second: monster_loop_final (1)_55
+  - first:
+      213: -1276192202792627301
+    second: monster_loop_final (1)_56
+  - first:
+      213: -619671050729561785
+    second: monster_loop_final (1)_57
+  - first:
+      213: 1998961508599587984
+    second: monster_loop_final (1)_58
+  - first:
+      213: -6975199471676933714
+    second: monster_loop_final (1)_59
+  - first:
+      213: 411950862442079325
+    second: monster_loop_final (1)_60
+  - first:
+      213: -3987372066797165292
+    second: monster_loop_final (1)_61
+  - first:
+      213: -4632503165271179669
+    second: monster_loop_final (1)_62
+  - first:
+      213: 5612500190035424148
+    second: monster_loop_final (1)_63
+  - first:
+      213: -1431686848901642833
+    second: monster_loop_final (1)_64
+  - first:
+      213: 829496365669913585
+    second: monster_loop_final (1)_65
+  - first:
+      213: -4377967786883549044
+    second: monster_loop_final (1)_66
+  - first:
+      213: 2010885427928499813
+    second: monster_loop_final (1)_67
+  - first:
+      213: -5758191941716055905
+    second: monster_loop_final (1)_68
+  - first:
+      213: 3731021571094466522
+    second: monster_loop_final (1)_69
+  - first:
+      213: 8586375724302758545
+    second: monster_loop_final (1)_70
+  - first:
+      213: -4068689093584418972
+    second: monster_loop_final (1)_71
+  - first:
+      213: -5748423338639294562
+    second: monster_loop_final (1)_72
+  - first:
+      213: -4414707814186364668
+    second: monster_loop_final (1)_73
+  - first:
+      213: 3784173501782945677
+    second: monster_loop_final (1)_74
+  - first:
+      213: -2162600250266387538
+    second: monster_loop_final (1)_75
+  - first:
+      213: -1182438978709585147
+    second: monster_loop_final (1)_76
+  - first:
+      213: 1242438212093689498
+    second: monster_loop_final (1)_77
+  - first:
+      213: -3443332343756470065
+    second: monster_loop_final (1)_78
+  - first:
+      213: 8768578619858089143
+    second: monster_loop_final (1)_79
+  - first:
+      213: 8721590505942430926
+    second: monster_loop_final (1)_80
+  - first:
+      213: -8726795649038698282
+    second: monster_loop_final (1)_81
+  - first:
+      213: 8058339333046370614
+    second: monster_loop_final (1)_82
+  - first:
+      213: -7758777692221331739
+    second: monster_loop_final (1)_83
+  - first:
+      213: 7952147690965050079
+    second: monster_loop_final (1)_84
+  - first:
+      213: -5881743478576032535
+    second: monster_loop_final (1)_85
+  - first:
+      213: 5632897973286506901
+    second: monster_loop_final (1)_86
+  - first:
+      213: -2871426252478834500
+    second: monster_loop_final (1)_87
+  - first:
+      213: -1573526160400775610
+    second: monster_loop_final (1)_88
+  - first:
+      213: 4960374630931573717
+    second: monster_loop_final (1)_89
+  - first:
+      213: -78117746178397236
+    second: monster_loop_final (1)_90
+  - first:
+      213: 1103569863896217310
+    second: monster_loop_final (1)_91
+  - first:
+      213: 5520991641427709333
+    second: monster_loop_final (1)_92
+  - first:
+      213: -7012443017641992962
+    second: monster_loop_final (1)_93
+  - first:
+      213: -1200673799626740185
+    second: monster_loop_final (1)_94
+  - first:
+      213: 3734574431481464358
+    second: monster_loop_final (1)_95
+  - first:
+      213: -803883168969272379
+    second: monster_loop_final (1)_96
+  - first:
+      213: 6202844032358022612
+    second: monster_loop_final (1)_97
+  - first:
+      213: -548885053967531312
+    second: monster_loop_final (1)_98
+  - first:
+      213: 4253060638003208373
+    second: monster_loop_final (1)_99
+  - first:
+      213: 7634460409156262528
+    second: monster_loop_final (1)_100
+  - first:
+      213: -7099982857963430478
+    second: monster_loop_final (1)_101
+  - first:
+      213: -1233076742515458869
+    second: monster_loop_final (1)_102
+  - first:
+      213: -585312820799474246
+    second: monster_loop_final (1)_103
+  - first:
+      213: 8689022452919609263
+    second: monster_loop_final (1)_104
+  - first:
+      213: -8233309395076622764
+    second: monster_loop_final (1)_105
+  - first:
+      213: -8280207795280049246
+    second: monster_loop_final (1)_106
+  - first:
+      213: 8355663975199395800
+    second: monster_loop_final (1)_107
+  - first:
+      213: 2949404467201508116
+    second: monster_loop_final (1)_108
+  - first:
+      213: -2182386140094511747
+    second: monster_loop_final (1)_109
+  - first:
+      213: -3434847451825500424
+    second: monster_loop_final (1)_110
+  - first:
+      213: 6639914309781763407
+    second: monster_loop_final (1)_111
+  - first:
+      213: 5443020627629616320
+    second: monster_loop_final (1)_112
+  - first:
+      213: -7253626748010386274
+    second: monster_loop_final (1)_113
+  - first:
+      213: 3007630977725568544
+    second: monster_loop_final (1)_114
+  - first:
+      213: 4789968598357022278
+    second: monster_loop_final (1)_115
+  - first:
+      213: -4600931183887479046
+    second: monster_loop_final (1)_116
+  - first:
+      213: -1677340402935263192
+    second: monster_loop_final (1)_117
+  - first:
+      213: -1053386093892027864
+    second: monster_loop_final (1)_118
+  - first:
+      213: 5483285964094682343
+    second: monster_loop_final (1)_119
+  - first:
+      213: 6191172674596124752
+    second: monster_loop_final (1)_120
+  - first:
+      213: -5896694399977543641
+    second: monster_loop_final (1)_121
+  - first:
+      213: 3605843604165244274
+    second: monster_loop_final (1)_122
+  - first:
+      213: -1650853752947689875
+    second: monster_loop_final (1)_123
+  - first:
+      213: -974440279431402934
+    second: monster_loop_final (1)_124
+  - first:
+      213: 8506768431932652342
+    second: monster_loop_final (1)_125
+  - first:
+      213: 6116071901412586114
+    second: monster_loop_final (1)_126
+  - first:
+      213: -2592287694069516452
+    second: monster_loop_final (1)_127
+  - first:
+      213: 2120273878711454417
+    second: monster_loop_final (1)_128
+  - first:
+      213: -8109162267329088742
+    second: monster_loop_final (1)_129
+  - first:
+      213: 4714551538456615293
+    second: monster_loop_final (1)_130
+  - first:
+      213: 5256717853662022068
+    second: monster_loop_final (1)_131
+  - first:
+      213: 3897537457566588137
+    second: monster_loop_final (1)_132
+  - first:
+      213: 3000015136546144527
+    second: monster_loop_final (1)_133
+  - first:
+      213: 4984528617280454849
+    second: monster_loop_final (1)_134
+  - first:
+      213: 8368888443403712644
+    second: monster_loop_final (1)_135
+  - first:
+      213: -4647412428059948080
+    second: monster_loop_final (1)_136
+  - first:
+      213: -4809832433626621273
+    second: monster_loop_final (1)_137
+  - first:
+      213: -4263562330699960110
+    second: monster_loop_final (1)_138
+  - first:
+      213: 2544957676355889643
+    second: monster_loop_final (1)_139
+  - first:
+      213: -895356247324820150
+    second: monster_loop_final (1)_140
+  - first:
+      213: 9035221704875499634
+    second: monster_loop_final (1)_141
+  - first:
+      213: -3554517489970822518
+    second: monster_loop_final (1)_142
+  - first:
+      213: 8331490150315103332
+    second: monster_loop_final (1)_143
+  - first:
+      213: -563540118877134607
+    second: monster_loop_final (1)_144
+  - first:
+      213: 3040160497181830229
+    second: monster_loop_final (1)_145
+  - first:
+      213: -7708720748817619439
+    second: monster_loop_final (1)_146
+  - first:
+      213: -3668241735560425783
+    second: monster_loop_final (1)_147
+  - first:
+      213: -177686557403280379
+    second: monster_loop_final (1)_148
+  - first:
+      213: -5377487507423588355
+    second: monster_loop_final (1)_149
+  - first:
+      213: -93266980723107549
+    second: monster_loop_final (1)_150
+  - first:
+      213: 3194510013762227392
+    second: monster_loop_final (1)_151
+  - first:
+      213: 5494134950456175365
+    second: monster_loop_final (1)_152
+  - first:
+      213: 3123130573851607480
+    second: monster_loop_final (1)_153
+  - first:
+      213: 3289526840226917364
+    second: monster_loop_final (1)_154
+  - first:
+      213: 5120863892865566649
+    second: monster_loop_final (1)_155
+  - first:
+      213: 7343976277702536332
+    second: monster_loop_final (1)_156
+  - first:
+      213: -893040868914922638
+    second: monster_loop_final (1)_157
+  - first:
+      213: 2707633991768519009
+    second: monster_loop_final (1)_158
+  - first:
+      213: -9031245218505530301
+    second: monster_loop_final (1)_159
+  - first:
+      213: -8172290616439562550
+    second: monster_loop_final (1)_160
+  - first:
+      213: 5052293645348402518
+    second: monster_loop_final (1)_161
+  - first:
+      213: 387165795801275064
+    second: monster_loop_final (1)_162
+  - first:
+      213: -6837568535860452278
+    second: monster_loop_final (1)_163
+  - first:
+      213: 3731600252331219146
+    second: monster_loop_final (1)_164
+  - first:
+      213: 5077371359422204023
+    second: monster_loop_final (1)_165
+  - first:
+      213: 7748608026415365707
+    second: monster_loop_final (1)_166
+  - first:
+      213: -3530714883055890492
+    second: monster_loop_final (1)_167
+  - first:
+      213: -2850613140185662481
+    second: monster_loop_final (1)_168
+  - first:
+      213: -5744034257198661739
+    second: monster_loop_final (1)_169
+  - first:
+      213: -1734322246348553598
+    second: monster_loop_final (1)_170
+  - first:
+      213: 6470899821653948617
+    second: monster_loop_final (1)_171
+  - first:
+      213: 4655821360693306786
+    second: monster_loop_final (1)_172
+  - first:
+      213: 4592606473134936884
+    second: monster_loop_final (1)_173
+  - first:
+      213: 325366290546268731
+    second: monster_loop_final (1)_174
+  - first:
+      213: 8570633125855345284
+    second: monster_loop_final (1)_175
+  - first:
+      213: 8910199618218855853
+    second: monster_loop_final (1)_176
+  - first:
+      213: 7027917772490419008
+    second: monster_loop_final (1)_177
+  - first:
+      213: 8068136207836127765
+    second: monster_loop_final (1)_178
+  - first:
+      213: 37683358501275737
+    second: monster_loop_final (1)_179
+  - first:
+      213: -2173954593905481534
+    second: monster_loop_final (1)_180
+  - first:
+      213: 5311797571804299193
+    second: monster_loop_final (1)_181
+  - first:
+      213: -7407644460491255644
+    second: monster_loop_final (1)_182
+  - first:
+      213: 2125421736798889033
+    second: monster_loop_final (1)_183
+  - first:
+      213: 6344995569139019502
+    second: monster_loop_final (1)_184
+  - first:
+      213: -1449577479106365738
+    second: monster_loop_final (1)_185
+  - first:
+      213: -4157603374534459764
+    second: monster_loop_final (1)_186
+  - first:
+      213: 1529344828511081735
+    second: monster_loop_final (1)_187
+  - first:
+      213: 1915675849436275133
+    second: monster_loop_final (1)_188
+  - first:
+      213: 4636571804667453984
+    second: monster_loop_final (1)_189
+  - first:
+      213: -5070972638655268814
+    second: monster_loop_final (1)_190
+  - first:
+      213: 7358544154960728250
+    second: monster_loop_final (1)_191
+  - first:
+      213: -556974918301481052
+    second: monster_loop_final (1)_192
+  - first:
+      213: 8387774459311401549
+    second: monster_loop_final (1)_193
+  - first:
+      213: -5595220006678560758
+    second: monster_loop_final (1)_194
+  - first:
+      213: -7840855229657360883
+    second: monster_loop_final (1)_195
+  - first:
+      213: 1584106847961323670
+    second: monster_loop_final (1)_196
+  - first:
+      213: 2922231295079243566
+    second: monster_loop_final (1)_197
+  - first:
+      213: -6688625950004064132
+    second: monster_loop_final (1)_198
+  - first:
+      213: 1924796346719404882
+    second: monster_loop_final (1)_199
+  - first:
+      213: -6338994049505911010
+    second: monster_loop_final (1)_200
+  - first:
+      213: -6888631418605114175
+    second: monster_loop_final (1)_201
+  - first:
+      213: -3147992188373312036
+    second: monster_loop_final (1)_202
+  - first:
+      213: 4364576732869333268
+    second: monster_loop_final (1)_203
+  - first:
+      213: -6151554171124195704
+    second: monster_loop_final (1)_204
+  - first:
+      213: -3467899722056855237
+    second: monster_loop_final (1)_205
+  - first:
+      213: 7728423913908408216
+    second: monster_loop_final (1)_206
+  - first:
+      213: 1099535312534468694
+    second: monster_loop_final (1)_207
+  - first:
+      213: -301791881160419094
+    second: monster_loop_final (1)_208
+  - first:
+      213: -2405454347600529336
+    second: monster_loop_final (1)_209
+  - first:
+      213: -4331292782566009524
+    second: monster_loop_final (1)_210
+  - first:
+      213: -7152177187824428686
+    second: monster_loop_final (1)_211
+  - first:
+      213: -7181841206068916022
+    second: monster_loop_final (1)_212
+  - first:
+      213: 1990437950060657984
+    second: monster_loop_final (1)_213
+  - first:
+      213: -1870621379768666787
+    second: monster_loop_final (1)_214
+  - first:
+      213: -8267081779560868681
+    second: monster_loop_final (1)_215
+  - first:
+      213: -2821437416132163316
+    second: monster_loop_final (1)_216
+  - first:
+      213: 6376174216132946567
+    second: monster_loop_final (1)_217
+  - first:
+      213: -6130334846590435202
+    second: monster_loop_final (1)_218
+  - first:
+      213: -3946244553268002685
+    second: monster_loop_final (1)_219
+  - first:
+      213: 2043307758435331334
+    second: monster_loop_final (1)_220
+  - first:
+      213: -3078417021930181204
+    second: monster_loop_final (1)_221
+  - first:
+      213: -9051843254539167455
+    second: monster_loop_final (1)_222
+  - first:
+      213: 1183008374124520919
+    second: monster_loop_final (1)_223
+  - first:
+      213: 230453752104173455
+    second: monster_loop_final (1)_224
+  - first:
+      213: 4889144896474366890
+    second: monster_loop_final (1)_225
+  - first:
+      213: -8065474356013765828
+    second: monster_loop_final (1)_226
+  - first:
+      213: -2373281884554335934
+    second: monster_loop_final (1)_227
+  - first:
+      213: 6293570442827352873
+    second: monster_loop_final (1)_228
+  - first:
+      213: 6893630380226891443
+    second: monster_loop_final (1)_229
+  - first:
+      213: -2925945381141644951
+    second: monster_loop_final (1)_230
+  - first:
+      213: -5167889579857512966
+    second: monster_loop_final (1)_231
+  - first:
+      213: -6096890242765079838
+    second: monster_loop_final (1)_232
+  - first:
+      213: 4964018765052262200
+    second: monster_loop_final (1)_233
+  - first:
+      213: -6559920271469994697
+    second: monster_loop_final (1)_234
+  - first:
+      213: 7240349289194123653
+    second: monster_loop_final (1)_235
+  - first:
+      213: -1790104733495087764
+    second: monster_loop_final (1)_236
+  - first:
+      213: 5119033437682375206
+    second: monster_loop_final (1)_237
+  - first:
+      213: -7938413198940026950
+    second: monster_loop_final (1)_238
+  - first:
+      213: -5970962363096592560
+    second: monster_loop_final (1)_239
+  - first:
+      213: 8054306566187478915
+    second: monster_loop_final (1)_240
+  - first:
+      213: -752844316672000044
+    second: monster_loop_final (1)_241
+  - first:
+      213: -4835750694744452312
+    second: monster_loop_final (1)_242
+  - first:
+      213: -6043368227731625884
+    second: monster_loop_final (1)_243
+  - first:
+      213: 3982666405764118748
+    second: monster_loop_final (1)_244
+  - first:
+      213: -7389257851630361165
+    second: monster_loop_final (1)_245
+  - first:
+      213: 2338767091342084316
+    second: monster_loop_final (1)_246
+  - first:
+      213: 5489428195759635728
+    second: monster_loop_final (1)_247
+  - first:
+      213: -8739605981896962671
+    second: monster_loop_final (1)_248
+  - first:
+      213: -8882728812054265234
+    second: monster_loop_final (1)_249
+  - first:
+      213: -6043964995589424390
+    second: monster_loop_final (1)_250
+  - first:
+      213: 5695051417274491121
+    second: monster_loop_final (1)_251
+  - first:
+      213: -3238660786056610290
+    second: monster_loop_final (1)_252
+  - first:
+      213: -5668612844576929126
+    second: monster_loop_final (1)_253
+  - first:
+      213: -8468758179675530888
+    second: monster_loop_final (1)_254
+  - first:
+      213: 905165134776784943
+    second: monster_loop_final (1)_255
+  - first:
+      213: -39117363451812354
+    second: monster_loop_final (1)_256
+  - first:
+      213: 2539792245493727862
+    second: monster_loop_final (1)_257
+  - first:
+      213: -7190376695553844806
+    second: monster_loop_final (1)_258
+  - first:
+      213: -8384718451464912840
+    second: monster_loop_final (1)_259
+  - first:
+      213: 3031819329583103305
+    second: monster_loop_final (1)_260
+  - first:
+      213: -6029805518857712727
+    second: monster_loop_final (1)_261
+  - first:
+      213: -7297047748779585100
+    second: monster_loop_final (1)_262
+  - first:
+      213: 2944875757822573201
+    second: monster_loop_final (1)_263
+  - first:
+      213: -2444562264777935940
+    second: monster_loop_final (1)_264
+  - first:
+      213: 2217840505925108899
+    second: monster_loop_final (1)_265
+  - first:
+      213: 4512678478279163353
+    second: monster_loop_final (1)_266
+  - first:
+      213: 6065651473104346730
+    second: monster_loop_final (1)_267
+  - first:
+      213: -9135307860766636376
+    second: monster_loop_final (1)_268
+  - first:
+      213: -2156417582430831469
+    second: monster_loop_final (1)_269
+  - first:
+      213: 5138333629967091896
+    second: monster_loop_final (1)_270
+  - first:
+      213: 2220434046556636787
+    second: monster_loop_final (1)_271
+  - first:
+      213: -1335077643258166866
+    second: monster_loop_final (1)_272
+  - first:
+      213: 5986576510262604732
+    second: monster_loop_final (1)_273
+  - first:
+      213: 3564382256930859563
+    second: monster_loop_final (1)_274
+  - first:
+      213: -3481869090639971597
+    second: monster_loop_final (1)_275
+  - first:
+      213: -4272554381201348480
+    second: monster_loop_final (1)_276
+  - first:
+      213: -6231681228042462585
+    second: monster_loop_final (1)_277
+  - first:
+      213: -7111179034203388017
+    second: monster_loop_final (1)_278
+  - first:
+      213: -5425183581822061512
+    second: monster_loop_final (1)_279
+  - first:
+      213: -7596178592001013560
+    second: monster_loop_final (1)_280
+  - first:
+      213: 8053361622707867358
+    second: monster_loop_final (1)_281
+  - first:
+      213: 5352654577268082614
+    second: monster_loop_final (1)_282
+  - first:
+      213: 1532394346110299506
+    second: monster_loop_final (1)_283
+  - first:
+      213: 5910915957859936661
+    second: monster_loop_final (1)_284
+  - first:
+      213: 8014447166193331412
+    second: monster_loop_final (1)_285
+  - first:
+      213: -5815384827390828721
+    second: monster_loop_final (1)_286
+  - first:
+      213: -1702470391251322886
+    second: monster_loop_final (1)_287
+  - first:
+      213: -1984859241960839877
+    second: monster_loop_final (1)_288
+  - first:
+      213: -7195658238125427922
+    second: monster_loop_final (1)_289
+  - first:
+      213: -3385426002445969228
+    second: monster_loop_final (1)_290
+  - first:
+      213: -4717464421985254926
+    second: monster_loop_final (1)_291
+  - first:
+      213: 1484994823720816289
+    second: monster_loop_final (1)_292
+  - first:
+      213: -2836498116389015592
+    second: monster_loop_final (1)_293
+  - first:
+      213: -1049484250729275885
+    second: monster_loop_final (1)_294
+  - first:
+      213: -8927498604481331509
+    second: monster_loop_final (1)_295
+  - first:
+      213: 2786262204060667498
+    second: monster_loop_final (1)_296
+  - first:
+      213: -7203194681641188894
+    second: monster_loop_final (1)_297
+  - first:
+      213: -9045468290641196728
+    second: monster_loop_final (1)_298
+  - first:
+      213: 5829654829323853005
+    second: monster_loop_final (1)_299
+  - first:
+      213: 3028264062267665534
+    second: monster_loop_final (1)_300
+  - first:
+      213: 4910900403554490309
+    second: monster_loop_final (1)_301
+  - first:
+      213: 5740954483084076373
+    second: monster_loop_final (1)_302
+  - first:
+      213: -4658533371732812937
+    second: monster_loop_final (1)_303
+  - first:
+      213: 1638521196543558812
+    second: monster_loop_final (1)_304
+  - first:
+      213: -1487444581769363622
+    second: monster_loop_final (1)_305
+  - first:
+      213: 3096196518142482141
+    second: monster_loop_final (1)_306
+  - first:
+      213: -3192714404163064446
+    second: monster_loop_final (1)_307
+  - first:
+      213: 8363130647066704568
+    second: monster_loop_final (1)_308
+  - first:
+      213: 6887039010609216124
+    second: monster_loop_final (1)_309
+  - first:
+      213: 3535353744920284301
+    second: monster_loop_final (1)_310
+  - first:
+      213: 8388299026531625368
+    second: monster_loop_final (1)_311
+  - first:
+      213: -1400854199989412951
+    second: monster_loop_final (1)_312
+  - first:
+      213: -207644836223483215
+    second: monster_loop_final (1)_313
+  - first:
+      213: -2291807087914244698
+    second: monster_loop_final (1)_314
+  - first:
+      213: -1111881044602026911
+    second: monster_loop_final (1)_315
+  - first:
+      213: 5732004293631959661
+    second: monster_loop_final (1)_316
+  - first:
+      213: -3638343455498484848
+    second: monster_loop_final (1)_317
+  - first:
+      213: -6995683831847069308
+    second: monster_loop_final (1)_318
+  - first:
+      213: -2675960838929621399
+    second: monster_loop_final (1)_319
+  - first:
+      213: 1546745303653205660
+    second: monster_loop_final (1)_320
+  - first:
+      213: -3806445545118377785
+    second: monster_loop_final (1)_321
+  - first:
+      213: 1741673188947550171
+    second: monster_loop_final (1)_322
+  - first:
+      213: -3657009054565588704
+    second: monster_loop_final (1)_323
+  - first:
+      213: 5030446379385329098
+    second: monster_loop_final (1)_324
+  - first:
+      213: 719887945131643008
+    second: monster_loop_final (1)_325
+  - first:
+      213: -2391693989413546
+    second: monster_loop_final (1)_326
+  - first:
+      213: 4300163676039405593
+    second: monster_loop_final (1)_327
+  - first:
+      213: -7637756428634629248
+    second: monster_loop_final (1)_328
+  - first:
+      213: 2150037224393055886
+    second: monster_loop_final (1)_329
+  - first:
+      213: -2206324706641847992
+    second: monster_loop_final (1)_330
+  - first:
+      213: 3168673699482658314
+    second: monster_loop_final (1)_331
+  - first:
+      213: -5746558448729761946
+    second: monster_loop_final (1)_332
+  - first:
+      213: 1152631479289453923
+    second: monster_loop_final (1)_333
+  - first:
+      213: 1199072607926202721
+    second: monster_loop_final (1)_334
+  - first:
+      213: 1240597380006804498
+    second: monster_loop_final (1)_335
+  - first:
+      213: -7813305111547826797
+    second: monster_loop_final (1)_336
+  - first:
+      213: 8220512963159340585
+    second: monster_loop_final (1)_337
+  - first:
+      213: -690169209299434907
+    second: monster_loop_final (1)_338
+  - first:
+      213: -3569767804673211320
+    second: monster_loop_final (1)_339
+  - first:
+      213: -5036550261509055215
+    second: monster_loop_final (1)_340
+  - first:
+      213: -6298898141100463017
+    second: monster_loop_final (1)_341
+  - first:
+      213: 136443021041745257
+    second: monster_loop_final (1)_342
+  - first:
+      213: 3790731053250416969
+    second: monster_loop_final (1)_343
+  - first:
+      213: -6774573762041349143
+    second: monster_loop_final (1)_344
+  - first:
+      213: -2842238473681717693
+    second: monster_loop_final (1)_345
+  - first:
+      213: -5319130279853710287
+    second: monster_loop_final (1)_346
+  - first:
+      213: -7700376301145411526
+    second: monster_loop_final (1)_347
+  - first:
+      213: 6546812055646307575
+    second: monster_loop_final (1)_348
+  - first:
+      213: 4644159989616468876
+    second: monster_loop_final (1)_349
+  - first:
+      213: 2691476996826552084
+    second: monster_loop_final (1)_350
+  - first:
+      213: 6768733892768390692
+    second: monster_loop_final (1)_351
+  - first:
+      213: 8169953975167241339
+    second: monster_loop_final (1)_352
+  - first:
+      213: 3057386195236455278
+    second: monster_loop_final (1)_353
+  - first:
+      213: 5307807292574515044
+    second: monster_loop_final (1)_354
+  - first:
+      213: 6833163085837099125
+    second: monster_loop_final (1)_355
+  - first:
+      213: 5163012902844754466
+    second: monster_loop_final (1)_356
+  - first:
+      213: -4651039210498786628
+    second: monster_loop_final (1)_357
+  - first:
+      213: -6879982171236650275
+    second: monster_loop_final (1)_358
+  - first:
+      213: 6989817442308190759
+    second: monster_loop_final (1)_359
+  - first:
+      213: 4044941032812818579
+    second: monster_loop_final (1)_360
+  - first:
+      213: -1323600060843599985
+    second: monster_loop_final (1)_361
+  - first:
+      213: -5700464400445401979
+    second: monster_loop_final (1)_362
+  - first:
+      213: -5203262960794180539
+    second: monster_loop_final (1)_363
+  - first:
+      213: -8090244016380936800
+    second: monster_loop_final (1)_364
+  - first:
+      213: 8109806533756395767
+    second: monster_loop_final (1)_365
+  - first:
+      213: 5718385129932810367
+    second: monster_loop_final (1)_366
+  - first:
+      213: 6074064593026294873
+    second: monster_loop_final (1)_367
+  - first:
+      213: -8364544167996738479
+    second: monster_loop_final (1)_368
+  - first:
+      213: 8177472121367137940
+    second: monster_loop_final (1)_369
+  - first:
+      213: 7654939889372150705
+    second: monster_loop_final (1)_370
+  - first:
+      213: 4370853324478552050
+    second: monster_loop_final (1)_371
+  - first:
+      213: 8994504527781079116
+    second: monster_loop_final (1)_372
+  - first:
+      213: 4625576045362273252
+    second: monster_loop_final (1)_373
+  - first:
+      213: -8066789398980739067
+    second: monster_loop_final (1)_374
+  - first:
+      213: 8112327716757873786
+    second: monster_loop_final (1)_375
+  - first:
+      213: -1439608067882042345
+    second: monster_loop_final (1)_376
+  - first:
+      213: -9134370758083113503
+    second: monster_loop_final (1)_377
+  - first:
+      213: 9069979269369565756
+    second: monster_loop_final (1)_378
+  - first:
+      213: -1585107300526261216
+    second: monster_loop_final (1)_379
+  - first:
+      213: -1351074991394128164
+    second: monster_loop_final (1)_380
+  - first:
+      213: -4124894774465459597
+    second: monster_loop_final (1)_381
+  - first:
+      213: -2018098330377341377
+    second: monster_loop_final (1)_382
+  - first:
+      213: -6584593969070835141
+    second: monster_loop_final (1)_383
+  - first:
+      213: -8589574269559892141
+    second: monster_loop_final (1)_384
+  - first:
+      213: -7337628675920918540
+    second: monster_loop_final (1)_385
+  - first:
+      213: 7844591289834251242
+    second: monster_loop_final (1)_386
+  - first:
+      213: 5553296235306219018
+    second: monster_loop_final (1)_387
+  - first:
+      213: -4767806183418622820
+    second: monster_loop_final (1)_388
+  - first:
+      213: -5459117340521158587
+    second: monster_loop_final (1)_389
+  - first:
+      213: -4475650892862759730
+    second: monster_loop_final (1)_390
+  - first:
+      213: 8960727712351962875
+    second: monster_loop_final (1)_391
+  - first:
+      213: -3049468687574537194
+    second: monster_loop_final (1)_392
+  - first:
+      213: 3895853996974825631
+    second: monster_loop_final (1)_393
+  - first:
+      213: 6238539695985932802
+    second: monster_loop_final (1)_394
+  - first:
+      213: -210927730494044291
+    second: monster_loop_final (1)_395
+  - first:
+      213: -5623923651901764373
+    second: monster_loop_final (1)_396
+  - first:
+      213: -2947696175746559325
+    second: monster_loop_final (1)_397
+  - first:
+      213: 3910536482189298411
+    second: monster_loop_final (1)_398
+  - first:
+      213: 4848299764369617698
+    second: monster_loop_final (1)_399
+  - first:
+      213: -881084310155921975
+    second: monster_loop_final (1)_400
+  - first:
+      213: -7363138515263750501
+    second: monster_loop_final (1)_401
+  - first:
+      213: 7844444872429819336
+    second: monster_loop_final (1)_402
+  - first:
+      213: -1114100726144868969
+    second: monster_loop_final (1)_403
+  - first:
+      213: 7456497206373325397
+    second: monster_loop_final (1)_404
+  - first:
+      213: -5476701133208525356
+    second: monster_loop_final (1)_405
+  - first:
+      213: 2913252611431950878
+    second: monster_loop_final (1)_406
+  - first:
+      213: -2650505061580851087
+    second: monster_loop_final (1)_407
+  - first:
+      213: -4364474850132122432
+    second: monster_loop_final (1)_408
+  - first:
+      213: 6770668308937881612
+    second: monster_loop_final (1)_409
+  - first:
+      213: 216035988437718587
+    second: monster_loop_final (1)_410
+  - first:
+      213: 4303594077161698418
+    second: monster_loop_final (1)_411
+  - first:
+      213: 7341044856263505992
+    second: monster_loop_final (1)_412
+  - first:
+      213: 1720288916429282961
+    second: monster_loop_final (1)_413
+  - first:
+      213: -3922725611557825408
+    second: monster_loop_final (1)_414
+  - first:
+      213: -1593745278550245039
+    second: monster_loop_final (1)_415
+  - first:
+      213: -8353648882764430196
+    second: monster_loop_final (1)_416
+  - first:
+      213: -658185197835930926
+    second: monster_loop_final (1)_417
+  - first:
+      213: 1001112934145389638
+    second: monster_loop_final (1)_418
+  - first:
+      213: 8628428736296942924
+    second: monster_loop_final (1)_419
+  - first:
+      213: 3542666817951488541
+    second: monster_loop_final (1)_420
+  - first:
+      213: 6555680713836768769
+    second: monster_loop_final (1)_421
+  - first:
+      213: -7787077219768487000
+    second: monster_loop_final (1)_422
+  - first:
+      213: -888659683316138653
+    second: monster_loop_final (1)_423
+  - first:
+      213: -396738945567338647
+    second: monster_loop_final (1)_424
+  - first:
+      213: -7048503471275726302
+    second: monster_loop_final (1)_425
+  - first:
+      213: 6413150076863009617
+    second: monster_loop_final (1)_426
+  - first:
+      213: 5154412770617689292
+    second: monster_loop_final (1)_427
+  - first:
+      213: -4462907418358002443
+    second: monster_loop_final (1)_428
+  - first:
+      213: -7158654294793724068
+    second: monster_loop_final (1)_429
+  - first:
+      213: -4941624024721501032
+    second: monster_loop_final (1)_430
+  - first:
+      213: -1346224925217342411
+    second: monster_loop_final (1)_431
+  - first:
+      213: 1613640672665287125
+    second: monster_loop_final (1)_432
+  - first:
+      213: -1715701444072276810
+    second: monster_loop_final (1)_433
+  - first:
+      213: -6698573593512337662
+    second: monster_loop_final (1)_434
+  - first:
+      213: 3545611472388443237
+    second: monster_loop_final (1)_435
+  - first:
+      213: -5404295796082940881
+    second: monster_loop_final (1)_436
+  - first:
+      213: -3059478390636305807
+    second: monster_loop_final (1)_437
+  - first:
+      213: -3857735549834864296
+    second: monster_loop_final (1)_438
+  - first:
+      213: -6960934805730010013
+    second: monster_loop_final (1)_439
+  - first:
+      213: -5632606751841674727
+    second: monster_loop_final (1)_440
+  - first:
+      213: -8472925725166467550
+    second: monster_loop_final (1)_441
+  - first:
+      213: -3114044607740174813
+    second: monster_loop_final (1)_442
+  - first:
+      213: -8973866988356180317
+    second: monster_loop_final (1)_443
+  - first:
+      213: -6357422627310987788
+    second: monster_loop_final (1)_444
+  - first:
+      213: 3999506448799630320
+    second: monster_loop_final (1)_445
+  - first:
+      213: 5824974051446227160
+    second: monster_loop_final (1)_446
+  - first:
+      213: -1713423730262613080
+    second: monster_loop_final (1)_447
+  - first:
+      213: 913621075974154947
+    second: monster_loop_final (1)_448
+  - first:
+      213: 6351232349047173936
+    second: monster_loop_final (1)_449
+  - first:
+      213: -3113614361532170012
+    second: monster_loop_final (1)_450
+  - first:
+      213: 5793703325019287885
+    second: monster_loop_final (1)_451
+  - first:
+      213: -3915299019995137711
+    second: monster_loop_final (1)_452
+  - first:
+      213: -3866133826697189281
+    second: monster_loop_final (1)_453
+  - first:
+      213: 165384344708445875
+    second: monster_loop_final (1)_454
+  - first:
+      213: -4779734694636036406
+    second: monster_loop_final (1)_455
+  - first:
+      213: 5659152583526014195
+    second: monster_loop_final (1)_456
+  - first:
+      213: -8733035316404666857
+    second: monster_loop_final (1)_457
+  - first:
+      213: 9028055511936198049
+    second: monster_loop_final (1)_458
+  - first:
+      213: 7521578958099818061
+    second: monster_loop_final (1)_459
+  - first:
+      213: 7860985330269645791
+    second: monster_loop_final (1)_460
+  - first:
+      213: -840846580880747116
+    second: monster_loop_final (1)_461
+  - first:
+      213: -8032621304013630951
+    second: monster_loop_final (1)_462
+  - first:
+      213: 8937317578876952972
+    second: monster_loop_final (1)_463
+  - first:
+      213: -2719499509415848122
+    second: monster_loop_final (1)_464
+  - first:
+      213: 6196062792907346089
+    second: monster_loop_final (1)_465
+  - first:
+      213: 6022749413620741549
+    second: monster_loop_final (1)_466
+  - first:
+      213: 6909476415295195707
+    second: monster_loop_final (1)_467
+  - first:
+      213: 8474012965642038632
+    second: monster_loop_final (1)_468
+  - first:
+      213: -1525767741627076469
+    second: monster_loop_final (1)_469
+  - first:
+      213: 9189778219405395334
+    second: monster_loop_final (1)_470
+  - first:
+      213: -6392746954745519345
+    second: monster_loop_final (1)_471
+  - first:
+      213: 5900825467077442918
+    second: monster_loop_final (1)_472
+  - first:
+      213: -8230859987111321981
+    second: monster_loop_final (1)_473
+  - first:
+      213: -1431596909208439755
+    second: monster_loop_final (1)_474
+  - first:
+      213: -6491697573900810508
+    second: monster_loop_final (1)_475
+  - first:
+      213: 5883158554565915888
+    second: monster_loop_final (1)_476
+  - first:
+      213: 3574822408908371589
+    second: monster_loop_final (1)_477
+  - first:
+      213: 2818193458747571550
+    second: monster_loop_final (1)_478
+  - first:
+      213: 6806087535863651323
+    second: monster_loop_final (1)_479
+  - first:
+      213: -1584106033891161889
+    second: monster_loop_final (1)_480
+  - first:
+      213: 945624713191377743
+    second: monster_loop_final (1)_481
+  - first:
+      213: 6069621135780705719
+    second: monster_loop_final (1)_482
+  - first:
+      213: -6067392466421505238
+    second: monster_loop_final (1)_483
+  - first:
+      213: -2887870411097074381
+    second: monster_loop_final (1)_484
+  - first:
+      213: 8950047693225440372
+    second: monster_loop_final (1)_485
+  - first:
+      213: -1705961764487717499
+    second: monster_loop_final (1)_486
+  - first:
+      213: 7774443734952479480
+    second: monster_loop_final (1)_487
+  - first:
+      213: 585184453333372561
+    second: monster_loop_final (1)_488
+  - first:
+      213: -8196329056903505089
+    second: monster_loop_final (1)_489
+  - first:
+      213: -3889912232021994661
+    second: monster_loop_final (1)_490
+  - first:
+      213: 5910171349431877930
+    second: monster_loop_final (1)_491
+  - first:
+      213: -4095768663367159165
+    second: monster_loop_final (1)_492
+  - first:
+      213: 5768991138499902294
+    second: monster_loop_final (1)_493
+  - first:
+      213: -1249666758220394450
+    second: monster_loop_final (1)_494
+  - first:
+      213: 1168855011877447913
+    second: monster_loop_final (1)_495
+  - first:
+      213: 6758174387723120532
+    second: monster_loop_final (1)_496
+  - first:
+      213: -8019811235678988306
+    second: monster_loop_final (1)_497
+  - first:
+      213: -3130523969823189674
+    second: monster_loop_final (1)_498
+  - first:
+      213: -8935991866654473182
+    second: monster_loop_final (1)_499
+  - first:
+      213: -3914690339020311651
+    second: monster_loop_final (1)_500
+  - first:
+      213: 3551174284979855842
+    second: monster_loop_final (1)_501
+  - first:
+      213: -3778728739499272791
+    second: monster_loop_final (1)_502
+  - first:
+      213: -5409564830223126831
+    second: monster_loop_final (1)_503
+  - first:
+      213: -9219957934686481463
+    second: monster_loop_final (1)_504
+  - first:
+      213: 4884477479854912928
+    second: monster_loop_final (1)_505
+  - first:
+      213: -3969990571379889012
+    second: monster_loop_final (1)_506
+  - first:
+      213: -9080062150988145469
+    second: monster_loop_final (1)_507
+  - first:
+      213: 4699913559243344482
+    second: monster_loop_final (1)_508
+  - first:
+      213: 8921134513446591408
+    second: monster_loop_final (1)_509
+  - first:
+      213: 6095192342829494110
+    second: monster_loop_final (1)_510
+  - first:
+      213: -4865117598315977853
+    second: monster_loop_final (1)_511
+  - first:
+      213: -2506588290839023980
+    second: monster_loop_final (1)_512
+  - first:
+      213: 9141786591193307808
+    second: monster_loop_final (1)_513
+  - first:
+      213: -6005891983541628400
+    second: monster_loop_final (1)_514
+  - first:
+      213: 7713756325164469160
+    second: monster_loop_final (1)_515
+  - first:
+      213: 1815150427581685712
+    second: monster_loop_final (1)_516
+  - first:
+      213: 342540319519305297
+    second: monster_loop_final (1)_517
+  - first:
+      213: -8511982146720658645
+    second: monster_loop_final (1)_518
+  - first:
+      213: -3758543528466971127
+    second: monster_loop_final (1)_519
+  - first:
+      213: -7924875669424476692
+    second: monster_loop_final (1)_520
+  - first:
+      213: -8802890238424071487
+    second: monster_loop_final (1)_521
+  - first:
+      213: -1576987912048068547
+    second: monster_loop_final (1)_522
+  - first:
+      213: 8819777718808567014
+    second: monster_loop_final (1)_523
+  - first:
+      213: -7428389991479626736
+    second: monster_loop_final (1)_524
+  - first:
+      213: 84010199138998530
+    second: monster_loop_final (1)_525
+  - first:
+      213: -3763346881239306776
+    second: monster_loop_final (1)_526
+  - first:
+      213: 3872073853231352521
+    second: monster_loop_final (1)_527
+  - first:
+      213: 790173879716503153
+    second: monster_loop_final (1)_528
+  - first:
+      213: 2168741589979868369
+    second: monster_loop_final (1)_529
+  - first:
+      213: 3131651121936221684
+    second: monster_loop_final (1)_530
+  - first:
+      213: -7001920657069726554
+    second: monster_loop_final (1)_531
+  - first:
+      213: -1500573890911732747
+    second: monster_loop_final (1)_532
+  - first:
+      213: 5940214012302295878
+    second: monster_loop_final (1)_533
+  - first:
+      213: -7103338069172998283
+    second: monster_loop_final (1)_534
+  - first:
+      213: 8520908242527767191
+    second: monster_loop_final (1)_535
+  - first:
+      213: -5445940632758309404
+    second: monster_loop_final (1)_536
+  - first:
+      213: -5579071271384605750
+    second: monster_loop_final (1)_537
+  - first:
+      213: 5284951142005758006
+    second: monster_loop_final (1)_538
+  - first:
+      213: -576642984601270755
+    second: monster_loop_final (1)_539
+  - first:
+      213: -8294852824227370128
+    second: monster_loop_final (1)_540
+  - first:
+      213: -7030845129105654447
+    second: monster_loop_final (1)_541
+  - first:
+      213: 7670312049737768745
+    second: monster_loop_final (1)_542
+  - first:
+      213: 1862395346689175539
+    second: monster_loop_final (1)_543
+  - first:
+      213: 7117676087016639084
+    second: monster_loop_final (1)_544
+  - first:
+      213: 663153463185365405
+    second: monster_loop_final (1)_545
+  - first:
+      213: 3921940200159421759
+    second: monster_loop_final (1)_546
+  - first:
+      213: 8138202420919373768
+    second: monster_loop_final (1)_547
+  - first:
+      213: 4553653397726863451
+    second: monster_loop_final (1)_548
+  - first:
+      213: -6303297332944071323
+    second: monster_loop_final (1)_549
+  - first:
+      213: 2847899155551956037
+    second: monster_loop_final (1)_550
+  - first:
+      213: -8297506334015687556
+    second: monster_loop_final (1)_551
+  - first:
+      213: 1548403082911057586
+    second: monster_loop_final (1)_552
+  - first:
+      213: -8113934751177355801
+    second: monster_loop_final (1)_553
+  - first:
+      213: 6591272052474245848
+    second: monster_loop_final (1)_554
+  - first:
+      213: -2792217287699811661
+    second: monster_loop_final (1)_555
+  - first:
+      213: -6984477142611480137
+    second: monster_loop_final (1)_556
+  - first:
+      213: 3584142759211736478
+    second: monster_loop_final (1)_557
+  - first:
+      213: -7508199892633323942
+    second: monster_loop_final (1)_558
+  - first:
+      213: 5870127512231512088
+    second: monster_loop_final (1)_559
+  - first:
+      213: 3089842747591361801
+    second: monster_loop_final (1)_560
+  - first:
+      213: -7597201401805003267
+    second: monster_loop_final (1)_561
+  - first:
+      213: -9211718107690977402
+    second: monster_loop_final (1)_562
+  - first:
+      213: 544594779685396585
+    second: monster_loop_final (1)_563
+  - first:
+      213: 5736120923537421163
+    second: monster_loop_final (1)_564
+  - first:
+      213: -5834003018050883379
+    second: monster_loop_final (1)_565
+  - first:
+      213: -7795166360400018267
+    second: monster_loop_final (1)_566
+  - first:
+      213: -8221032556300826534
+    second: monster_loop_final (1)_567
+  - first:
+      213: 5782657041781747438
+    second: monster_loop_final (1)_568
+  - first:
+      213: -8996321276537123599
+    second: monster_loop_final (1)_569
+  - first:
+      213: 6230554024662324616
+    second: monster_loop_final (1)_570
+  - first:
+      213: -9199611451686537742
+    second: monster_loop_final (1)_571
+  - first:
+      213: -4551880293287157770
+    second: monster_loop_final (1)_572
+  - first:
+      213: 8769384256316071561
+    second: monster_loop_final (1)_573
+  - first:
+      213: -1474589802740963840
+    second: monster_loop_final (1)_574
+  - first:
+      213: -8067859890967344599
+    second: monster_loop_final (1)_575
+  - first:
+      213: 5950533811923542016
+    second: monster_loop_final (1)_576
+  - first:
+      213: 2889433266574304289
+    second: monster_loop_final (1)_577
+  - first:
+      213: -4341363875833760434
+    second: monster_loop_final (1)_578
+  - first:
+      213: 5330066024239907746
+    second: monster_loop_final (1)_579
+  - first:
+      213: -9169099099348878091
+    second: monster_loop_final (1)_580
+  - first:
+      213: -460089769720210824
+    second: monster_loop_final (1)_581
+  - first:
+      213: -1184474916861850014
+    second: monster_loop_final (1)_582
+  - first:
+      213: -5870276306242636492
+    second: monster_loop_final (1)_583
+  - first:
+      213: 6056193026880344610
+    second: monster_loop_final (1)_584
+  - first:
+      213: 1780086987486629372
+    second: monster_loop_final (1)_585
+  - first:
+      213: 1710134013358270864
+    second: monster_loop_final (1)_586
+  - first:
+      213: 4057863395848434113
+    second: monster_loop_final (1)_587
+  - first:
+      213: -8899075976503830624
+    second: monster_loop_final (1)_588
+  - first:
+      213: 7382859409359221797
+    second: monster_loop_final (1)_589
+  - first:
+      213: 921274322005098446
+    second: monster_loop_final (1)_590
+  - first:
+      213: -5529424011437085077
+    second: monster_loop_final (1)_591
+  - first:
+      213: 8555887781721287069
+    second: monster_loop_final (1)_592
+  - first:
+      213: -6884573329751676961
+    second: monster_loop_final (1)_593
+  - first:
+      213: 6763400416786283361
+    second: monster_loop_final (1)_594
+  - first:
+      213: 8617061234835619506
+    second: monster_loop_final (1)_595
+  - first:
+      213: -5805306291867589731
+    second: monster_loop_final (1)_596
+  - first:
+      213: -1424960097922453416
+    second: monster_loop_final (1)_597
+  - first:
+      213: -5822509266760862807
+    second: monster_loop_final (1)_598
+  - first:
+      213: -2367853385173803721
+    second: monster_loop_final (1)_599
+  - first:
+      213: 7771484162734978006
+    second: monster_loop_final (1)_600
+  - first:
+      213: -2616927263089763102
+    second: monster_loop_final (1)_601
+  - first:
+      213: -6703967373888829133
+    second: monster_loop_final (1)_602
+  - first:
+      213: 2142217517277285042
+    second: monster_loop_final (1)_603
+  - first:
+      213: -3518216494911643054
+    second: monster_loop_final (1)_604
+  - first:
+      213: 7108587257275594468
+    second: monster_loop_final (1)_605
+  - first:
+      213: 1118677286401622330
+    second: monster_loop_final (1)_606
+  - first:
+      213: -1319431683192960799
+    second: monster_loop_final (1)_607
+  - first:
+      213: 7212584582716279170
+    second: monster_loop_final (1)_608
+  - first:
+      213: -927204942999883169
+    second: monster_loop_final (1)_609
+  - first:
+      213: -7260239235402224230
+    second: monster_loop_final (1)_610
+  - first:
+      213: 2758251961021159986
+    second: monster_loop_final (1)_611
+  - first:
+      213: 7654743284278952454
+    second: monster_loop_final (1)_612
+  - first:
+      213: 642534735370767801
+    second: monster_loop_final (1)_613
+  - first:
+      213: 944897706031285348
+    second: monster_loop_final (1)_614
+  - first:
+      213: -7882650780838247310
+    second: monster_loop_final (1)_615
+  - first:
+      213: -3038547278081810805
+    second: monster_loop_final (1)_616
+  - first:
+      213: -8730298799600472576
+    second: monster_loop_final (1)_617
+  - first:
+      213: 2358870457683120993
+    second: monster_loop_final (1)_618
+  - first:
+      213: -2810486598810350324
+    second: monster_loop_final (1)_619
+  - first:
+      213: -3532221746967021173
+    second: monster_loop_final (1)_620
+  - first:
+      213: 7454719804075043301
+    second: monster_loop_final (1)_621
+  - first:
+      213: -2693974531286348580
+    second: monster_loop_final (1)_622
+  - first:
+      213: -2091070514226764593
+    second: monster_loop_final (1)_623
+  - first:
+      213: 5663480545629868308
+    second: monster_loop_final (1)_624
+  - first:
+      213: 2513738576428129173
+    second: monster_loop_final (1)_625
+  - first:
+      213: 1401032716737410379
+    second: monster_loop_final (1)_626
+  - first:
+      213: -7093726824515477136
+    second: monster_loop_final (1)_627
+  - first:
+      213: -664448227892894218
+    second: monster_loop_final (1)_628
+  - first:
+      213: 5834984784010250580
+    second: monster_loop_final (1)_629
+  - first:
+      213: 6406191534055661132
+    second: monster_loop_final (1)_630
+  - first:
+      213: 1197605888637597011
+    second: monster_loop_final (1)_631
+  - first:
+      213: -7298884885608624612
+    second: monster_loop_final (1)_632
+  - first:
+      213: 4027890024650991721
+    second: monster_loop_final (1)_633
+  - first:
+      213: 4683678900701023253
+    second: monster_loop_final (1)_634
+  - first:
+      213: -7878995277687194413
+    second: monster_loop_final (1)_635
+  - first:
+      213: -2755983897644205663
+    second: monster_loop_final (1)_636
+  - first:
+      213: 1734195594796470539
+    second: monster_loop_final (1)_637
+  - first:
+      213: -6644347385357735342
+    second: monster_loop_final (1)_638
+  - first:
+      213: 7488671581189071291
+    second: monster_loop_final (1)_639
+  - first:
+      213: 9025604342786809067
+    second: monster_loop_final (1)_640
+  - first:
+      213: 795722693628711235
+    second: monster_loop_final (1)_641
+  - first:
+      213: -1203558201741289560
+    second: monster_loop_final (1)_642
+  - first:
+      213: 3373262089317475396
+    second: monster_loop_final (1)_643
+  - first:
+      213: -5067315354479209024
+    second: monster_loop_final (1)_644
+  - first:
+      213: -7737526983189027043
+    second: monster_loop_final (1)_645
+  - first:
+      213: -1665880882887578444
+    second: monster_loop_final (1)_646
+  - first:
+      213: 4027172171151516722
+    second: monster_loop_final (1)_647
+  - first:
+      213: -5551423360001787371
+    second: monster_loop_final (1)_648
+  - first:
+      213: 8166915955034536352
+    second: monster_loop_final (1)_649
+  - first:
+      213: -602024049322094816
+    second: monster_loop_final (1)_650
+  - first:
+      213: 4826267925015044695
+    second: monster_loop_final (1)_651
+  - first:
+      213: 8847437892370271355
+    second: monster_loop_final (1)_652
+  - first:
+      213: 7364029922458546128
+    second: monster_loop_final (1)_653
+  - first:
+      213: -8271966804929917708
+    second: monster_loop_final (1)_654
+  - first:
+      213: -957736166978457615
+    second: monster_loop_final (1)_655
+  - first:
+      213: -4020750317507631458
+    second: monster_loop_final (1)_656
+  - first:
+      213: 2651580731608877252
+    second: monster_loop_final (1)_657
+  - first:
+      213: -422488396880891928
+    second: monster_loop_final (1)_658
+  - first:
+      213: -5083384521034646949
+    second: monster_loop_final (1)_659
+  - first:
+      213: -6992223233514723687
+    second: monster_loop_final (1)_660
+  - first:
+      213: -5166746302617045220
+    second: monster_loop_final (1)_661
+  - first:
+      213: -4392553153970791259
+    second: monster_loop_final (1)_662
+  - first:
+      213: 7217279540839791646
+    second: monster_loop_final (1)_663
+  - first:
+      213: 987386871728523943
+    second: monster_loop_final (1)_664
+  - first:
+      213: 5468058903389324320
+    second: monster_loop_final (1)_665
+  - first:
+      213: 2532789686441991844
+    second: monster_loop_final (1)_666
+  - first:
+      213: 1580565036886632468
+    second: monster_loop_final (1)_667
+  - first:
+      213: -1308969545073359658
+    second: monster_loop_final (1)_668
+  - first:
+      213: -3950842396632667432
+    second: monster_loop_final (1)_669
+  - first:
+      213: -8934611461443799569
+    second: monster_loop_final (1)_670
+  - first:
+      213: -6260475201343651811
+    second: monster_loop_final (1)_671
+  - first:
+      213: 7422448465721081764
+    second: monster_loop_final (1)_672
+  - first:
+      213: -477551188497223902
+    second: monster_loop_final (1)_673
+  - first:
+      213: -7672337758120415705
+    second: monster_loop_final (1)_674
+  - first:
+      213: 4740153083817303712
+    second: monster_loop_final (1)_675
+  - first:
+      213: 300917055695360044
+    second: monster_loop_final (1)_676
+  - first:
+      213: 4355864429986160177
+    second: monster_loop_final (1)_677
+  - first:
+      213: -2338287012560148289
+    second: monster_loop_final (1)_678
+  - first:
+      213: 180905706627462375
+    second: monster_loop_final (1)_679
+  - first:
+      213: 7355808182036179786
+    second: monster_loop_final (1)_680
+  - first:
+      213: 6591586802678772607
+    second: monster_loop_final (1)_681
+  - first:
+      213: 9167132285431663834
+    second: monster_loop_final (1)_682
+  - first:
+      213: 8220278691303756764
+    second: monster_loop_final (1)_683
+  - first:
+      213: 2284968456391744950
+    second: monster_loop_final (1)_684
+  - first:
+      213: -1703367953227455897
+    second: monster_loop_final (1)_685
+  - first:
+      213: -4862738205716991941
+    second: monster_loop_final (1)_686
+  - first:
+      213: -1689336177766878936
+    second: monster_loop_final (1)_687
+  - first:
+      213: 5616721131266343415
+    second: monster_loop_final (1)_688
+  - first:
+      213: -828268371357295162
+    second: monster_loop_final (1)_689
+  - first:
+      213: -6417491970391628531
+    second: monster_loop_final (1)_690
+  - first:
+      213: -5432789712910203537
+    second: monster_loop_final (1)_691
+  - first:
+      213: -5467499885237271996
+    second: monster_loop_final (1)_692
+  - first:
+      213: 3151679140530368600
+    second: monster_loop_final (1)_693
+  - first:
+      213: -4583396303811795023
+    second: monster_loop_final (1)_694
+  - first:
+      213: -7341338183432460652
+    second: monster_loop_final (1)_695
+  - first:
+      213: 5141299960097338247
+    second: monster_loop_final (1)_696
+  - first:
+      213: -3359310651850405813
+    second: monster_loop_final (1)_697
+  - first:
+      213: 3707955024953793753
+    second: monster_loop_final (1)_698
+  - first:
+      213: -4386971237975742173
+    second: monster_loop_final (1)_699
+  - first:
+      213: -3057203759146052532
+    second: monster_loop_final (1)_700
+  - first:
+      213: -1390454210128789869
+    second: monster_loop_final (1)_701
+  - first:
+      213: -4499724563029938206
+    second: monster_loop_final (1)_702
+  - first:
+      213: -3448593018560856252
+    second: monster_loop_final (1)_703
+  - first:
+      213: -2578991031825010328
+    second: monster_loop_final (1)_704
+  - first:
+      213: 5466707816445128010
+    second: monster_loop_final (1)_705
+  - first:
+      213: 3424836402251199022
+    second: monster_loop_final (1)_706
+  - first:
+      213: -3951281477758056442
+    second: monster_loop_final (1)_707
+  - first:
+      213: -8763544445409121451
+    second: monster_loop_final (1)_708
+  - first:
+      213: -8215572458578009295
+    second: monster_loop_final (1)_709
+  - first:
+      213: 5993787185644489539
+    second: monster_loop_final (1)_710
+  - first:
+      213: -3808947001579209811
+    second: monster_loop_final (1)_711
+  - first:
+      213: -1069601229817287863
+    second: monster_loop_final (1)_712
+  - first:
+      213: -6263138566102095187
+    second: monster_loop_final (1)_713
+  - first:
+      213: -4290916266160417829
+    second: monster_loop_final (1)_714
+  - first:
+      213: 2615281477663177486
+    second: monster_loop_final (1)_715
+  - first:
+      213: 1897137883824492055
+    second: monster_loop_final (1)_716
+  - first:
+      213: -8503663548059471335
+    second: monster_loop_final (1)_717
+  - first:
+      213: -6049564172060464262
+    second: monster_loop_final (1)_718
+  - first:
+      213: -3171316343307387048
+    second: monster_loop_final (1)_719
+  - first:
+      213: -6692814858565091945
+    second: monster_loop_final (1)_720
+  - first:
+      213: -8331989819013877917
+    second: monster_loop_final (1)_721
+  - first:
+      213: -8225137625626048004
+    second: monster_loop_final (1)_722
+  - first:
+      213: 5611181759185964871
+    second: monster_loop_final (1)_723
+  - first:
+      213: -3674453662884650125
+    second: monster_loop_final (1)_724
+  - first:
+      213: -5235368247370863334
+    second: monster_loop_final (1)_725
+  - first:
+      213: 8101249055296519696
+    second: monster_loop_final (1)_726
+  - first:
+      213: -8561557443311815098
+    second: monster_loop_final (1)_727
+  - first:
+      213: -6204056552993888756
+    second: monster_loop_final (1)_728
+  - first:
+      213: 8198954831672760786
+    second: monster_loop_final (1)_729
+  - first:
+      213: 3975883739825785978
+    second: monster_loop_final (1)_730
+  - first:
+      213: -6654799564506636791
+    second: monster_loop_final (1)_731
+  - first:
+      213: -6583564935115276961
+    second: monster_loop_final (1)_732
+  - first:
+      213: 1399712708826225318
+    second: monster_loop_final (1)_733
+  - first:
+      213: -8436077443533236605
+    second: monster_loop_final (1)_734
+  - first:
+      213: 4425480218430771992
+    second: monster_loop_final (1)_735
+  - first:
+      213: -2120024556301735909
+    second: monster_loop_final (1)_736
+  - first:
+      213: -8485290326541977884
+    second: monster_loop_final (1)_737
+  - first:
+      213: -1529824227108305544
+    second: monster_loop_final (1)_738
+  - first:
+      213: 52554857698463046
+    second: monster_loop_final (1)_739
+  - first:
+      213: -2578033247547987588
+    second: monster_loop_final (1)_740
+  - first:
+      213: 8135413207170882593
+    second: monster_loop_final (1)_741
+  - first:
+      213: -1395041749258974158
+    second: monster_loop_final (1)_742
+  - first:
+      213: 6231055384200771602
+    second: monster_loop_final (1)_743
+  - first:
+      213: -5921371032874224210
+    second: monster_loop_final (1)_744
+  - first:
+      213: -8159298875972100563
+    second: monster_loop_final (1)_745
+  - first:
+      213: 142925139082054027
+    second: monster_loop_final (1)_746
+  - first:
+      213: 3085548878788879163
+    second: monster_loop_final (1)_747
+  - first:
+      213: 4924342288598944626
+    second: monster_loop_final (1)_748
+  - first:
+      213: -7953652618426869904
+    second: monster_loop_final (1)_749
+  - first:
+      213: -1795192998503355529
+    second: monster_loop_final (1)_750
+  - first:
+      213: 2308371286596916438
+    second: monster_loop_final (1)_751
+  - first:
+      213: -7621667724988418967
+    second: monster_loop_final (1)_752
+  - first:
+      213: 3616555533183243655
+    second: monster_loop_final (1)_753
+  - first:
+      213: 8123121391477318875
+    second: monster_loop_final (1)_754
+  - first:
+      213: 1836668555119658815
+    second: monster_loop_final (1)_755
+  - first:
+      213: 5368963633195549518
+    second: monster_loop_final (1)_756
+  - first:
+      213: -6798210370562483118
+    second: monster_loop_final (1)_757
+  - first:
+      213: -5578633048141178830
+    second: monster_loop_final (1)_758
+  - first:
+      213: -1045102122888047819
+    second: monster_loop_final (1)_759
+  - first:
+      213: 4552022555606508831
+    second: monster_loop_final (1)_760
+  - first:
+      213: -6925306488507063908
+    second: monster_loop_final (1)_761
+  - first:
+      213: 332081902040785466
+    second: monster_loop_final (1)_762
+  - first:
+      213: -4252474726284596525
+    second: monster_loop_final (1)_763
+  - first:
+      213: 3521075701993150792
+    second: monster_loop_final (1)_764
+  - first:
+      213: -8386358691450634398
+    second: monster_loop_final (1)_765
+  - first:
+      213: -8655310070288950444
+    second: monster_loop_final (1)_766
+  - first:
+      213: 5242902941902632208
+    second: monster_loop_final (1)_767
+  - first:
+      213: -5983170194559209852
+    second: monster_loop_final (1)_768
+  - first:
+      213: 7824440061014489672
+    second: monster_loop_final (1)_769
+  - first:
+      213: 4898525990803077501
+    second: monster_loop_final (1)_770
+  - first:
+      213: -1616539559200216002
+    second: monster_loop_final (1)_771
+  - first:
+      213: 1410714158140772178
+    second: monster_loop_final (1)_772
+  - first:
+      213: 4751433729887119112
+    second: monster_loop_final (1)_773
+  - first:
+      213: -4776437763781764660
+    second: monster_loop_final (1)_774
+  - first:
+      213: 7213422005141713680
+    second: monster_loop_final (1)_775
+  - first:
+      213: -1297600231939664870
+    second: monster_loop_final (1)_776
+  - first:
+      213: -7378198760856784096
+    second: monster_loop_final (1)_777
+  - first:
+      213: 1720521298467417231
+    second: monster_loop_final (1)_778
+  - first:
+      213: 1504799305240227432
+    second: monster_loop_final (1)_779
+  - first:
+      213: 5387917806358082065
+    second: monster_loop_final (1)_780
+  - first:
+      213: 7614509883967066600
+    second: monster_loop_final (1)_781
+  - first:
+      213: 8267820596316378509
+    second: monster_loop_final (1)_782
+  - first:
+      213: 8186355323418882299
+    second: monster_loop_final (1)_783
+  - first:
+      213: -7576138764326788611
+    second: monster_loop_final (1)_784
+  - first:
+      213: -6397443933260529157
+    second: monster_loop_final (1)_785
+  - first:
+      213: 5469920329196872162
+    second: monster_loop_final (1)_786
+  - first:
+      213: 2450459938939342904
+    second: monster_loop_final (1)_787
+  - first:
+      213: 967766597754091185
+    second: monster_loop_final (1)_788
+  - first:
+      213: 2009658990628611778
+    second: monster_loop_final (1)_789
+  - first:
+      213: 7324032049769782294
+    second: monster_loop_final (1)_790
+  - first:
+      213: -6084055237725153143
+    second: monster_loop_final (1)_791
+  - first:
+      213: -9036222234244589750
+    second: monster_loop_final (1)_792
+  - first:
+      213: 8266384898006254282
+    second: monster_loop_final (1)_793
+  - first:
+      213: 1726130223666653953
+    second: monster_loop_final (1)_794
+  - first:
+      213: -6945558024257015748
+    second: monster_loop_final (1)_795
+  - first:
+      213: -5056949037783459659
+    second: monster_loop_final (1)_796
+  - first:
+      213: 9153138734672285896
+    second: monster_loop_final (1)_797
+  - first:
+      213: -4734316104994401909
+    second: monster_loop_final (1)_798
+  - first:
+      213: -2395570356200554667
+    second: monster_loop_final (1)_799
+  - first:
+      213: -4338092232664121054
+    second: monster_loop_final (1)_800
+  - first:
+      213: 8137111041812954004
+    second: monster_loop_final (1)_801
+  - first:
+      213: 3202920032689435876
+    second: monster_loop_final (1)_802
+  - first:
+      213: -8707605118349074137
+    second: monster_loop_final (1)_803
+  - first:
+      213: -5579727414760862981
+    second: monster_loop_final (1)_804
+  - first:
+      213: 564868937018244537
+    second: monster_loop_final (1)_805
+  - first:
+      213: -8554587965579223895
+    second: monster_loop_final (1)_806
+  - first:
+      213: 7875112572524034779
+    second: monster_loop_final (1)_807
+  - first:
+      213: 5685195922601677103
+    second: monster_loop_final (1)_808
+  - first:
+      213: -1171685082704518559
+    second: monster_loop_final (1)_809
+  - first:
+      213: -1882559727990588093
+    second: monster_loop_final (1)_810
+  - first:
+      213: -4411594519603113167
+    second: monster_loop_final (1)_811
+  - first:
+      213: 4202030445949245178
+    second: monster_loop_final (1)_812
+  - first:
+      213: -7186610162185962353
+    second: monster_loop_final (1)_813
+  - first:
+      213: -2006550565937183668
+    second: monster_loop_final (1)_814
+  - first:
+      213: -1821150518889524870
+    second: monster_loop_final (1)_815
+  - first:
+      213: 5563215429894578098
+    second: monster_loop_final (1)_816
+  - first:
+      213: 8404477801192655932
+    second: monster_loop_final (1)_817
+  - first:
+      213: -7910053340834990954
+    second: monster_loop_final (1)_818
+  - first:
+      213: -7195655940157508998
+    second: monster_loop_final (1)_819
+  - first:
+      213: 7302254252150108713
+    second: monster_loop_final (1)_820
+  - first:
+      213: -1404495039715904007
+    second: monster_loop_final (1)_821
+  - first:
+      213: 6951954404502214967
+    second: monster_loop_final (1)_822
+  - first:
+      213: 58172927475581208
+    second: monster_loop_final (1)_823
+  - first:
+      213: 395607084841736637
+    second: monster_loop_final (1)_824
+  - first:
+      213: 731368507850958093
+    second: monster_loop_final (1)_825
+  - first:
+      213: 8918379646497608043
+    second: monster_loop_final (1)_826
+  - first:
+      213: -6293133379647370643
+    second: monster_loop_final (1)_827
+  - first:
+      213: -4433148851792530944
+    second: monster_loop_final (1)_828
+  - first:
+      213: -2541649152378912146
+    second: monster_loop_final (1)_829
+  - first:
+      213: 1602775037865710858
+    second: monster_loop_final (1)_830
+  - first:
+      213: -8717289597575584847
+    second: monster_loop_final (1)_831
+  - first:
+      213: -2221499274133329647
+    second: monster_loop_final (1)_832
+  - first:
+      213: -6971005415870685852
+    second: monster_loop_final (1)_833
+  - first:
+      213: 4972868710567725688
+    second: monster_loop_final (1)_834
+  - first:
+      213: -8271745775886688275
+    second: monster_loop_final (1)_835
+  - first:
+      213: 1056181938916483752
+    second: monster_loop_final (1)_836
+  - first:
+      213: 1054396936625123598
+    second: monster_loop_final (1)_837
+  - first:
+      213: -3536417336155474889
+    second: monster_loop_final (1)_838
+  - first:
+      213: -2342634589983466647
+    second: monster_loop_final (1)_839
+  - first:
+      213: -1300836304909201445
+    second: monster_loop_final (1)_840
+  - first:
+      213: 6423358193373699664
+    second: monster_loop_final (1)_841
+  - first:
+      213: 2530224508739961283
+    second: monster_loop_final (1)_842
+  - first:
+      213: 1911562977403329135
+    second: monster_loop_final (1)_843
+  - first:
+      213: 294417199926819668
+    second: monster_loop_final (1)_844
+  - first:
+      213: -2725627292678453582
+    second: monster_loop_final (1)_845
+  - first:
+      213: -1313583080296608903
+    second: monster_loop_final (1)_846
+  - first:
+      213: 177775690800285814
+    second: monster_loop_final (1)_847
+  - first:
+      213: 4209769662149430999
+    second: monster_loop_final (1)_848
+  - first:
+      213: -5238870461331009762
+    second: monster_loop_final (1)_849
+  - first:
+      213: -6754167227235576801
+    second: monster_loop_final (1)_850
+  - first:
+      213: -1657320480841236500
+    second: monster_loop_final (1)_851
+  - first:
+      213: 1470373699000434166
+    second: monster_loop_final (1)_852
+  - first:
+      213: 5059123208247689263
+    second: monster_loop_final (1)_853
+  - first:
+      213: -953617674834486910
+    second: monster_loop_final (1)_854
+  - first:
+      213: -8342960389029147709
+    second: monster_loop_final (1)_855
+  - first:
+      213: 1840906063284801061
+    second: monster_loop_final (1)_856
+  - first:
+      213: -5188605171059563571
+    second: monster_loop_final (1)_857
+  - first:
+      213: -3947193599011824621
+    second: monster_loop_final (1)_858
+  - first:
+      213: 7112470805033134317
+    second: monster_loop_final (1)_859
+  - first:
+      213: -2418316519966859668
+    second: monster_loop_final (1)_860
+  - first:
+      213: -4511654872967649043
+    second: monster_loop_final (1)_861
+  - first:
+      213: -303832545242166401
+    second: monster_loop_final (1)_862
+  - first:
+      213: -7317438647571362157
+    second: monster_loop_final (1)_863
+  - first:
+      213: -8826925442319183440
+    second: monster_loop_final (1)_864
+  - first:
+      213: 8636962618440338991
+    second: monster_loop_final (1)_865
+  - first:
+      213: -9170157253718568881
+    second: monster_loop_final (1)_866
+  - first:
+      213: -7772853071247861461
+    second: monster_loop_final (1)_867
+  - first:
+      213: 865447213095841738
+    second: monster_loop_final (1)_868
+  - first:
+      213: -3974505547573577905
+    second: monster_loop_final (1)_869
+  - first:
+      213: 6952536323072099541
+    second: monster_loop_final (1)_870
+  - first:
+      213: -3110013337014224859
+    second: monster_loop_final (1)_871
+  - first:
+      213: 3537811289972986969
+    second: monster_loop_final (1)_872
+  - first:
+      213: 3616063559787495386
+    second: monster_loop_final (1)_873
+  - first:
+      213: 5994072235078283101
+    second: monster_loop_final (1)_874
+  - first:
+      213: 3981181586818342767
+    second: monster_loop_final (1)_875
+  - first:
+      213: 815322194738049834
+    second: monster_loop_final (1)_876
+  - first:
+      213: -9149969499031122191
+    second: monster_loop_final (1)_877
+  - first:
+      213: 6012012833438401830
+    second: monster_loop_final (1)_878
+  - first:
+      213: 4116114256286385942
+    second: monster_loop_final (1)_879
+  - first:
+      213: 8451625159145837383
+    second: monster_loop_final (1)_880
+  - first:
+      213: -8762329845039033496
+    second: monster_loop_final (1)_881
+  - first:
+      213: 2132541866470739438
+    second: monster_loop_final (1)_882
+  - first:
+      213: 7176464797312425610
+    second: monster_loop_final (1)_883
+  - first:
+      213: -6366749959402769361
+    second: monster_loop_final (1)_884
+  - first:
+      213: 4222474900842759325
+    second: monster_loop_final (1)_885
+  - first:
+      213: -7450401896514973836
+    second: monster_loop_final (1)_886
+  - first:
+      213: -8669454674671992659
+    second: monster_loop_final (1)_887
+  - first:
+      213: -1663943761577244814
+    second: monster_loop_final (1)_888
+  - first:
+      213: -6729999759976714393
+    second: monster_loop_final (1)_889
+  - first:
+      213: 580110848696406012
+    second: monster_loop_final (1)_890
+  - first:
+      213: -8906305524154782284
+    second: monster_loop_final (1)_891
+  - first:
+      213: -3521547249930660697
+    second: monster_loop_final (1)_892
+  - first:
+      213: 8179553966694432190
+    second: monster_loop_final (1)_893
+  - first:
+      213: -6933321261868753064
+    second: monster_loop_final (1)_894
+  - first:
+      213: -1489957708414197023
+    second: monster_loop_final (1)_895
+  - first:
+      213: -4773156612542732431
+    second: monster_loop_final (1)_896
+  - first:
+      213: 410129699288670672
+    second: monster_loop_final (1)_897
+  - first:
+      213: -6118211785939274146
+    second: monster_loop_final (1)_898
+  - first:
+      213: 2705419647530130981
+    second: monster_loop_final (1)_899
+  - first:
+      213: -8210519044614228368
+    second: monster_loop_final (1)_900
+  - first:
+      213: -5321420163430326816
+    second: monster_loop_final (1)_901
+  - first:
+      213: 2446451851173888914
+    second: monster_loop_final (1)_902
+  - first:
+      213: 704040143598656437
+    second: monster_loop_final (1)_903
+  - first:
+      213: -6364317895700238510
+    second: monster_loop_final (1)_904
+  - first:
+      213: 8747538795859018192
+    second: monster_loop_final (1)_905
+  - first:
+      213: 4853046748552807806
+    second: monster_loop_final (1)_906
+  - first:
+      213: -6646507084109472740
+    second: monster_loop_final (1)_907
+  - first:
+      213: 1620237953715734069
+    second: monster_loop_final (1)_908
+  - first:
+      213: 3804011778599723867
+    second: monster_loop_final (1)_909
+  - first:
+      213: -6068038352547132182
+    second: monster_loop_final (1)_910
+  - first:
+      213: 3927150534349475960
+    second: monster_loop_final (1)_911
+  - first:
+      213: 8609951718138467084
+    second: monster_loop_final (1)_912
+  - first:
+      213: 7711077390043793592
+    second: monster_loop_final (1)_913
+  - first:
+      213: -7074816287653801635
+    second: monster_loop_final (1)_914
+  - first:
+      213: -8393851866819437013
+    second: monster_loop_final (1)_915
+  - first:
+      213: -4940778541366895438
+    second: monster_loop_final (1)_916
+  - first:
+      213: 8762673643083845260
+    second: monster_loop_final (1)_917
+  - first:
+      213: 6801353930258610513
+    second: monster_loop_final (1)_918
+  - first:
+      213: 1530476553609281399
+    second: monster_loop_final (1)_919
+  - first:
+      213: -7022604151825492038
+    second: monster_loop_final (1)_920
+  - first:
+      213: -5217656859219894433
+    second: monster_loop_final (1)_921
+  - first:
+      213: -7131674792140568019
+    second: monster_loop_final (1)_922
+  - first:
+      213: 4029909031176757929
+    second: monster_loop_final (1)_923
+  - first:
+      213: 870136833589441373
+    second: monster_loop_final (1)_924
+  - first:
+      213: -2162700130772149323
+    second: monster_loop_final (1)_925
+  - first:
+      213: -1398517480855893171
+    second: monster_loop_final (1)_926
+  - first:
+      213: 508791741024793033
+    second: monster_loop_final (1)_927
+  - first:
+      213: 509961555160597288
+    second: monster_loop_final (1)_928
+  - first:
+      213: -4774001219986257931
+    second: monster_loop_final (1)_929
+  - first:
+      213: -1416748592665263522
+    second: monster_loop_final (1)_930
+  - first:
+      213: -5186911219904520462
+    second: monster_loop_final (1)_931
+  - first:
+      213: 5206216629517756424
+    second: monster_loop_final (1)_932
+  - first:
+      213: -8202127828769458280
+    second: monster_loop_final (1)_933
+  - first:
+      213: -7474768371060263617
+    second: monster_loop_final (1)_934
+  - first:
+      213: 505251130391496340
+    second: monster_loop_final (1)_935
+  - first:
+      213: -4674023474022276935
+    second: monster_loop_final (1)_936
+  - first:
+      213: 6393535299941355826
+    second: monster_loop_final (1)_937
+  - first:
+      213: -5146518705924123132
+    second: monster_loop_final (1)_938
+  - first:
+      213: 988272152255137024
+    second: monster_loop_final (1)_939
+  - first:
+      213: 7790577976795567465
+    second: monster_loop_final (1)_940
+  - first:
+      213: 1646465619871935281
+    second: monster_loop_final (1)_941
+  - first:
+      213: -9120012395876055148
+    second: monster_loop_final (1)_942
+  - first:
+      213: 5965674304619106622
+    second: monster_loop_final (1)_943
+  - first:
+      213: -7434467887115054437
+    second: monster_loop_final (1)_944
+  - first:
+      213: 9044489022028911244
+    second: monster_loop_final (1)_945
+  - first:
+      213: 1259810612797078808
+    second: monster_loop_final (1)_946
+  - first:
+      213: 5897392594337571449
+    second: monster_loop_final (1)_947
+  - first:
+      213: -1258038342028973685
+    second: monster_loop_final (1)_948
+  - first:
+      213: 6801517489366884050
+    second: monster_loop_final (1)_949
+  - first:
+      213: -9056999927496558440
+    second: monster_loop_final (1)_950
+  - first:
+      213: 8309787777315886033
+    second: monster_loop_final (1)_951
+  - first:
+      213: 7912631463800758343
+    second: monster_loop_final (1)_952
+  - first:
+      213: 6284931635313354409
+    second: monster_loop_final (1)_953
+  - first:
+      213: 1473068379362246675
+    second: monster_loop_final (1)_954
+  - first:
+      213: -243158473778337462
+    second: monster_loop_final (1)_955
+  - first:
+      213: -8612507947669862089
+    second: monster_loop_final (1)_956
+  - first:
+      213: -5841772262634959667
+    second: monster_loop_final (1)_957
+  - first:
+      213: -6185110576239995539
+    second: monster_loop_final (1)_958
+  - first:
+      213: 3914553129001988975
+    second: monster_loop_final (1)_959
+  - first:
+      213: 586632087500295001
+    second: monster_loop_final (1)_960
+  - first:
+      213: 3156948553491244609
+    second: monster_loop_final (1)_961
+  - first:
+      213: -5643799841962464616
+    second: monster_loop_final (1)_962
+  - first:
+      213: 6353489220506159592
+    second: monster_loop_final (1)_963
+  - first:
+      213: 271046126588624937
+    second: monster_loop_final (1)_964
+  - first:
+      213: -640477053661903736
+    second: monster_loop_final (1)_965
+  - first:
+      213: 2910384334885382327
+    second: monster_loop_final (1)_966
+  - first:
+      213: -1804697439132065274
+    second: monster_loop_final (1)_967
+  - first:
+      213: -6678366501157825976
+    second: monster_loop_final (1)_968
+  - first:
+      213: 7321328430586077992
+    second: monster_loop_final (1)_969
+  - first:
+      213: 3712718670335454390
+    second: monster_loop_final (1)_970
+  - first:
+      213: 9205230951054775559
+    second: monster_loop_final (1)_971
+  - first:
+      213: -4149144626800666161
+    second: monster_loop_final (1)_972
+  - first:
+      213: -3739717467182440059
+    second: monster_loop_final (1)_973
+  - first:
+      213: 7202665162893966040
+    second: monster_loop_final (1)_974
+  - first:
+      213: -7478034489173307693
+    second: monster_loop_final (1)_975
+  - first:
+      213: -1514616047443611360
+    second: monster_loop_final (1)_976
+  - first:
+      213: 2974759149515669247
+    second: monster_loop_final (1)_977
+  - first:
+      213: 1425789717184661538
+    second: monster_loop_final (1)_978
+  - first:
+      213: 2030891612900430002
+    second: monster_loop_final (1)_979
+  - first:
+      213: -6764457620788469231
+    second: monster_loop_final (1)_980
+  - first:
+      213: 7064635964770916099
+    second: monster_loop_final (1)_981
+  - first:
+      213: 6504523055272976779
+    second: monster_loop_final (1)_982
+  - first:
+      213: -4180014939575366644
+    second: monster_loop_final (1)_983
+  - first:
+      213: 5123522735391345341
+    second: monster_loop_final (1)_984
+  - first:
+      213: -4106106171905505929
+    second: monster_loop_final (1)_985
+  - first:
+      213: -4268914794024384392
+    second: monster_loop_final (1)_986
+  - first:
+      213: -3372313065088678595
+    second: monster_loop_final (1)_987
+  - first:
+      213: -7540315302722710025
+    second: monster_loop_final (1)_988
+  - first:
+      213: 7340302058667552530
+    second: monster_loop_final (1)_989
+  - first:
+      213: -3922772992778718326
+    second: monster_loop_final (1)_990
+  - first:
+      213: -4269126196440086867
+    second: monster_loop_final (1)_991
+  - first:
+      213: 867066336507970082
+    second: monster_loop_final (1)_992
+  - first:
+      213: 9101255409352047036
+    second: monster_loop_final (1)_993
+  - first:
+      213: -7630403884266804373
+    second: monster_loop_final (1)_994
+  - first:
+      213: 2689104179258076441
+    second: monster_loop_final (1)_995
+  - first:
+      213: 7148328249033474512
+    second: monster_loop_final (1)_996
+  - first:
+      213: 3378396128698445935
+    second: monster_loop_final (1)_997
+  - first:
+      213: -2245182826220366574
+    second: monster_loop_final (1)_998
+  - first:
+      213: -9059511445175053459
+    second: monster_loop_final (1)_999
+  - first:
+      213: -8619388369831796270
+    second: monster_loop_final (1)_1000
+  - first:
+      213: 2816359579951797800
+    second: monster_loop_final (1)_1001
+  - first:
+      213: -2376017812953534768
+    second: monster_loop_final (1)_1002
+  - first:
+      213: -8561670944560343116
+    second: monster_loop_final (1)_1003
+  - first:
+      213: -9165993290515234914
+    second: monster_loop_final (1)_1004
+  - first:
+      213: -8876541275861173225
+    second: monster_loop_final (1)_1005
+  - first:
+      213: -3699408038794007197
+    second: monster_loop_final (1)_1006
+  - first:
+      213: -5419271712396893904
+    second: monster_loop_final (1)_1007
+  - first:
+      213: 4683897702641507493
+    second: monster_loop_final (1)_1008
+  - first:
+      213: 6501257374590131124
+    second: monster_loop_final (1)_1009
+  - first:
+      213: -4068636079070279746
+    second: monster_loop_final (1)_1010
+  - first:
+      213: -6396958171340038076
+    second: monster_loop_final (1)_1011
+  - first:
+      213: 5314553496507885526
+    second: monster_loop_final (1)_1012
+  - first:
+      213: 8470242482058742414
+    second: monster_loop_final (1)_1013
+  - first:
+      213: -327432281433634771
+    second: monster_loop_final (1)_1014
+  - first:
+      213: 181344880438215589
+    second: monster_loop_final (1)_1015
+  - first:
+      213: 853788264371201226
+    second: monster_loop_final (1)_1016
+  - first:
+      213: -1765297016955136565
+    second: monster_loop_final (1)_1017
+  - first:
+      213: 2189581231657903086
+    second: monster_loop_final (1)_1018
+  - first:
+      213: 6406867368618198532
+    second: monster_loop_final (1)_1019
+  - first:
+      213: 315227198137245054
+    second: monster_loop_final (1)_1020
+  - first:
+      213: 2675595040104338263
+    second: monster_loop_final (1)_1021
+  - first:
+      213: 8789359846090305619
+    second: monster_loop_final (1)_1022
+  - first:
+      213: 6224447465945603391
+    second: monster_loop_final (1)_1023
+  - first:
+      213: 7650942055550360062
+    second: monster_loop_final (1)_1024
+  - first:
+      213: 976769228587111714
+    second: monster_loop_final (1)_1025
+  - first:
+      213: 1631482560856874131
+    second: monster_loop_final (1)_1026
+  - first:
+      213: 2994869163788698877
+    second: monster_loop_final (1)_1027
+  - first:
+      213: 6771097698744969670
+    second: monster_loop_final (1)_1028
+  - first:
+      213: -3433215222621348226
+    second: monster_loop_final (1)_1029
+  - first:
+      213: -6589641306588987670
+    second: monster_loop_final (1)_1030
+  - first:
+      213: -3285533444685523528
+    second: monster_loop_final (1)_1031
+  - first:
+      213: -3612397985288152680
+    second: monster_loop_final (1)_1032
+  - first:
+      213: -574249091346504722
+    second: monster_loop_final (1)_1033
+  - first:
+      213: -5704090575196775331
+    second: monster_loop_final (1)_1034
+  - first:
+      213: -4200521007671493785
+    second: monster_loop_final (1)_1035
+  - first:
+      213: -8967510567797124396
+    second: monster_loop_final (1)_1036
+  - first:
+      213: -4953039976806997252
+    second: monster_loop_final (1)_1037
+  - first:
+      213: -1291743157735003102
+    second: monster_loop_final (1)_1038
+  - first:
+      213: 8321010200572962438
+    second: monster_loop_final (1)_1039
+  - first:
+      213: -8771413486078451882
+    second: monster_loop_final (1)_1040
+  - first:
+      213: 596226920086480627
+    second: monster_loop_final (1)_1041
+  - first:
+      213: -883861494047498541
+    second: monster_loop_final (1)_1042
+  - first:
+      213: -426569768661368659
+    second: monster_loop_final (1)_1043
+  - first:
+      213: 5711195016863804890
+    second: monster_loop_final (1)_1044
+  - first:
+      213: 2381111687679521411
+    second: monster_loop_final (1)_1045
+  - first:
+      213: -1157298088490771510
+    second: monster_loop_final (1)_1046
+  - first:
+      213: -5520340280372930042
+    second: monster_loop_final (1)_1047
+  - first:
+      213: 2665168010334079860
+    second: monster_loop_final (1)_1048
+  - first:
+      213: -4817475462245917800
+    second: monster_loop_final (1)_1049
+  - first:
+      213: -2999755927239036363
+    second: monster_loop_final (1)_1050
+  - first:
+      213: 540691030701647467
+    second: monster_loop_final (1)_1051
+  - first:
+      213: 4346615816702024247
+    second: monster_loop_final (1)_1052
+  - first:
+      213: -8206488507637966421
+    second: monster_loop_final (1)_1053
+  - first:
+      213: -7161569845367347817
+    second: monster_loop_final (1)_1054
+  - first:
+      213: -791522412206773514
+    second: monster_loop_final (1)_1055
+  - first:
+      213: -6537735645399815821
+    second: monster_loop_final (1)_1056
+  - first:
+      213: 7965885360330168922
+    second: monster_loop_final (1)_1057
+  - first:
+      213: -926249173193683813
+    second: monster_loop_final (1)_1058
+  - first:
+      213: 5729711116564146101
+    second: monster_loop_final (1)_1059
+  - first:
+      213: -8588716488806357448
+    second: monster_loop_final (1)_1060
+  - first:
+      213: 4380763335460799611
+    second: monster_loop_final (1)_1061
+  - first:
+      213: -4008117873813526200
+    second: monster_loop_final (1)_1062
+  - first:
+      213: 3451351599431846206
+    second: monster_loop_final (1)_1063
+  - first:
+      213: -3921486334274044336
+    second: monster_loop_final (1)_1064
+  - first:
+      213: 1248436068654652568
+    second: monster_loop_final (1)_1065
+  - first:
+      213: -5745294596178325294
+    second: monster_loop_final (1)_1066
+  - first:
+      213: 3292846797762998622
+    second: monster_loop_final (1)_1067
+  - first:
+      213: 4799899955450450770
+    second: monster_loop_final (1)_1068
+  - first:
+      213: 5517689640647714899
+    second: monster_loop_final (1)_1069
+  - first:
+      213: -6492675171369593909
+    second: monster_loop_final (1)_1070
+  - first:
+      213: -7568525442789095397
+    second: monster_loop_final (1)_1071
+  - first:
+      213: 4588990604394805727
+    second: monster_loop_final (1)_1072
+  - first:
+      213: -3634819925089994649
+    second: monster_loop_final (1)_1073
+  - first:
+      213: -4808551413210241635
+    second: monster_loop_final (1)_1074
+  - first:
+      213: 134144426059270082
+    second: monster_loop_final (1)_1075
+  - first:
+      213: -2060317009613813578
+    second: monster_loop_final (1)_1076
+  - first:
+      213: -3206510140163960361
+    second: monster_loop_final (1)_1077
+  - first:
+      213: 312307163092070848
+    second: monster_loop_final (1)_1078
+  - first:
+      213: 122287967166558164
+    second: monster_loop_final (1)_1079
+  - first:
+      213: -8533160009240680823
+    second: monster_loop_final (1)_1080
+  - first:
+      213: -8567510827141107668
+    second: monster_loop_final (1)_1081
+  - first:
+      213: -7058026947916472905
+    second: monster_loop_final (1)_1082
+  - first:
+      213: -7726656800086678784
+    second: monster_loop_final (1)_1083
+  - first:
+      213: -6359454345379590777
+    second: monster_loop_final (1)_1084
+  - first:
+      213: 6805942847269519972
+    second: monster_loop_final (1)_1085
+  - first:
+      213: -2765027174699965523
+    second: monster_loop_final (1)_1086
+  - first:
+      213: 7660005120976725759
+    second: monster_loop_final (1)_1087
+  - first:
+      213: 7841028455279340554
+    second: monster_loop_final (1)_1088
+  - first:
+      213: -2554232881514635231
+    second: monster_loop_final (1)_1089
+  - first:
+      213: 4549935149184305050
+    second: monster_loop_final (1)_1090
+  - first:
+      213: 7649980363961231540
+    second: monster_loop_final (1)_1091
+  - first:
+      213: 4804874731217665007
+    second: monster_loop_final (1)_1092
+  - first:
+      213: 8221649586706531596
+    second: monster_loop_final (1)_1093
+  - first:
+      213: -978018586034112441
+    second: monster_loop_final (1)_1094
+  - first:
+      213: 4453171583385334189
+    second: monster_loop_final (1)_1095
+  - first:
+      213: 6108641735367626560
+    second: monster_loop_final (1)_1096
+  - first:
+      213: 1763697289135540027
+    second: monster_loop_final (1)_1097
+  - first:
+      213: 7053695669495990968
+    second: monster_loop_final (1)_1098
+  - first:
+      213: -920013614727091504
+    second: monster_loop_final (1)_1099
+  - first:
+      213: -2914189212721959481
+    second: monster_loop_final (1)_1100
+  - first:
+      213: -4601336801645871162
+    second: monster_loop_final (1)_1101
+  - first:
+      213: 5866942779525715516
+    second: monster_loop_final (1)_1102
+  - first:
+      213: -7229660282779898552
+    second: monster_loop_final (1)_1103
+  - first:
+      213: 6269817356096886487
+    second: monster_loop_final (1)_1104
+  - first:
+      213: -8875104980028089188
+    second: monster_loop_final (1)_1105
+  - first:
+      213: 7792976092649152139
+    second: monster_loop_final (1)_1106
+  - first:
+      213: 8424361519480192321
+    second: monster_loop_final (1)_1107
+  - first:
+      213: -7970436934069938377
+    second: monster_loop_final (1)_1108
+  - first:
+      213: 1780129387123776441
+    second: monster_loop_final (1)_1109
+  - first:
+      213: 5646088904740379042
+    second: monster_loop_final (1)_1110
+  - first:
+      213: 8213158892453739994
+    second: monster_loop_final (1)_1111
+  - first:
+      213: 342557666351285915
+    second: monster_loop_final (1)_1112
+  - first:
+      213: -6359291316344318308
+    second: monster_loop_final (1)_1113
+  - first:
+      213: 5090272143135831266
+    second: monster_loop_final (1)_1114
+  - first:
+      213: -4721172162505873657
+    second: monster_loop_final (1)_1115
+  - first:
+      213: 8505855071256723046
+    second: monster_loop_final (1)_1116
+  - first:
+      213: -3966580560896510596
+    second: monster_loop_final (1)_1117
+  - first:
+      213: -6197273584542081796
+    second: monster_loop_final (1)_1118
+  - first:
+      213: -708968247979056200
+    second: monster_loop_final (1)_1119
+  - first:
+      213: 4223341034459282802
+    second: monster_loop_final (1)_1120
+  - first:
+      213: 6554987010212017269
+    second: monster_loop_final (1)_1121
+  - first:
+      213: 7465262949015926227
+    second: monster_loop_final (1)_1122
+  - first:
+      213: -5622249020463643593
+    second: monster_loop_final (1)_1123
+  - first:
+      213: 5783853979783738556
+    second: monster_loop_final (1)_1124
+  - first:
+      213: 3305708886142703411
+    second: monster_loop_final (1)_1125
+  - first:
+      213: -4273008856902459915
+    second: monster_loop_final (1)_1126
+  - first:
+      213: -8028411746945522922
+    second: monster_loop_final (1)_1127
+  - first:
+      213: -6450083542481369429
+    second: monster_loop_final (1)_1128
+  - first:
+      213: 8543497506931894474
+    second: monster_loop_final (1)_1129
+  - first:
+      213: 1355387657405616091
+    second: monster_loop_final (1)_1130
+  - first:
+      213: -5248996789152263388
+    second: monster_loop_final (1)_1131
+  - first:
+      213: 7329453344150515523
+    second: monster_loop_final (1)_1132
+  - first:
+      213: 6905449086970208412
+    second: monster_loop_final (1)_1133
+  - first:
+      213: 3837357935086108030
+    second: monster_loop_final (1)_1134
+  - first:
+      213: 3348404740629481868
+    second: monster_loop_final (1)_1135
+  - first:
+      213: 5920404849692188914
+    second: monster_loop_final (1)_1136
+  - first:
+      213: -7123182010393532561
+    second: monster_loop_final (1)_1137
+  - first:
+      213: -1753291607662379170
+    second: monster_loop_final (1)_1138
+  - first:
+      213: -6035635623386647257
+    second: monster_loop_final (1)_1139
+  - first:
+      213: -1352248512229642221
+    second: monster_loop_final (1)_1140
+  - first:
+      213: 6239133719454452437
+    second: monster_loop_final (1)_1141
+  - first:
+      213: 5015893679681884189
+    second: monster_loop_final (1)_1142
+  - first:
+      213: 1041000021707901856
+    second: monster_loop_final (1)_1143
+  - first:
+      213: -6600634762456746861
+    second: monster_loop_final (1)_1144
+  - first:
+      213: -5273413124054603087
+    second: monster_loop_final (1)_1145
+  - first:
+      213: 2429449271066269999
+    second: monster_loop_final (1)_1146
+  - first:
+      213: -2717659772228161354
+    second: monster_loop_final (1)_1147
+  - first:
+      213: 2272674328499856750
+    second: monster_loop_final (1)_1148
+  - first:
+      213: -8334191183359128336
+    second: monster_loop_final (1)_1149
+  - first:
+      213: -1309227971822708350
+    second: monster_loop_final (1)_1150
+  - first:
+      213: -7624815778876391996
+    second: monster_loop_final (1)_1151
+  - first:
+      213: 3274394891549498732
+    second: monster_loop_final (1)_1152
+  - first:
+      213: -7429735130683540742
+    second: monster_loop_final (1)_1153
+  - first:
+      213: -2020555162136542782
+    second: monster_loop_final (1)_1154
+  - first:
+      213: -4919744246774277237
+    second: monster_loop_final (1)_1155
+  - first:
+      213: -3697233705372861799
+    second: monster_loop_final (1)_1156
+  - first:
+      213: 9030860103146745100
+    second: monster_loop_final (1)_1157
+  - first:
+      213: 7795271427562708259
+    second: monster_loop_final (1)_1158
+  - first:
+      213: -7488275687566571925
+    second: monster_loop_final (1)_1159
+  - first:
+      213: 8189029135950495840
+    second: monster_loop_final (1)_1160
+  - first:
+      213: -4361417601294085484
+    second: monster_loop_final (1)_1161
+  - first:
+      213: 4724068913695614461
+    second: monster_loop_final (1)_1162
+  - first:
+      213: -5358639341417008875
+    second: monster_loop_final (1)_1163
+  - first:
+      213: -4235087673993610143
+    second: monster_loop_final (1)_1164
+  - first:
+      213: -3361704189635041611
+    second: monster_loop_final (1)_1165
+  - first:
+      213: -868054599192914458
+    second: monster_loop_final (1)_1166
+  - first:
+      213: -2954416250325770795
+    second: monster_loop_final (1)_1167
+  - first:
+      213: 7662990439923023675
+    second: monster_loop_final (1)_1168
+  - first:
+      213: 6442272857602474267
+    second: monster_loop_final (1)_1169
+  - first:
+      213: -5745138931612846038
+    second: monster_loop_final (1)_1170
+  - first:
+      213: -5400665887026227181
+    second: monster_loop_final (1)_1171
+  - first:
+      213: -9132269538017806901
+    second: monster_loop_final (1)_1172
+  - first:
+      213: -2628346268373413219
+    second: monster_loop_final (1)_1173
+  - first:
+      213: -2764140455215308306
+    second: monster_loop_final (1)_1174
+  - first:
+      213: 7537332755166201804
+    second: monster_loop_final (1)_1175
+  - first:
+      213: -1587114778499580467
+    second: monster_loop_final (1)_1176
+  - first:
+      213: -3580829355797248298
+    second: monster_loop_final (1)_1177
+  - first:
+      213: 5647367089444857651
+    second: monster_loop_final (1)_1178
+  - first:
+      213: -4069596670877076660
+    second: monster_loop_final (1)_1179
+  - first:
+      213: -3337984126472143067
+    second: monster_loop_final (1)_1180
+  - first:
+      213: -8779326525949748249
+    second: monster_loop_final (1)_1181
+  - first:
+      213: -3791646831741777670
+    second: monster_loop_final (1)_1182
+  - first:
+      213: -7140895644152721795
+    second: monster_loop_final (1)_1183
+  - first:
+      213: 5296145201772524614
+    second: monster_loop_final (1)_1184
+  - first:
+      213: 5329808805328448315
+    second: monster_loop_final (1)_1185
+  - first:
+      213: 5569898539254123205
+    second: monster_loop_final (1)_1186
+  - first:
+      213: -493689718849312430
+    second: monster_loop_final (1)_1187
+  - first:
+      213: 6988122503296666222
+    second: monster_loop_final (1)_1188
+  - first:
+      213: 9018939906653736623
+    second: monster_loop_final (1)_1189
+  - first:
+      213: -8025783333594043085
+    second: monster_loop_final (1)_1190
+  - first:
+      213: -6624830585093820189
+    second: monster_loop_final (1)_1191
+  - first:
+      213: 4457898826055485157
+    second: monster_loop_final (1)_1192
+  - first:
+      213: -5364498630803281883
+    second: monster_loop_final (1)_1193
+  - first:
+      213: 3579319525244905229
+    second: monster_loop_final (1)_1194
+  - first:
+      213: 8011883674662611802
+    second: monster_loop_final (1)_1195
+  - first:
+      213: 1609741244730785035
+    second: monster_loop_final (1)_1196
+  - first:
+      213: 1387206960177765552
+    second: monster_loop_final (1)_1197
+  - first:
+      213: -2298041750948669379
+    second: monster_loop_final (1)_1198
+  - first:
+      213: -781037686537936966
+    second: monster_loop_final (1)_1199
+  - first:
+      213: 2091582559568537980
+    second: monster_loop_final (1)_1200
+  - first:
+      213: 7574617940929497029
+    second: monster_loop_final (1)_1201
+  - first:
+      213: 2407626312864699161
+    second: monster_loop_final (1)_1202
+  - first:
+      213: -4579972910526185660
+    second: monster_loop_final (1)_1203
+  - first:
+      213: 8329404182447554802
+    second: monster_loop_final (1)_1204
+  - first:
+      213: 1564995372051608301
+    second: monster_loop_final (1)_1205
+  - first:
+      213: 4893206742564276492
+    second: monster_loop_final (1)_1206
+  - first:
+      213: -3506647071646406408
+    second: monster_loop_final (1)_1207
+  - first:
+      213: -2349337622802028377
+    second: monster_loop_final (1)_1208
+  - first:
+      213: -1240721221623791738
+    second: monster_loop_final (1)_1209
+  - first:
+      213: -8441297606419279704
+    second: monster_loop_final (1)_1210
+  - first:
+      213: -6710768455002807568
+    second: monster_loop_final (1)_1211
+  - first:
+      213: -3374470241451175848
+    second: monster_loop_final (1)_1212
+  - first:
+      213: -6036605886555740311
+    second: monster_loop_final (1)_1213
+  - first:
+      213: 3455438526118168919
+    second: monster_loop_final (1)_1214
+  - first:
+      213: -7891386062432769713
+    second: monster_loop_final (1)_1215
+  - first:
+      213: 2954709063869843822
+    second: monster_loop_final (1)_1216
+  - first:
+      213: -6189209257207181073
+    second: monster_loop_final (1)_1217
+  - first:
+      213: 30924524920123827
+    second: monster_loop_final (1)_1218
+  - first:
+      213: 562703034899427289
+    second: monster_loop_final (1)_1219
+  - first:
+      213: -3606246874263347884
+    second: monster_loop_final (1)_1220
+  - first:
+      213: 1643942293171113135
+    second: monster_loop_final (1)_1221
+  - first:
+      213: 727132376683076708
+    second: monster_loop_final (1)_1222
+  - first:
+      213: -6229006920799519330
+    second: monster_loop_final (1)_1223
+  - first:
+      213: 5200007305069484313
+    second: monster_loop_final (1)_1224
+  - first:
+      213: 5458678106482820375
+    second: monster_loop_final (1)_1225
+  - first:
+      213: -3615145365852349812
+    second: monster_loop_final (1)_1226
+  - first:
+      213: 8685641163023350485
+    second: monster_loop_final (1)_1227
+  - first:
+      213: -930379427980190415
+    second: monster_loop_final (1)_1228
+  - first:
+      213: -3180865004262615574
+    second: monster_loop_final (1)_1229
+  - first:
+      213: -6789964427406479443
+    second: monster_loop_final (1)_1230
+  - first:
+      213: 5657899202538044294
+    second: monster_loop_final (1)_1231
+  - first:
+      213: -9097786740138976297
+    second: monster_loop_final (1)_1232
+  - first:
+      213: -5825898285287869595
+    second: monster_loop_final (1)_1233
+  - first:
+      213: 1830891278004884867
+    second: monster_loop_final (1)_1234
+  - first:
+      213: -4420775317857788622
+    second: monster_loop_final (1)_1235
+  - first:
+      213: 8853708673607487651
+    second: monster_loop_final (1)_1236
+  - first:
+      213: 1831344590314013997
+    second: monster_loop_final (1)_1237
+  - first:
+      213: 5947418642188140323
+    second: monster_loop_final (1)_1238
+  - first:
+      213: -2250801645125847995
+    second: monster_loop_final (1)_1239
+  - first:
+      213: 4950961167517618534
+    second: monster_loop_final (1)_1240
+  - first:
+      213: 6397310223723353610
+    second: monster_loop_final (1)_1241
+  - first:
+      213: 5214453656433061573
+    second: monster_loop_final (1)_1242
+  - first:
+      213: -4215404515948478507
+    second: monster_loop_final (1)_1243
+  - first:
+      213: 646207581025384945
+    second: monster_loop_final (1)_1244
+  - first:
+      213: -8615234300665737037
+    second: monster_loop_final (1)_1245
+  - first:
+      213: 9107302236757250961
+    second: monster_loop_final (1)_1246
+  - first:
+      213: -7011471108147868319
+    second: monster_loop_final (1)_1247
+  - first:
+      213: -6721791878578949741
+    second: monster_loop_final (1)_1248
+  - first:
+      213: -3359033374329598237
+    second: monster_loop_final (1)_1249
+  - first:
+      213: 4496382226360449582
+    second: monster_loop_final (1)_1250
+  - first:
+      213: 2465869642350992169
+    second: monster_loop_final (1)_1251
+  - first:
+      213: 2760486338007809587
+    second: monster_loop_final (1)_1252
+  - first:
+      213: 851436933294225350
+    second: monster_loop_final (1)_1253
+  - first:
+      213: 8968148652220994630
+    second: monster_loop_final (1)_1254
+  - first:
+      213: -8655549892113866182
+    second: monster_loop_final (1)_1255
+  - first:
+      213: -8659423456457692055
+    second: monster_loop_final (1)_1256
+  - first:
+      213: -3344216836089327236
+    second: monster_loop_final (1)_1257
+  - first:
+      213: -7242477319926157259
+    second: monster_loop_final (1)_1258
+  - first:
+      213: -5325299592417446412
+    second: monster_loop_final (1)_1259
+  - first:
+      213: 117988879253503406
+    second: monster_loop_final (1)_1260
+  - first:
+      213: 7469087018917173264
+    second: monster_loop_final (1)_1261
+  - first:
+      213: -4494556907789967385
+    second: monster_loop_final (1)_1262
+  - first:
+      213: -3916074066673949304
+    second: monster_loop_final (1)_1263
+  - first:
+      213: 4121612556335607206
+    second: monster_loop_final (1)_1264
+  - first:
+      213: 312788689527819710
+    second: monster_loop_final (1)_1265
+  - first:
+      213: -4625293451814226348
+    second: monster_loop_final (1)_1266
+  - first:
+      213: 6389420376529080877
+    second: monster_loop_final (1)_1267
+  - first:
+      213: 6173016985013554397
+    second: monster_loop_final (1)_1268
+  - first:
+      213: -6425274535962449457
+    second: monster_loop_final (1)_1269
+  - first:
+      213: 302837475898908232
+    second: monster_loop_final (1)_1270
+  - first:
+      213: -6198598505261622864
+    second: monster_loop_final (1)_1271
+  - first:
+      213: -122716140762920289
+    second: monster_loop_final (1)_1272
+  - first:
+      213: -3032917091880985703
+    second: monster_loop_final (1)_1273
+  - first:
+      213: 8796640459890522874
+    second: monster_loop_final (1)_1274
+  - first:
+      213: 601961183421000769
+    second: monster_loop_final (1)_1275
+  - first:
+      213: 4456250451641132355
+    second: monster_loop_final (1)_1276
+  - first:
+      213: -8570865368554304813
+    second: monster_loop_final (1)_1277
+  - first:
+      213: -5934445902836244029
+    second: monster_loop_final (1)_1278
+  - first:
+      213: -5341213138952241445
+    second: monster_loop_final (1)_1279
+  - first:
+      213: 6912022509108109175
+    second: monster_loop_final (1)_1280
+  - first:
+      213: -164551199881771001
+    second: monster_loop_final (1)_1281
+  - first:
+      213: -3072414133793901036
+    second: monster_loop_final (1)_1282
+  - first:
+      213: 6095850925415109695
+    second: monster_loop_final (1)_0
+  - first:
+      213: 8026564060748004133
+    second: monster_loop_final (1)_1
+  - first:
+      213: -4682842130939652404
+    second: monster_loop_final (1)_2
+  - first:
+      213: -2803441734348524898
+    second: monster_loop_final (1)_4
+  - first:
+      213: 2115917288158122313
+    second: monster_loop_final (1)_5
+  - first:
+      213: 5415453349074789790
+    second: monster_loop_final (1)_8
+  - first:
+      213: 9180295014528477830
+    second: monster_loop_final (1)_10
+  - first:
+      213: -5442283177479726689
+    second: monster_loop_final (1)_11
+  - first:
+      213: -293722240438273104
+    second: monster_loop_final (1)_12
+  - first:
+      213: 2141013757780286549
+    second: monster_loop_final (1)_13
+  - first:
+      213: -3320726598868198672
+    second: monster_loop_final (1)_14
+  - first:
+      213: 5335149347513313235
+    second: monster_loop_final (1)_16
+  - first:
+      213: -1281800875823577194
+    second: monster_loop_final (1)_17
+  - first:
+      213: 6486736758778808974
+    second: monster_loop_final (1)_19
+  - first:
+      213: 1234858959254118682
+    second: monster_loop_final (1)_21
+  - first:
+      213: -6160470354249037879
+    second: monster_loop_final (1)_25
+  - first:
+      213: 3468387647302999553
+    second: monster_loop_final (1)_26
+  - first:
+      213: 3413692353350034071
+    second: monster_loop_final (1)_27
+  - first:
+      213: 7762480354018741816
+    second: monster_loop_final (1)_28
+  - first:
+      213: -2200315911960435492
+    second: monster_loop_final (1)_29
+  - first:
+      213: -2712792460347790305
+    second: monster_loop_final (1)_3
+  - first:
+      213: -7729792012234919461
+    second: monster_loop_final (1)_6
+  - first:
+      213: 3311990025104411822
+    second: monster_loop_final (1)_7
+  - first:
+      213: -1350853909188191778
+    second: monster_loop_final (1)_9
+  - first:
+      213: -844992202875792369
+    second: monster_loop_final (1)_15
+  - first:
+      213: -1592885455057362830
+    second: monster_loop_final (1)_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster_loop_final (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3326
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f349a159e10d89450800000000000000
+      internalID: 6095850925415109695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_1
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 3326
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b3dc79c75146f60800000000000000
+      internalID: 8026564060748004133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 3326
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6db1684e3330fb0800000000000000
+      internalID: -4682842130939652404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_4
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 3326
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92b6ab889c2819d0800000000000000
+      internalID: -2803441734348524898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2556
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941d5ce109f3d5d10800000000000000
+      internalID: 2115917288158122313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_8
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 2556
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e956d41f02e872b40800000000000000
+      internalID: 5415453349074789790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1786
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a624a2da5f66f70800000000000000
+      internalID: 9180295014528477830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_11
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1786
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f999c37d8402974b0800000000000000
+      internalID: -5442283177479726689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1786
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb7b04bd2d7cebf0800000000000000
+      internalID: -293722240438273104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_13
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 1786
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cd7bb4ba866bd10800000000000000
+      internalID: 2141013757780286549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_14
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1786
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa154690c86ae1d0800000000000000
+      internalID: -3320726598868198672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_16
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1016
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7203290124a0a40800000000000000
+      internalID: 5335149347513313235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1016
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69740cb05e0263ee0800000000000000
+      internalID: -1281800875823577194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_19
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1016
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8aca72c6b4850a50800000000000000
+      internalID: 6486736758778808974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_3
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 3326
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cac9b51a93a5ad0800000000000000
+      internalID: -2712792460347790305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_6
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 2556
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1f51b7e134ab490800000000000000
+      internalID: -7729792012234919461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 2556
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac4cf1516d86fd20800000000000000
+      internalID: 3311990025104411822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_9
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 2556
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9d367d68dc04de0800000000000000
+      internalID: -1350853909188191778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1016
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f041d95811cf544f0800000000000000
+      internalID: -844992202875792369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_loop_final (1)_18
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 1016
+        width: 764
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2706b6b3e1fe4e9e0800000000000000
+      internalID: -1592885455057362830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57d59f35430e5374aa3c4607e040bc35
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
