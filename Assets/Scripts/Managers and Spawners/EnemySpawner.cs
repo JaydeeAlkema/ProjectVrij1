@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -45,10 +46,21 @@ public class EnemySpawner : MonoBehaviour
 
 			GameObject enemyGO = Instantiate(enemiesToSpawn[randInt], spawnPositions[randInt].position, Quaternion.identity, enemySpawnTransformParent);
 			enemyGO.name += " [" + enemyIndex + "]";
+			enemyGO.transform.position = new Vector3(enemyGO.transform.position.x, -3f, 0f);
 			if(randInt == 0)
 			{
 				enemyGO.GetComponent<Enemy>().MovementMethod = MovementMethod.MoveTowards;
 				enemyGO.GetComponent<Enemy>().MoveTime = 4f;
+
+				SpriteRenderer[] spriteRenderers = enemyGO.GetComponentsInChildren<SpriteRenderer>();
+				Light2D[] lights = enemyGO.GetComponentsInChildren<Light2D>();
+				foreach(SpriteRenderer sprite in spriteRenderers) sprite.flipX = true;
+				foreach(Light2D light in lights)
+				{
+					Vector3 scale = light.transform.localScale;
+					scale.x *= -1;
+					light.transform.localScale = scale;
+				}
 			}
 			else if(randInt == 1)
 			{
