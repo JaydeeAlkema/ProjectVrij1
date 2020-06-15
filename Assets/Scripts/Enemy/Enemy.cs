@@ -108,13 +108,7 @@ public class Enemy : MonoBehaviour, IDamageable
 			transform.position = CleanLerp(startingPos, target.position, timeStartedLerping, moveTime);
 
 		else if(movementMethod == MovementMethod.MoveTowards)
-			transform.position = Vector3.MoveTowards(transform.position, target.position, MoveTime * Time.deltaTime);
-
-		//Vector3 diff = target.position - transform.position;
-		//diff.Normalize();
-
-		//float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-		//spriteTransform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
+			transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, -3f, 0f), MoveTime * Time.deltaTime);
 	}
 
 	/// <summary>
@@ -130,7 +124,7 @@ public class Enemy : MonoBehaviour, IDamageable
 		float timeSinceStarted = Time.time - timeStartedLerping;
 		float percentageComplete = timeSinceStarted / lerptime;
 
-		Vector3 result = Vector3.Lerp(startPos, endPos, percentageComplete);
+		Vector3 result = Vector3.Lerp(startPos, new Vector3(endPos.x, -3f, 0f), percentageComplete);
 		return result;
 	}
 
